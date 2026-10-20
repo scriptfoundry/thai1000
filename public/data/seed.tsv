@@ -1,0 +1,1001 @@
+version: 1
+1	1	หลอดไฟ	light bulb	ช่างไฟฟ้าปีนขึ้นไปเปลี่ยนหลอดไฟดวงใหม่ที่ระเบียง.	The electrician climbed up to replace a new light bulb on the balcony.	nouns
+2	1	พัดลม	electric fan	เปิดพัดลมส่ายเบาๆ เพื่อช่วยให้อากาศในห้องถ่ายเท.	Turn on the electric fan oscillating gently to help air circulate in the room.	nouns
+3	1	ผ้าห่ม	blanket	เด็กน้อยดึงผ้าห่มผืนหนาขึ้นมาคลุมตัวเพื่อคลายหนาว.	The child pulled up the thick blanket to cover up against the cold.	nouns
+4	1	ร่ม	umbrella	อย่าลืมพกร่มพับคันเล็กติดกระเป๋าเป้ไว้ในวันฝนตก.	Do not forget to pack a small folding umbrella in your backpack on rainy days.	nouns
+5	1	สะพาน	bridge	รถยนต์แล่นข้ามสะพานคอนกรีตขนาดใหญ่ข้ามแม่น้ำเจ้าพระยา.	Cars drove crossing the large concrete bridge over the Chao Phraya River.	nouns
+6	1	บันได	stairs	คนแก่ค่อยๆ ก้าวเดินขึ้นบันไดบ้านอย่างระมัดระวัง.	The elderly person stepped slowly up the house stairs carefully.	nouns
+7	1	กำแพง	wall	มีต้นไม้เลื้อยสีเขียวเกาะปกคลุมตามแนวกำแพงอิฐเก่า.	Green climbing plants latch covering along the old brick wall line.	nouns
+8	1	แก้ว	glass	รินน้ำส้มคั้นสดใส่ลงในแก้วใสเย็นฉ่ำสำหรับมื้อเช้า.	Pour freshly squeezed orange juice into a chilled transparent glass for breakfast.	nouns
+9	1	ส้อม	fork	จัดวางมีดและส้อมไว้ข้างจานอย่างถูกต้องตามมารยาท.	Place knives and forks beside plates properly according to etiquette.	nouns
+10	1	ช้อน	spoon	เขาหยิบช้อนสแตนเลสคันใหม่ขึ้นมาตักน้ำซุปอุ่นๆ.	He picked up a new stainless steel spoon to scoop warm soup.	nouns
+11	1	จาน	plate	พนักงานยกจานข้าวผัดร้อนๆ มาเสิร์ฟบนโต๊ะอาหาร.	The waiter brought hot plates of fried rice to serve on the dining table.	nouns
+12	1	ตลาด	market	ชาวบ้านเดินไปซื้อปลาสดและพืชผักที่ตลาดเช้าตรู่.	Villagers walk to buy fresh fish and vegetables at the early morning market.	nouns
+13	1	สวนสาธารณะ	public park	ผู้คนพากันมาวิ่งออกกำลังกายในสวนสาธารณะยามเย็น.	People gather to jog for exercise in the public park at dusk.	nouns
+14	1	ห้องนอน	bedroom	เขาเปิดหน้าต่างห้องนอนเพื่อระบายอากาศในตอนเช้า.	He opened the bedroom window to ventilate air in the morning.	nouns
+15	1	ราบเรียบ	flat	ผิวน้ำในสระว่ายน้ำนิ่งสงบและราบเรียบเหมือนกระจกเงา.	Water surfaces in the swimming pool lay tranquil and flat like looking-glasses.	adjectives
+16	1	ห้องครัว	kitchen	แม่กำลังยืนอบขนมปังหอมกรุ่นอยู่ภายในห้องครัว.	Mother is standing baking aromatic bread inside the kitchen.	nouns
+17	1	กว้างขึ้น	wider	ช่างขยายแนวสะพานข้ามคลองให้กว้างขึ้นเพื่อรองรับรถสองคัน.	Crews widened the canal bridge wider to accommodate two passing cars.	adjectives
+18	1	กระจก	mirror	เธอยืนจัดแต่งทรงผมและตรวจดูความเรียบร้อยหน้าบานกระจกเงา.	She stood fixing hair locks and checking appearances in front of mirrors.	nouns
+19	1	ต่อเติม	to extend	เจ้าของบ้านจ้างช่างมาต่อเติมระเบียงไม้หลังบ้านใหม่.	The homeowner hired carpenters to extend a new wooden back porch.	verbs
+20	1	ชื่นชม	to admire	อาจารย์ชื่นชมผลงานภาพวาดสีน้ำของนักเรียนทุกคน.	The teacher admires the watercolor painting work of every student.	verbs
+21	1	แคบลง	narrower	ถนนคอนกรีตเริ่มแคบลงเมื่อรถแล่นเข้าสู่เขตแนวเขา.	The concrete road grew narrower as vehicles drove into mountain passes.	adjectives
+22	1	ตู้เย็น	refrigerator	แม่นำผักสดและผลไม้แช่เก็บไว้ในช่องเก็บความเย็นของตู้เย็น.	Mom stores farm vegetables and fruits inside cold refrigerator drawers.	nouns
+23	1	กวักมือ	to wave hand	แม่ค้ากวักมือเรียกให้ลูกค้าเข้ามาดูสินค้าหน้าร้าน.	The vendor waved her hand calling customers to browse storefront goods.	verbs
+24	1	ข้ามแดน	to cross border	กลุ่มนักท่องเที่ยวต้องแสดงหนังสือเดินทางก่อนข้ามแดน.	The tourist group must present passports before crossing borders.	verbs
+25	1	คลุมเครือ	vague	ข้อความในประกาศยังคงมีความหมายคลุมเครือจนคนสับสน.	Wording in the bulletin remains vague in meaning until people get confused.	adjectives
+26	1	ธนาคาร	bank	พนักงานบริษัทเดินไปทำธุรกรรมฝากเงินสดที่เคาน์เตอร์ธนาคาร.	The office worker walked over to deposit currency sums at bank desks.	nouns
+27	1	ต้อนรับ	to welcome	พนักงานโรงแรมยืนต้อนรับแขกผู้มาเยือนด้วยความอบอุ่น.	Hotel staff stood welcoming visiting guests with warmth.	verbs
+28	1	ปรึกษา	to consult	นักเรียนเข้าพบครูประจำชั้นเพื่อปรึกษาเรื่องแผนการเรียน.	The student met the homeroom teacher to consult on study plans.	verbs
+29	1	มุ่งมั่น	determined	เด็กหนุ่มมีแววตามุ่งมั่นที่จะสอบเข้ามหาวิทยาลัยให้ได้.	The young lad carries determined eyes to pass university exams.	adjectives
+30	1	สนามบิน	airport	ผู้โดยสารนั่งรอขึ้นเครื่องอยู่ภายในโถงผู้โดยสารของสนามบิน.	Passengers sat waiting boarding calls inside airport terminal lounges.	nouns
+31	1	ชักชวน	to invite	เพื่อนๆ ชักชวนกันไปปั่นจักรยานออกกำลังกายตอนเย็น.	Friends invited each other to ride bicycles for evening exercise.	verbs
+32	1	ส่ายหน้า	to shake head	น้องสาวส่ายหน้าปฏิเสธเมื่อแม่ถามว่าอยากกินยาไหม.	Little sister shook her head refusing when mother asked if she wanted medicine.	verbs
+33	1	ชุ่มชื้น	moist	ผืนป่าต้นน้ำยังคงเขียวขจีและมีความชุ่มชื้นตลอดทั้งปี.	Upstream forest canopies stay lush green and moist throughout the year.	adjectives
+34	1	หมู่บ้าน	village	หมู่บ้านชนบทแห่งนี้ล้อมรอบไปด้วยขุนเขาเขียวชอุ่มและลำธารใส.	This rural countryside village is surrounded by verdant hills and clear brooks.	nouns
+35	1	พยักหน้า	to nod	เขาพยักหน้าตอบรับเมื่อเข้าใจข้อตกลงในการทำงาน.	He nodded in agreement upon understanding the work agreement.	verbs
+36	1	ส่งยิ้ม	to smile at	คุณยายใจดีส่งยิ้มให้เด็กๆ ที่เดินผ่านหน้าบ้าน.	The kind grandmother smiled at the children walking past the house.	verbs
+37	1	แห้งแล้ง	arid	ผืนดินแถบนี้แตกระแหงเพราะสภาพอากาศแห้งแล้งมานานหลายเดือน.	Ground in this region cracked open because of arid weather lasting months.	adjectives
+38	1	เรือ	boat	ชาวประมงพายเรือหาปลาลำเล็กเทียบเข้าหาฝั่งตอนเช้ามืด.	The fisherman rows the small boat docking ashore at the crack of dawn.	nouns
+39	1	ถอด	to take off	กรุณาถอดรองเท้าไว้บนชั้นวางก่อนเดินเข้าห้องพระ.	Please take off shoes onto the rack before walking into the prayer room.	verbs
+40	1	สวม	to wear	ทุกคนควรสวมหน้ากากอนามัยเมื่อเข้าไปในที่แออัด.	Everyone should wear a sanitary mask when entering crowded places.	verbs
+41	1	เหน็ดเหนื่อย	exhausted	กรรมกรพักดื่มน้ำคลายร้อนหลังตรากตรำทำงานอย่างเหน็ดเหนื่อย.	Laborers pause to drink water cooling down after working in an exhausted state.	adjectives
+42	1	จักรยาน	bicycle	เด็กๆ ปั่นจักรยานสองล้อคันเล็กเล่นรอบสวนสาธารณะในตอนเย็น.	Kids pedal two-wheeled bicycles around municipal parks at dusk.	nouns
+43	1	จอด	to park	พ่อจอดรถยนต์ส่วนตัวไว้ในช่องจอดใต้ร่มไม้.	Father parked the private car in the parking slot under the tree shade.	verbs
+44	1	ซ่อนรูป	to conceal form	เขาใส่เสื้อตัวใหญ่เพื่อซ่อนรูปทรงที่แท้จริง.	He wears an oversized shirt to conceal his actual build.	verbs
+45	1	สดชื่น	refreshed	การได้ล้างหน้าด้วยน้ำเย็นยามเช้าทำให้รู้สึกสดชื่นกระปรี้กระเปร่า.	Washing the face with cool water at dawn makes one feel refreshed.	adjectives
+46	1	เครื่องบิน	airplane	เครื่องบินโดยสารลำใหญ่ทะยานขึ้นสู่น่านฟ้าอย่างนุ่มนวลและปลอดภัย.	The large commercial airplane ascended into airspace smoothly and safely.	nouns
+47	1	ปลูก	to plant	ชาวสวนช่วยกันปลูกต้นส้มในแปลงดินหลังบ้าน.	The gardeners helped each other plant orange trees in the backyard plot.	verbs
+48	1	ประดิษฐ์	to invent	นักวิทยาศาสตร์คิดค้นประดิษฐ์เครื่องกรองน้ำพลังงานแสงอาทิตย์.	Scientists invented solar-powered water purifiers.	verbs
+49	1	อึกทึก	noisy	บริเวณตลาดสดตอนเช้าเต็มไปด้วยเสียงพูดคุยอึกทึกครึกโครม.	The morning market area is packed with noisy, bustling chatter.	adjectives
+50	1	กล้อง	camera	ช่างภาพหยิบกล้องถ่ายรูปตัวโปรดขึ้นมาบันทึกภาพทิวทัศน์ริมทะเล.	The photographer picked up his prized camera documenting seascape views.	nouns
+51	1	แลกเปลี่ยน	to exchange	นักท่องเที่ยวแวะแลกเปลี่ยนเงินตราต่างประเทศที่เคาน์เตอร์ธนาคาร.	Tourists stop by to exchange foreign currencies at bank counters.	verbs
+52	1	สะสม	to collect	คุณตาชอบสะสมแสตมป์โบราณจากทั่วทุกมุมโลก.	Grandfather likes collecting antique stamps from all corners of the world.	verbs
+53	1	เงียบเชียบ	dead silent	ทางเดินในอาคารเรียนยามค่ำคืนดูเงียบเชียบไร้ผู้คน.	The school building hallways at night look dead silent, devoid of people.	adjectives
+54	1	รูปภาพ	picture	ครอบครัวแขวนรูปภาพถ่ายรวมสมาชิกทุกคนไว้บนผนังห้องรับแขก.	The family framed and mounted group pictures on parlor walls.	nouns
+55	1	ควบคุม	to control	กัปตันบังคับควบคุมเครื่องบินให้ลงจอดอย่างปลอดภัย.	The pilot handled controls to land the airplane securely.	verbs
+56	1	สมัคร	to apply	บัณฑิตใหม่ยื่นเอกสารเพื่อสมัครงานที่บริษัทข้ามชาติ.	The fresh graduate submitted documents to apply for jobs at a multinational firm.	verbs
+57	1	เปราะบาง	fragile	แก้วคริสตัลใบนี้เนื้อบางมากและเปราะบางต่อแรงกระแทก.	This crystal glass is very thin and fragile against impacts.	adjectives
+58	1	แผนที่	map	นักท่องเที่ยวกางแผนที่เมืองออกดูเพื่อหาทางเดินไปสถานีรถไฟ.	The tourist folded out the city map to locate trails to the train station.	nouns
+59	1	สอบ	to take an exam	นักเรียนกำลังนั่งสอบปลายภาคอย่างเงียบสงบในห้องเรียน.	Students are sitting taking final exams quietly in the classroom.	verbs
+60	1	สอน	to teach	ครูตั้งใจสอนวิชาคณิตศาสตร์ให้นักเรียนเข้าใจง่าย.	The teacher determinedly teaches mathematics for students to easily grasp.	verbs
+61	1	เหนียวแน่น	solid	ความผูกพันในครอบครัวยังคงอบอุ่นและเหนียวแน่นเสมอ.	Bonds within the family remain warm and solid always.	adjectives
+62	1	กระดาษ	paper	เขาจดบันทึกข้อความสำคัญลงบนแผ่นกระดาษสีขาวสะอาดตา.	He jotted down key notes upon sheets of spotless white paper.	nouns
+63	1	ฝึก	to practice	เด็กชายขยันฝึกเล่นเปียโนทุกวันหลังเลิกเรียน.	The boy diligently practices playing piano every day after classes.	verbs
+64	1	แข่ง	to compete	นักกีฬาเยาวชนลงสนามร่วมแข่งว่ายน้ำเพื่อชิงเหรียญทอง.	Youth athletes entered the pool to compete in swimming for gold medals.	verbs
+65	1	จืดสนิท	completely bland	แกงจืดชามนี้ลืมใส่เกลือทำให้มีรสชาติจืดสนิท.	This soup bowl forgot salt, leaving it with a completely bland taste.	adjectives
+66	1	ดินสอ	pencil	จิตรกรเหลาดินสอไม้จนแหลมคมเพื่อใช้ร่างโครงสร้างภาพวาด.	The artist sharpens the wood pencil sharply to sketch drawing outlines.	nouns
+67	1	ชนะ	to win	ทีมโรงเรียนของเราสามารถเอาชนะการแข่งขันฟุตบอลประจำปีได้สำเร็จ.	Our school team managed to win the annual soccer championship.	verbs
+68	1	เหงื่อออก	to sweat	นักวิ่งมีเหงื่อออกท่วมตัวหลังจากวิ่งเข้าเส้นชัย.	The runner sweated profusely all over after crossing the finish line.	verbs
+69	1	เค็มจัด	extremely salty	อย่าใส่น้ำปลามากเกินไปเพราะจะทำให้น้ำซุปเค็มจัด.	Do not add too much fish sauce because it makes the soup extremely salty.	adjectives
+70	1	ปากกา	pen	คุณครูใช้ปากกาสีแดงตรวจและให้คะแนนการบ้านของนักเรียน.	The schoolteacher uses a red ink pen to check and grade student homework.	nouns
+71	1	สั่น	to shake	ลูกสุนัขตัวน้อยยืนตัวสั่นด้วยความหนาวเหน็บท่ามกลางสายฝน.	The tiny puppy stood shaking with bitter chill in the rain.	verbs
+72	1	เคลิ้ม	to doze	เขานั่งเคลิ้มหลับไปบนเก้าอี้โยกเพราะความอ่อนเพลีย.	He sat dozing off on the rocking chair out of exhaustion.	verbs
+73	1	ใจร้อน	impatient	อย่าเพิ่งใจร้อนตัดสินคนอื่นเพียงเพราะฟังความข้างเดียวมา.	Do not be impatient judging others after hearing only one side.	adjectives
+74	1	กระเป๋า	bag	นักเรียนสะพายกระเป๋าใส่หนังสือเล่มหนักเดินเข้าประตูโรงเรียน.	The pupil slung a bag loaded with heavy books entering school gates.	nouns
+75	1	หาว	to yawn	นักเรียนเริ่มง่วงนอนจนเผลอหาวระหว่างฟังบรรยาย.	The student grew sleepy and accidentally yawned during lecture.	verbs
+76	1	จาม	to sneeze	เขาแพ้ละอองเกสรดอกไม้จนจามออกมาเสียงดัง.	He had pollen allergies until he sneezed loudly.	verbs
+77	1	ใจเย็น	calm	เขาเป็นคนมีสติและใจเย็นเสมอแม้จะต้องเผชิญหน้ากับปัญหาเฉพาะหน้า.	He is always level-headed and calm even facing immediate crises.	adjectives
+78	1	กุญแจ	key	เขากำพวงกุญแจไว้ในมือแน่นก่อนเสียบไขปลดล็อคประตูรั้ว.	He held the key ring tightly before inserting it to unlock the gate.	nouns
+79	1	ไอ	to cough	คนป่วยมีอาการไอแห้งติดต่อกันหลายวันเพราะเป็นหวัด.	The patient suffered from dry cough consecutively for days from a cold.	verbs
+80	1	หายใจ	to breathe	เราควรสูดลมหายใจเข้าลึกๆ เพื่อผ่อนคลายความเครียด.	We should breathe deeply inward to relieve stress.	verbs
+81	1	เข้มงวด	strict	โรงเรียนประจำมีกฎระเบียบวินัยที่เข้มงวดสำหรับการพักผ่อน.	The boarding school enforces strict disciplinary rules for curfews.	adjectives
+82	1	ไข่	egg	เขาตอกไข่ไก่ใส่ลงในกระทะร้อนฉ่าเพื่อทำไข่ดาวกรอบๆ.	He cracked a fresh hen egg into the sizzling pan to make a fried egg.	nouns
+83	1	จ้อง	to stare	แมวจ้องมองจิ้งจกบนผนังห้องโดยไม่กะพริบตา.	The cat stares at a wall gecko without blinking an eye.	verbs
+84	1	ชิม	to taste	พ่อครัวใช้ช้อนชิมรสชาติน้ำซุปก่อนยกเสิร์ฟลูกค้า.	The chef uses a spoon to taste soup flavors before serving guests.	verbs
+85	1	น่าสงสาร	pitiful	ลูกแมวจรจัดเปียกฝนตัวสั่นดูน่าสงสารจนมีคนรับไปเลี้ยงดู.	The shivering, wet stray kitten looked pitiful until someone adopted it.	adjectives
+86	1	ข้าว	rice	ชาวนาเกี่ยวข้าวหอมมะลิสีทองอร่ามเต็มทุ่งนาในฤดูเก็บเกี่ยว.	Farmers harvest golden jasmine rice spanning paddies in harvest season.	nouns
+87	1	ดม	to smell	เด็กหญิงก้มลงดมกลิ่นหอมของดอกมะลิสีขาว.	The young girl leaned down to smell the scent of white jasmine.	verbs
+88	1	ไหม้	to burn	ขนมปังในเตาอบร้อนเกินไปจนไหม้ดำเกรียม.	Bread inside the baking oven got overheated and burned pitch black.	verbs
+89	1	ประมาท	careless	อุบัติเหตุบนท้องถนนส่วนใหญ่มักเกิดขึ้นจากการขับรถที่ประมาท.	Most road accidents happen because of careless driving.	adjectives
+90	1	อาหาร	food	แม่ครัวปรุงอาหารรสชาติกลมกล่อมและถูกหลักอนามัยทุกมื้อ.	The cook prepares palatable and hygienic food for every meal.	nouns
+91	1	ไหล	to flow	น้ำตกใสไหลลงมาจากหน้าผาสูงสู่ลำธารด้านล่าง.	Clear waterfall flows down from high cliffs into lower streams.	verbs
+92	1	จม	to sink	ก้อนหินหนักจมดิ่งลงสู่ก้นบ่อน้ำลึกทันที.	The heavy stone sank right down to the deep pond bottom instantly.	verbs
+93	1	ระมัดระวัง	careful	คนขับรถที่ดีควรใช้ความระมัดระวังเป็นพิเศษเมื่อขับผ่านเขตโรงเรียน.	A good driver should be especially careful passing school zones.	adjectives
+94	1	อากาศ	weather	อากาศวันนี้เย็นสบายและมีลมพัดเอื่อยๆ ตลอดทั้งวัน.	Today's weather is pleasantly cool with gentle breezes blowing all day.	nouns
+95	1	ลอย	to float	กระทงใบตองลอยไปตามกระแสน้ำในแม่น้ำอย่างช้าๆ.	Banana leaf floats drift slowly along currents in the river.	verbs
+96	1	สะท้อน	to reflect	ผิวน้ำนิ่งสะท้อนเงาของดวงจันทร์ยามค่ำคืนได้อย่างชัดเจน.	Calm water surfaces reflect shadows of the night moon clearly.	verbs
+97	1	แพ้	allergic	เธอมีอาการผื่นคันขึ้นตามผิวหนังเพราะแพ้อาหารทะเลจำพวกกุ้ง.	She developed an itchy skin rash because she is allergic to shrimp.	adjectives
+98	1	ความสุข	happiness	รอยยิ้มของเด็กๆ เติมเต็มความสุขให้แก่ทุกคนในบ้านอย่างแท้จริง.	Children's smiles truly fill everyone in the house with happiness.	nouns
+99	1	ระเบิด	to explode	ถังก๊าซเก่าระเบิดเสียงดังสนั่นหวั่นไหวกลางโรงงาน.	An old gas canister exploded with a deafening noise inside the plant.	verbs
+100	1	แข็งตัว	to freeze	น้ำในช่องแช่แข็งเย็นจัดจนเปลี่ยนสภาพแข็งตัวเป็นน้ำแข็ง.	Water in the deep freezer got so chilled it froze into ice.	verbs
+101	1	อิ่ม	full	ทุกคนรู้สึกอิ่มแปล้หลังรับประทานบุฟเฟต์อาหารค่ำมื้อใหญ่.	Everyone felt comfortably full after dining on the big evening buffet.	adjectives
+102	1	ความรัก	love	ความรักและความเข้าใจในครอบครัวเป็นเกราะคุ้มกันจิตใจที่ดีที่สุด.	Love and mutual understanding within families form the best shield.	nouns
+103	1	ละลาย	to melt	ก้อนน้ำแข็งในแก้วเริ่มละลายอย่างรวดเร็วเพราะอากาศร้อน.	Ice cubes inside the glass begin to melt rapidly due to heat.	verbs
+104	1	เน่า	to rot	ผลไม้ที่วางทิ้งไว้กลางแดดนานเริ่มส่งกลิ่นเน่าเสีย.	Fruit left out in the sun for long starts rotting and smelling bad.	verbs
+105	1	หิวน้ำ	thirsty	นักกีฬารู้สึกกระหายและหิวน้ำมากหลังจากวิ่งกลางแดดจัด.	The athlete felt very thirsty after running under the scorching sun.	adjectives
+106	1	สมอง	brain	การอ่านหนังสือและการพักผ่อนที่เพียงพอช่วยบำรุงระบบสมอง.	Reading books and getting adequate rest nurture brain function.	nouns
+107	1	ขยาย	to expand	เทศบาลวางแผนขยายช่องจราจรเพื่อลดปัญหารถติด.	The municipality plans to expand traffic lanes to curb road congestion.	verbs
+108	1	นินทา	to gossip	คนที่มีมารยาทย่อมไม่นำเรื่องผู้อื่นไปนินทาลับหลัง.	Well-mannered people naturally do not take others' affairs to gossip behind backs.	verbs
+109	1	เมา	drunk	เขาดื่มสุรามากเกินไปในงานเลี้ยงจนมีอาการเมาและทรงตัวไม่อยู่.	He drank too much liquor at the banquet, became drunk, and couldn't balance.	adjectives
+110	1	หัวใจ	heart	การออกกำลังกายแบบคาร์ดิโอช่วยบริหารกล้ามเนื้อหัวใจให้แข็งแรง.	Cardiovascular exercise workouts help condition heart muscles sturdily.	nouns
+111	1	ห้าม	to forbid	ป้ายติดประกาศห้ามสูบบุหรี่ในบริเวณโรงพยาบาล.	The posted sign forbids smoking inside the hospital area.	verbs
+112	1	ขัดจังหวะ	to interrupt	เขาไม่ควรพูดแทรกขัดจังหวะระหว่างคนอื่นกำลังประชุม.	He should not speak up to interrupt while others are meeting.	verbs
+113	1	อย่างกระตือรือร้น	eagerly	นักเรียนยกมือตอบคำถามของคุณครูอย่างกระตือรือร้น.	The students raised their hands to answer the teacher eagerly.	adverbs
+114	1	สว่าง	bright	หลอดไฟแอลอีดีดวงใหม่ส่องแสงสว่างจ้าทั่วห้องอ่านหนังสือ.	The new LED bulb shines bright light across the reading room.	adjectives
+115	1	เท้า	foot	เขาล้างเศษทรายที่เกาะติดเท้าก่อนเดินก้าวขึ้นบนระเบียงบ้าน.	He rinsed sandy residues sticking to feet before stepping onto the porch.	nouns
+116	1	ล้อเลียน	to mimic	อย่าพูดจาล้อเลียนสำเนียงของคนอื่นแบบนั้น.	Do not speak mimicking someone else's accent like that.	verbs
+117	1	เยี่ยม	to visit	พวกเราเดินทางไปเยี่ยมญาติผู้ใหญ่ที่ต่างจังหวัด.	We traveled to visit our senior relatives upcountry.	verbs
+118	1	โดยอัตโนมัติ	automatically	ประตูทางเข้าห้างสรรพสินค้าเปิดออกโดยอัตโนมัติเมื่อคนเดินเข้าใกล้.	The mall entrance doors open automatically when people approach.	adverbs
+119	1	บาง	thin	กระจกหน้าต่างบานนี้บางเกินไปจนเสี่ยงที่จะแตกหักได้ง่าย.	This windowpane is too thin and risks breaking easily.	adjectives
+120	1	ขา	leg	นักวิ่งรู้สึกตึงกล้ามเนื้อขาหลังจากวิ่งมาราธอนระยะไกล.	The runner felt stiff leg muscles after running the long marathon.	nouns
+121	1	นัด	to make an appointment	หมอนัดคนไข้มาตรวจติดตามอาการในสัปดาห์หน้า.	The doctor makes an appointment for the patient to follow up symptoms next week.	verbs
+122	1	กอด	to hug	สองพี่น้องกอดกันแน่นด้วยความคิดถึงหลังไม่ได้เจอกันนาน.	The two siblings hugged tightly out of longing after long separation.	verbs
+123	1	มิฉะนั้น	otherwise	รีบออกเดินทางตอนนี้ มิฉะนั้นจะไม่ทันเที่ยวรถไฟเช้า.	Leave right now; otherwise, you will miss the morning train.	adverbs
+124	1	หนา	thick	เขาหยิบเสื้อกันหนาวผ้าขนสัตว์ตัวหนาออกมาสวมใส่สู้ลมหนาว.	He pulled out a thick wool jacket to put on against the frost.	adjectives
+125	1	ปาก	mouth	เขาใช้กระดาษเช็ดคราบเศษอาหารที่มุมปากหลังรับประทานเสร็จ.	He used a napkin to wipe food crumbs at the mouth corner after dining.	nouns
+126	1	จูบ	to kiss	แม่ก้มลงจูบหน้าผากลูกสาวก่อนนอนหลับฝันดี.	Mother leaned down to kiss her daughter's forehead before sweet dreams.	verbs
+127	1	ทักทาย	to greet	เพื่อนบ้านยกมือไหว้ทักทายกันอย่างเป็นมิตรยามเช้า.	Neighbors raise hands in greeting each other amicably in the morning.	verbs
+128	1	อย่างไรก็ตาม	however	เขารู้สึกเหนื่อยมาก อย่างไรก็ตามเขาก็ยังทำงานจนเสร็จ.	He felt very tired; however, he still worked until it was finished.	adverbs
+129	1	เรียบ	smooth	พื้นหินอ่อนภายในห้องโถงได้รับการขัดถูจนเงาวับและเรียบเนียน.	The marble floor in the lobby was polished smooth and glossy.	adjectives
+130	1	จมูก	nose	เด็กน้อยใช้ผ้าเช็ดหน้าซับหยดน้ำมูกที่ไหลออกจากรูจมูก.	The toddler dabs a handkerchief on drops running out of the nose.	nouns
+131	1	ทิ้ง	to throw away	โปรดนำเศษกระดาษไปทิ้งลงในถังขยะด้านนอก.	Please take scrap paper and throw it into the outside bin.	verbs
+132	1	ซ่อมแซม	to repair	ช่างไม้ซ่อมแซมบันไดไม้เก่าที่ชำรุดให้แข็งแรง.	The carpenter repairs the old damaged wooden stairs to be sturdy.	verbs
+133	1	ในทางกลับกัน	conversely	ในทางกลับกัน การนอนดึกเป็นประจำทำให้ร่างกายอ่อนเพลีย.	Conversely, staying up late regularly exhausts the body.	adverbs
+134	1	ขรุขระ	rough	ล้อรถสะเทือนอย่างแรงขณะแล่นผ่านพื้นถนนดินลูกรังที่ขรุขระ.	The car wheels vibrated heavily rolling over the rough gravel road.	adjectives
+135	1	หู	ear	เขาสวมหูฟังครอบหูทั้งสองข้างเพื่อฟังเพลงบรรเลงโปรด.	He wears over-ear headphones over both ears listening to music.	nouns
+136	1	รดน้ำ	to water	คนสวนรดน้ำแปลงดอกไม้ในตอนเย็นหลังแดดร่ม.	The gardener waters the flower beds in the evening after shade sets.	verbs
+137	1	รีดผ้า	to iron	พี่สาวเปิดเตารีดไฟฟ้ารีดผ้าเชิ้ตสีขาวเรียบกริบ.	Older sister turned on the iron to smoothly press the white shirt.	verbs
+138	1	นอกจากนี้	furthermore	นอกจากนี้เขายังอาสาช่วยทำความสะอาดพื้นที่ส่วนกลางด้วย.	Furthermore, he also volunteered to help clean the common area.	adverbs
+139	1	โชคร้าย	unlucky	คนขับรถคันนั้นโชคร้ายที่ยางรถระเบิดกลางสะพานข้ามแม่น้ำ.	That driver was unlucky that his car tire blew out on the bridge.	adjectives
+140	1	ตา	eye	การจ้องหน้าจอคอมพิวเตอร์นานเกินไปทำให้ปวดเมื่อยตา.	Staring at computer screens for too long causes eye strain.	nouns
+141	1	ถู	to mop	แม่บ้านถูพื้นกระเบื้องในห้องครัวจนแห้งสนิท.	The housekeeper mopped the tile floor in the kitchen until completely dry.	verbs
+142	1	กวาด	to sweep	ภารโรงกวาดใบไม้แห้งออกจากลานโรงเรียนทุกเช้า.	The janitor sweeps dry leaves off the school grounds every morning.	verbs
+143	1	โดยอ้อม	indirectly	มาตรการประหยัดไฟส่งผลดีต่อสิ่งแวดล้อมโดยอ้อม.	The power-saving measures benefit the environment indirectly.	adverbs
+144	1	โชคดี	lucky	เขาเป็นคนโชคดีที่หาตั๋วเครื่องบินเที่ยวสุดท้ายได้ทันเวลา.	He was lucky to find the last available flight ticket on time.	adjectives
+145	1	หน้า	face	เขาล้างหน้าด้วยน้ำสะอาดเย็นๆ เพื่อเรียกความสดชื่นยามเช้า.	He washes his face with cool fresh water to feel refreshed at dawn.	nouns
+146	1	ซักผ้า	to wash clothes	ป้าตื่นมาซักผ้ากองโตในวันหยุดสุดสัปดาห์.	Aunt wakes up to wash a big pile of clothes over the weekend.	verbs
+147	1	ล้าง	to wash	แม่ครัวล้างผักสดในอ่างน้ำไหลจนสะอาดหมดจด.	The cook washes fresh vegetables in running water until thoroughly clean.	verbs
+148	1	โดยตรง	directly	ผู้ซื้อสามารถติดต่อสอบถามข้อมูลกับเจ้าของบ้านได้โดยตรง.	The buyer can inquire about information directly with the homeowner.	adverbs
+149	1	สำคัญ	important	การนอนหลับพักผ่อนอย่างเพียงพอเป็นสิ่งสำคัญต่อการฟื้นฟูร่างกาย.	Getting sufficient sleep is an important factor in recovery.	adjectives
+150	1	หัว	head	เขาใส่หมวกกันน็อกเพื่อปกป้องศีรษะและหัวขณะขี่จักรยานยนต์.	He straps on a helmet to protect his cranium and head while cycling.	nouns
+151	1	แต่งตัว	to get dressed	เขารีบแต่งตัวด้วยชุดทำงานเรียบร้อยตั้งแต่เช้า.	He hurries to get dressed in a neat work outfit since morning.	verbs
+152	1	แปรงฟัน	to brush teeth	เด็กทุกคนควรแปรงฟันวันละสองครั้งหลังอาหาร.	Every child should brush teeth twice a day after meals.	verbs
+153	1	ส่วนบุคคล	personally	เอกสารซองนี้เป็นจดหมายส่วนบุคคลที่ไม่ควรเปิดอ่าน.	This envelope is a personal letter that should not be opened.	adverbs
+154	1	ปกติ	normal	อุณหภูมิร่างกายของเขากลับมาอยู่ในระดับปกติหลังกินยาลดไข้.	His body temperature returned to a normal level after taking fever meds.	adjectives
+155	1	นก	bird	ฝูงนกส่งเสียงร้องเจื้อยแจ้วขณะบินออกจากรังในตอนเช้าตรู่.	A flock of birds chirps cheerfully while flying out of their nests at dawn.	nouns
+156	1	แต่งตัว	to get dressed	เขาแต่งตัวด้วยเสื้อเชิ้ตสุภาพเพื่อไปสัมภาษณ์งานใหม่.	He gets dressed in a polite collared shirt to attend a new job interview.	verbs
+157	1	แปรงฟัน	to brush teeth	เด็กดีแปรงฟันอย่างทั่วถึงทั้งตอนเช้าและก่อนเข้านอน.	Good children brush their teeth thoroughly both in the morning and before sleep.	verbs
+158	1	อย่างอิสระ	freely	นกพิราบบินร่อนไปมาบนท้องฟ้ากว้างได้อย่างอิสระ.	Pigeons glide back and forth in the wide sky freely.	adverbs
+159	1	แปลก	strange	ผลไม้ป่าชนิดนี้มีรูปทรงและรสชาติแปลกไม่เหมือนใคร.	This wild jungle fruit has a strange shape and unique taste.	adjectives
+160	1	แมว	cat	แมวนอนขดตัวรับความอบอุ่นจากแสงแดดริมระเบียงบ้าน.	The cat curls up basking in the warm sunshine on the house veranda.	nouns
+161	1	เหนื่อย	to be tired	คนงานรู้สึกเหนื่อยหลังจากขนย้ายสิ่งของหนักตลอดทั้งบ่าย.	The laborer felt tired after hauling heavy items all afternoon.	verbs
+162	1	สนใจ	to be interested	นักเรียนหลายคนเริ่มสนใจเรียนภาษาต่างประเทศเพิ่มเติม.	Many students begin to be interested in studying extra foreign languages.	verbs
+163	1	อย่างไม่เป็นทางการ	informally	หัวหน้าทีมนัดลูกน้องมานั่งคุยแลกเปลี่ยนความคิดเห็นอย่างไม่เป็นทางการ.	The team lead gathered staff to chat and share thoughts informally.	adverbs
+164	1	ตลก	funny	นักแสดงเดี่ยวไมโครโฟนเล่าเรื่องตลกจนผู้ชมหัวเราะลั่นห้อง.	The stand-up comic shared funny stories that had folks laughing aloud.	adjectives
+165	1	หมา	dog	หมาส่งเสียงเห่าเตือนเมื่อมีคนแปลกหน้าเดินผ่านหน้าประตูรั้ว.	The dog barks alertly when a stranger passes the front gate.	nouns
+166	1	เกรงใจ	to be considerate	เขาเกรงใจเพื่อนบ้านจึงไม่เปิดเพลงเสียงดังในยามวิกาล.	He is considerate of neighbors and does not play loud music late at night.	verbs
+167	1	เป็นห่วงนะ	worried about you	ฝนตกหนักอย่าลืมพกร่มและรักษาสุขภาพด้วย เป็นห่วงนะเพื่อน.	Heavy rain falling, remember to pack umbrellas and stay healthy; worried about you, friend.	others
+168	1	อิจฉา	to envy	เราไม่ควรมีความรู้สึกอิจฉาในความสำเร็จของผู้อื่น.	We should not hold feelings of envy toward the success of others.	verbs
+169	1	อย่างเป็นทางการ	formally	บริษัทส่งหนังสือแจ้งกำหนดการเปิดสาขาใหม่แก่สื่ออย่างเป็นทางการ.	The firm sent formal letters announcing the new branch schedule.	adverbs
+170	1	น่ากลัว	scary	บ้านร้างหลังเก่าในซอยเปลี่ยวดูมืดทึบและมีบรรยากาศน่ากลัว.	The abandoned house down the lonely lane looks scary.	adjectives
+171	1	ต้นไม้	tree	นกทำรังอยู่บนกิ่งก้านที่แข็งแรงของต้นไม้ใหญ่ข้างบ้าน.	Birds build nests on sturdy branches of the large tree beside the house.	nouns
+172	1	เบื่อ	to be bored	เขารู้สึกเบื่อเมื่อต้องนั่งรอคิวในแถวยาวเป็นเวลานาน.	He feels bored when having to sit and wait in a long queue for a long time.	verbs
+173	1	ขอทางหน่อยครับ	excuse me, make way	คนยืนรอหนาแน่นหน้าประตูลิฟต์ ขอทางหน่อยครับเพื่อเดินออก.	Crowds stand dense by elevator doors; excuse me, make way to step out.	others
+174	1	ดีใจ	to be happy	ลูกๆ ต่างดีใจเมื่อรู้ว่าพ่อแม่จะพาไปเที่ยวทะเลสุดสัปดาห์นี้.	The children rejoiced learning their parents would take them to the seaside this weekend.	verbs
+175	1	อย่างรวดเร็วปานสายฟ้า	rapidly	เสือชีตาห์วิ่งพุ่งทะยานเข้าหาเป้าหมายอย่างรวดเร็วปานสายฟ้า.	The cheetah dashed toward its mark rapidly like lightning.	adverbs
+176	1	น่ารัก	cute	ลูกสุนัขพันธุ์ทางตัวเล็กกระดิกหางอย่างน่ารักเมื่อเห็นเจ้าของ.	The tiny crossbreed puppy wags its tail in a cute way for its owner.	adjectives
+177	1	ดอกไม้	flower	ผึ้งบินว่อนตอมเกสรดอกไม้หลากสีสันในสวนสาธารณะ.	Bees buzz hovering around colorful flower stamens in public parks.	nouns
+178	1	เสียใจ	to be sorry	ฉันรู้สึกเสียใจมากที่ทำของขวัญชิ้นสำคัญของคุณแม่แตก.	I feel very sorry that I broke mother's precious gift.	verbs
+179	1	สู้ๆ นะ	keep fighting	การสอบรอบนี้ไม่ยากเกินความพยายาม ตั้งใจทำให้ดี สู้ๆ นะ.	This test round is not beyond your effort; do your best, keep fighting.	others
+180	1	ตกใจ	to be shocked	เธอสะดุ้งตกใจเมื่อมีแมววิ่งตัดหน้าในความมืด.	She flinched in shock when a cat darted across her path in the dark.	verbs
+181	1	ค่อนข้างมาก	considerably	ยอดขายของร้านกาแฟปรับตัวเพิ่มขึ้นค่อนข้างมากในเดือนนี้.	Coffee shop sales figures adjusted upward considerably this month.	adverbs
+182	1	ขี้ขลาด	cowardly	คนที่ขี้ขลาดมักจะวิ่งหนีปัญหาแทนที่จะหาทางเผชิญหน้าแก้ไข.	A cowardly person flees issues rather than facing them.	adjectives
+183	1	ลม	wind	สายลมพัดโบกกิ่งไผ่ลู่ไหวไปตามจังหวะในยามบ่ายแก่ๆ.	The breeze blows, swaying bamboo stems to rhythmic paces in the late afternoon.	nouns
+184	1	กลัว	to fear	เด็กเล็กๆ มักจะกลัวเสียงฟ้าร้องดังลั่นในคืนฝนตก.	Small toddlers usually fear thunder cracking loudly on rainy nights.	verbs
+185	1	เร็วเข้าเถอะ	hurry up	รถไฟกำลังจะเทียบชานชาลาแล้ว พวกเรารีบก้าวเท้าเร็วเข้าเถอะ.	The train is about to dock platforms; let us pick up pace, hurry up.	others
+186	1	โกรธ	to be angry	เขาโกรธเมื่อพบว่ามีคนแอบหยิบสิ่งของส่วนตัวไปโดยไม่บอก.	He became angry upon finding that someone secretly took his belongings without telling.	verbs
+187	1	ค่อนข้างจะ	somewhat	เส้นทางขึ้นยอดเขาชันและค่อนข้างจะลื่นหลังฝนตกใหม่ๆ.	The trail up the peak is steep and somewhat slippery right after rain.	adverbs
+188	1	กล้าหาญ	brave	นักดับเพลิงผู้กล้าหาญบุกฝ่ากองเพลิงเข้าไปช่วยเด็กน้อยออกมา.	The brave firefighter pushed through flames to rescue the toddler.	adjectives
+189	1	ฝน	rain	เม็ดฝนโปรยปรายลงมาทำให้ต้นไม้ใบหญ้าในสวนชุ่มฉ่ำ.	Rain drops sprinkle down, dampening garden foliage and plants freshly.	nouns
+190	1	ลงชื่อ	to sign	ผู้สมัครทุกคนต้องลงชื่อในเอกสารยินยอมก่อนเริ่มทำสัญญา.	Every applicant must sign the consent document before starting the contract.	verbs
+191	1	ช้าลงหน่อย	slow down a bit	ถนนลื่นและมีฝนตกพรำๆ กรุณาขับรถช้าลงหน่อยเพื่อความปลอดภัย.	Roads are slick and it drizzles; please slow down a bit for safety.	others
+192	1	พิมพ์	to type	เลขานุการพิมพ์รายงานการประชุมลงในคอมพิวเตอร์อย่างรวดเร็ว.	The secretary types meeting minutes into the computer rapidly.	verbs
+193	1	โดยเจตนา	intentionally	เขาทำกระจกหน้าต่างแตกโดยเจตนาจึงต้องชดใช้ค่าเสียหาย.	He broke the window intentionally, so he had to pay damages.	adverbs
+194	1	สด	fresh	แม่ค้าคัดเลือกกุ้งและปลาทะเลสดส่งตรงจากสะพานปลามาขาย.	The vendor picks fresh ocean shrimp and fish directly from the pier.	adjectives
+195	1	ดาว	star	บนท้องฟ้ายามค่ำคืนมีประกายแสงระยิบระยับของดาวนับล้านดวง.	In the night sky twinkle the sparkling lights of millions of stars.	nouns
+196	1	สั่ง	to order	เรานั่งลงที่โต๊ะแล้วสั่งอาหารพื้นเมืองมารับประทาน.	We sat down at the table and ordered local dishes to dine on.	verbs
+197	1	ระวังรถด้วย	watch out for cars	เวลาเดินข้ามถนนตรงทางม้าลายต้องมองซ้ายขวา ระวังรถด้วยนะ.	When crossing streets at zebra lines look both ways; watch out for cars.	others
+198	1	ต่อรอง	to negotiate	ลูกค้าพยายามต่อรองราคาสินค้ากับแม่ค้าในตลาดนัด.	The customer attempts to negotiate product prices with the market vendor.	verbs
+199	1	โดยบังเอิญ	accidentally	ฉันเดินไปพบเพื่อนร่วมชั้นเก่าที่ห้างสรรพสินค้าโดยบังเอิญ.	I ran into an old classmate at the mall accidentally.	adverbs
+200	1	เหม็น	stinky	กองขยะเปียกที่ทิ้งค้างคืนส่งกลิ่นเหม็นคละคลุ้งไปทั่วซอย.	The overnight wet garbage heap smells stinky all down the alley.	adjectives
+201	1	พระจันทร์	moon	แสงนวลตาจากพระจันทร์เต็มดวงส่องสว่างนำทางในค่ำคืนมืดมิด.	The mellow glow of the full moon lights the path in the dark night.	nouns
+202	1	ลงทุน	to invest	นักธุรกิจตัดสินใจลงทุนสร้างโรงงานผลิตพลังงานแสงอาทิตย์.	The entrepreneur decided to invest in building a solar power plant.	verbs
+203	1	ช่วยด้วย!	help!	มีคนพลัดตกน้ำข้างสะพาน ใครอยู่ใกล้ช่วยด้วย!	Someone fell into the water by the bridge; whoever is nearby, help!	others
+204	1	ลาออก	to resign	พนักงานตัดสินใจยื่นใบลาออกเพื่อไปเริ่มต้นทำธุรกิจส่วนตัว.	The employee decided to submit a resignation letter to start an independent business.	verbs
+205	1	อย่างลับๆ	secretly	เพื่อนๆ ร่วมมือกันจัดเตรียมงานเลี้ยงวันเกิดเซอร์ไพรส์อย่างลับๆ.	Friends worked together preparing the surprise birthday party secretly.	adverbs
+206	1	หอม	fragrant	ดอกมะลิส่งกลิ่นหอมชื่นใจไปทั่วทั้งบริเวณบ้านยามค่ำคืน.	Jasmine wafts a fragrant scent throughout the house at night.	adjectives
+207	1	พระอาทิตย์	sun	พระอาทิตย์ค่อยๆ โผล่พ้นขอบฟ้าสาดแสงอบอุ่นทั่วทุ่งนา.	The sun gradually rises above the horizon, casting warmth over the fields.	nouns
+208	1	จ้าง	to hire	เจ้าของบ้านจ้างช่างทาสีมาตกแต่งกำแพงรั้วใหม่.	The homeowner hires a painter to redecorate the perimeter fence.	verbs
+209	1	รอสักครู่	wait a moment	เจ้าหน้าที่กำลังค้นหาแฟ้มประวัติของคุณในระบบ รอสักครู่นะครับ.	The clerk is searching your profile folder in the database; wait a moment.	others
+210	1	ยืม	to borrow	นักเรียนยืมหนังสือประวัติศาสตร์จากห้องสมุดไปอ่านที่บ้าน.	The student borrows history books from the library to read at home.	verbs
+211	1	อย่างจริงจัง	seriously	ตำรวจเริ่มสืบสวนหาหลักฐานเกี่ยวกับคดีนี้อย่างจริงจัง.	The police began investigating for case evidence seriously.	adverbs
+212	1	แต่งงานแล้ว	married	เขาทั้งคู่แต่งงานแล้วและย้ายไปสร้างครอบครัวใหม่อยู่แถบชานเมือง.	They are married and moved to build a home in the suburbs.	adjectives
+213	1	ท้องฟ้า	sky	ท้องฟ้าแจ่มใสไร้เมฆหมอกบดบังในวันที่อากาศปลอดโปร่ง.	The sky is crystal clear with no overcast clouds on a fair-weather day.	nouns
+214	1	ซื้อ	to buy	ฉันแวะซื้อขนมปังและนมจืดที่ร้านสะดวกซื้อหน้าปากซอย.	I stopped by to buy bread and plain milk at the convenience store down the street.	verbs
+215	1	ตามสบายนะ	make yourself comfortable	นั่งพักดื่มน้ำเย็นในห้องรับแขกก่อนได้เลย ตามสบายนะเพื่อน.	Sit down and drink cold water in the parlor first; make yourself comfortable, friend.	others
+216	1	ขาย	to sell	ชาวสวนนำผลไม้สดมาขายที่ตลาดนัดทุกเช้าวันเสาร์.	The orchardist brings fresh fruits to sell at the morning market every Saturday.	verbs
+217	1	อย่างอ่อนโยน	gently	แม่ประคองอุ้มลูกน้อยไว้ในอ้อมอกพร้อมตบหลังเบาๆ อย่างอ่อนโยน.	Mother cradled the infant in her arms, patting gently.	adverbs
+218	1	โสด	single	พนักงานสาวคนนี้ยังคงใช้ชีวิตโสดและสนุกกับการเดินทางคนเดียว.	This young female clerk is single and enjoys solo travel.	adjectives
+219	1	แม่น้ำ	river	เรือบรรทุกสินค้าแล่นล่องไปตามแม่น้ำสายสำคัญของประเทศ.	Cargo vessels glide along the major transportation river of the country.	nouns
+220	1	ยอมแพ้	to surrender	แม้การแข่งขันจะยากลำบากแต่นักกีฬาก็ไม่ยอมแพ้.	Although the contest was difficult, the athlete did not surrender.	verbs
+221	1	เดินทางปลอดภัย	safe travels	ขอให้ทริปท่องเที่ยวต่างจังหวัดราบรื่น เดินทางปลอดภัยนะ.	May your provincial road trip go smoothly; safe travels.	others
+222	1	เตือนความจำ	to remind	เสียงนาฬิกาปลุกช่วยเตือนความจำเรื่องนัดหมายสำคัญตอนบ่าย.	The alarm clock sound helps remind me about an important afternoon meeting.	verbs
+223	1	อย่างรุนแรง	severely	ลมพายุฝนพัดกระโชกเข้าใส่หลังคาบ้านอย่างรุนแรงเมื่อคืน.	The rainstorm wind gusted against the house roof severely last night.	adverbs
+224	1	ขี้เกียจ	lazy	เขาไม่ควรนอนตื่นสายและทำตัวขี้เกียจในวันทำงานแบบนี้.	He shouldn't sleep late and behave in a lazy way on workdays.	adjectives
+225	1	ภูเขา	mountain	ยอดภูเขาสูงตระหง่านถูกปกคลุมด้วยทะเลหมอกสีขาวบริสุทธิ์.	The towering mountain peak is shrouded by a pure white sea of mist.	nouns
+226	1	แปล	to translate	นักศึกษานั่งแปลบทความภาษาอังกฤษเป็นภาษาไทยในห้องสมุด.	The student sits translating an English article into Thai in the library.	verbs
+227	1	ฝันดีนะ	sweet dreams	ดึกมากแล้ว รีบเข้านอนพักผ่อนได้แล้ว ฝันดีนะทุกคน.	It is very late; hurry off to sleep and rest now, sweet dreams to everyone.	others
+228	1	ตัดสินใจ	to decide	เธอตัดสินใจสมัครเข้าเรียนต่อในสาขาวิทยาศาสตร์.	She decided to apply for further studies in the science track.	verbs
+229	1	อย่างยากลำบาก	with difficulty	ชาวบ้านเดินแบกสัมภาระลุยโคลนขึ้นเขาไปอย่างยากลำบาก.	Villagers carried loads trudging mud uphill with difficulty.	adverbs
+230	1	ขยัน	diligent	นักเรียนที่ขยันอ่านหนังสือทบทวนบทเรียนมักจะสอบผ่านได้คะแนนดี.	A diligent student reviewing lessons routinely gets good grades.	adjectives
+231	1	ทะเล	sea	คลื่นทะเลซัดสาดเข้าหาแนวโขดหินริมชายหาดอย่างต่อเนื่อง.	Sea waves lap continuously against coastal rock formations on the beach.	nouns
+232	1	สัญญา	to promise	เขาให้คำสัญญาว่าจะกลับมาเยี่ยมบ้านเกิดปีละครั้ง.	He gave a promise that he would return to visit his hometown once a year.	verbs
+233	1	เจอกันใหม่นะ	see you again	ขอบคุณสำหรับการต้อนรับที่แสนอบอุ่นในวันนี้ เจอกันใหม่นะ.	Thank you for the wonderful warm hosting today; see you again.	others
+234	1	แนะนำ	to suggest	เพื่อนแนะนำร้านอาหารพื้นเมืองอร่อยๆ ให้ฉันลองชิม.	A friend suggested delicious local eateries for me to try.	verbs
+235	1	อย่างง่ายดาย	easily	นักกีฬาว่ายน้ำแตะขอบสระและคว้าชัยชนะมาได้อย่างง่ายดาย.	The swimmer touched the pool edge and claimed victory easily.	adverbs
+236	1	จริง	true	เรื่องราวที่เขาเล่าเป็นเหตุการณ์จริงที่เกิดขึ้นในหมู่บ้าน.	The story he recounted is a true event that occurred in the village.	adjectives
+237	1	ร้านอาหาร	restaurant	ร้านอาหารริมคลองแห่งนี้ขึ้นชื่อเรื่องต้มยำกุ้งรสจัดจ้าน.	This canal-side restaurant is renowned for spicy and sour shrimp soup.	nouns
+238	1	กระซิบ	to whisper	เธอโน้มตัวลงมากระซิบความลับเบาๆ ที่ข้างหูเพื่อน.	She leaned down to whisper the secret softly into her friend's ear.	verbs
+239	1	ไม่เป็นไรเลย	not at all an issue	ไม่ต้องคิดมากเรื่องที่เกิดขึ้น ทุกคนเข้าใจดี ไม่เป็นไรเลย.	Do not overthink what happened; all understand well, not at all an issue.	others
+240	1	ย่าง	to grill	พวกเราย่างเนื้อไก่บนเตาถ่านส่งกลิ่นหอมฟุ้ง.	We grill chicken over charcoal emitting a wonderful aroma.	verbs
+241	1	อย่างหยาบคาย	rudely	เขาถูกเชิญออกจากห้องประชุมเพราะพูดจาอย่างหยาบคายใส่ผู้อื่น.	He was asked to leave the meeting room because he spoke rudely to others.	adverbs
+242	1	เท็จ	false	พยานให้การเท็จต่อหน้าศาลจึงถูกตั้งข้อหาดำเนินคดี.	The witness gave false testimony before the court and was charged.	adjectives
+243	1	โรงพยาบาล	hospital	รถพยาบาลเปิดไซเรนนำผู้ป่วยส่งถึงโรงพยาบาลอย่างเร่งด่วน.	The ambulance sirens wail rushing patients swiftly to the hospital.	nouns
+244	1	ทอด	to fry	พ่อครัวทอดปลาในกระทะจนมีสีเหลืองกรอบน่ากิน.	The cook fries fish in the pan until it turns golden crispy and appetizing.	verbs
+245	1	ขอโทษจริงๆ	truly sorry	ฉันทำแก้วกาแฟใบโปรดของคุณตกแตก ขอโทษจริงๆ นะ.	I dropped and broke your prized coffee mug; truly sorry.	others
+246	1	ต้ม	to boil	แม่ต้มไข่ไก่ในหม้อน้ำเดือดสำหรับมื้อเช้า.	Mother boils chicken eggs in a pot of boiling water for breakfast.	verbs
+247	1	อย่างสุภาพ	politely	บริกรหนุ่มค้อมศีรษะรับฟังคำสั่งอาหารของลูกค้าอย่างสุภาพ.	The young waiter bowed listening to customer orders politely.	adverbs
+248	1	หนวกหู	noisy	เสียงเครื่องจักรทำงานในเขตก่อสร้างดังรบกวนจนน่าหนวกหู.	Machinery rumbling at the construction site is noisy.	adjectives
+249	1	โรงเรียน	school	นักเรียนยืนเข้าแถวเคารพธงชาติหน้าเสาธงในบริเวณโรงเรียน.	Pupils queue facing the flagstaff in the schoolyard for the anthem.	nouns
+250	1	กลืน	to swallow	คนไข้กลืนยาเม็ดพร้อมกับดื่มน้ำตามหนึ่งแก้ว.	The patient swallowed the pill along with drinking a glass of water.	verbs
+251	1	ยินดีด้วยนะ	congratulations	ทราบข่าวว่าเธอสอบได้ทุนไปเรียนต่อ ยินดีด้วยนะเพื่อนรัก.	Heard news you won study grants abroad; congratulations, my dear friend.	others
+252	1	เคี้ยว	to chew	เราควรเคี้ยวอาหารให้ละเอียดก่อนกลืนลงคอ.	We should chew food thoroughly before swallowing it down.	verbs
+253	1	อย่างประมาท	carelessly	คนขับรถแล่นแซงทางโค้งอย่างประมาทจนเกือบเฉี่ยวชนคันอื่น.	The driver overtook on a curve carelessly, almost sideswiping cars.	adverbs
+254	1	เงียบ	quiet	บรรยากาศภายในห้องอ่านหนังสือของหอสมุดเงียบสงบมาก.	The atmosphere inside the library reading hall is quiet.	adjectives
+255	1	บ้าน	house	ทุกคนช่วยกันทำความสะอาดและจัดเก็บข้าวของในบ้านให้น่าอยู่.	Everyone helps tidy and organize things to make the house cozy.	nouns
+256	1	หิว	to be hungry	หลังจากเดินป่าทั้งวันพวกเรารู้สึกหิวข้าวมาก.	After trekking all day, we felt very hungry for a meal.	verbs
+257	1	น่าตื่นเต้นจัง	how exciting	ได้ตั๋วไปชมการแข่งขันฟุตบอลรอบชิงชนะเลิศในสนามจริง น่าตื่นเต้นจัง.	Got stadium tickets to see the finals live; how exciting!	others
+258	1	ตื่น	to wake up	ฉันตื่นนอนตอนตีห้าเพื่อเตรียมตัวไปวิ่งออกกำลังกาย.	I wake up at five in the morning to prepare for a running workout.	verbs
+259	1	อย่างระมัดระวัง	carefully	พนักงานยกกล่องแจกันโบราณเดินขึ้นบันไดอย่างระมัดระวัง.	The clerk carried the box of antique vases up stairs carefully.	adverbs
+260	1	แห้ง	dry	ผ้าเช็ดตัวผืนนี้ตากแดดจนแห้งสนิทและพร้อมนำมาใช้งาน.	This bath towel was sunned completely dry and ready for use.	adjectives
+261	1	สี	color	ช่างทาสีผสมสีน้ำมันเฉดใหม่เพื่อทารั้วหน้าบ้าน.	The painter blends a new shade of oil color paint for the front fence.	nouns
+262	1	นอน	to sleep	เด็กน้อยนอนหลับปุ๋ยอยู่บนเตียงนุ่มๆ ในห้อง.	The little child sleeps soundly on the soft bed in the room.	verbs
+263	1	น่าเบื่อจัง	how boring	ต้องนั่งติดแหง็กอยู่บนรถเมล์ท่ามกลางการจราจรติดขัด น่าเบื่อจัง.	Sitting stuck on a city bus amidst gridlocked traffic; how boring.	others
+264	1	ดื่ม	to drink	หมอแนะนำให้ดื่มน้ำสะอาดอย่างน้อยวันละแปดแก้ว.	The doctor recommends drinking at least eight glasses of clean water daily.	verbs
+265	1	อย่างดัง	loudly	เสียงนาฬิกาปลุกหัวเตียงดังขึ้นอย่างดังในตอนเช้าตรู่.	The alarm clock by the bed rang loudly at dawn.	adverbs
+266	1	เปียก	wet	เสื้อผ้าของเขาเปียกชุ่มไปด้วยน้ำฝนหลังจากเดินตากพายุกลับบ้าน.	His clothes were thoroughly wet after walking home in the storm.	adjectives
+267	1	เงา	shadow	ต้นไม้ใหญ่ทอดเงาร่มรื่นปกคลุมลานหน้าบ้านอย่างสบายตา.	The large tree casts refreshing shadows shielding the front yard soothingly.	nouns
+268	1	กิน	to eat	ครอบครัวเรานั่งกินข้าวพร้อมหน้ากันทุกมื้อค่ำ.	Our family sits together eating rice every evening meal.	verbs
+269	1	ฉันมีคำถาม	I have a question	ขออนุญาตยกมือขัดจังหวะการบรรยายสักครู่ครับ พอดีฉันมีคำถาม.	Pardon my interrupting the lecture for a moment; I have a question.	others
+270	1	ดึง	to pull	เขาออกแรงดึงเชือกเพื่อเปิดม่านรับแสงแดด.	He pulled the cord forcefully to open the curtain for sunlight.	verbs
+271	1	อย่างเงียบๆ	quietly	นักเรียนค่อยๆ ปิดประตูห้องสมุดอย่างเงียบๆ เพื่อไม่ให้รบกวนคนอื่น.	The student shut the library door quietly so as not to disturb others.	adverbs
+272	1	กว้าง	wide	ถนนสายหลักหน้าเมืองได้รับการขยายจนกว้างขวางเพื่อรองรับรถ.	The highway outside town was expanded wide to absorb vehicles.	adjectives
+273	1	แสง	light	แสงแดดยามเช้าส่องลอดผ่านม่านหน้าต่างเข้ามาในห้องนอน.	Morning sunlight beams through window drapes into the bedroom.	nouns
+274	1	เคาะ	to knock	โปรดเคาะประตูก่อนเปิดเข้าไปในห้องทำงาน.	Please knock on the door before opening and entering the office.	verbs
+275	1	เดี๋ยวค่อยดู	let's see	ถ้าช่วงบ่ายมีเวลาว่างเหลือพอ เดี๋ยวค่อยดูว่าจะแวะไปร้านหนังสือไหม.	If time permits in the afternoon, let's see whether to visit bookstores.	others
+276	1	ขุด	to dig	ชาวสวนใช้จอบขุดหลุมเพื่อเตรียมปลูกต้นกล้า.	The gardener uses a hoe to dig holes in preparation for planting saplings.	verbs
+277	1	ถาวร	permanently	เขาย้ายถิ่นฐานไปตั้งรกรากประกอบอาชีพที่ต่างจังหวัดอย่างถาวร.	He relocated to settle down and work in another province permanently.	adverbs
+278	1	แคบ	narrow	ตรอกซอยนี้ทั้งแคบและชันจนรถยนต์ไม่สามารถแล่นผ่านได้.	This alley is both narrow and steep, preventing cars from passing.	adjectives
+279	1	คอมพิวเตอร์	computer	วิศวกรเปิดหน้าจอคอมพิวเตอร์เพื่อเขียนแบบโครงสร้างตึกสูง.	The engineer opened computer screens to draft high-rise building blueprints.	nouns
+280	1	เตะ	to kick	นักกีฬาเตะลูกฟุตบอลเข้าประตูอย่างสวยงาม.	The athlete kicked the football into the goal splendidly.	verbs
+281	1	มีแดด	it's sunny	ซักผ้าห่มและนำออกไปตากที่ระเบียงได้เลย เพราะวันนี้มีแดดออกทั้งวัน.	Wash blankets and hang them on the balcony; it's sunny all day.	others
+282	1	คลาน	to crawl	เด็กทารกเริ่มคลานบนพรมในห้องนั่งเล่นอย่างสนุกสนาน.	The baby begins to crawl playfully on the carpet in the living room.	verbs
+283	1	ชั่วคราว	temporarily	สะพานไม้ปิดซ่อมบำรุงชั่วคราวหลังได้รับผลกระทบจากน้ำหลาก.	The wooden bridge is closed temporarily after being hit by runoff.	adverbs
+284	1	แบน	flat	แผ่นแป้งโรตีถูกนวดจนมีลักษณะแบนบางก่อนนำไปทอด.	The roti dough is rolled out flat and thin before frying.	adjectives
+285	1	โทรศัพท์	telephone	เสียงสัญญาณโทรศัพท์ตั้งโต๊ะดังขึ้นหลายครั้งแต่ไม่มีใครรับสาย.	The desk telephone rang several times but nobody answered the call.	nouns
+286	1	ปีน	to climb	ลิงตัวเล็กปีนขึ้นไปเก็บบนยอดมะพร้าวอย่างว่องไว.	The little monkey climbed up swiftly to gather coconuts.	verbs
+287	1	ฝนกำลังตก	it's raining	อย่าเพิ่งรีบเดินออกไปข้างนอกตัวอาคารเลย ตอนนี้ฝนกำลังตกหนัก.	Don't rush out of the building yet; right now it's raining heavily.	others
+288	1	ว่ายน้ำ	to swim	นักเรียนฝึกว่ายน้ำในสระของโรงเรียนทุกวันศุกร์.	Students practice swimming in the school pool every Friday.	verbs
+289	1	สักครู่	for a moment	กรุณารอสักครู่ เจ้าหน้าที่กำลังตรวจสอบเอกสารในระบบ.	Please wait for a moment; the officer is checking files in the system.	adverbs
+290	1	กลม	round	ดวงจันทร์วันเพ็ญทอแสงเป็นวงกลมสว่างสุกใสเหนือท้องฟ้า.	The full moon beams as a bright round orb over the night sky.	adjectives
+291	1	ถุง	bag	ลูกค้าหิ้วถุงผ้าใส่ผักสดและผลไม้กลับมาจากซูเปอร์มาร์เก็ต.	The shopper carried cloth bags containing fresh produce back from the grocery.	nouns
+292	1	ขับ	to drive	พ่อขับรถยนต์ไปส่งลูกที่โรงเรียนแต่เช้า.	Father drives the car to drop his child off at school early.	verbs
+293	1	เผื่อไว้ก่อน	just in case	พกขวดน้ำดื่มและยาดมติดกระเป๋าเป้ไปด้วย เผื่อไว้ก่อนตอนเดินป่า.	Carry water bottles and inhalers in your bag, just in case, while trekking.	others
+294	1	ขี่	to ride	เด็กๆ ชอบขี่จักรยานเล่นในลานกว้างหน้าบ้าน.	Children like to ride bicycles playfully in the wide front yard.	verbs
+295	1	ทีหลัง	later	ถ้าตอนนี้ยังไม่ว่าง เดี๋ยวค่อยคุยเรื่องเอกสารกันทีหลัง.	If not free now, we can discuss the documents later.	adverbs
+296	1	เผ็ด	spicy	ส้มตำจานนี้ใส่พริกหลายเม็ดจนมีรสชาติเผ็ดร้อนมาก.	This papaya salad packs several chilies and tastes spicy.	adjectives
+297	1	กล่อง	box	พนักงานบรรจุสินค้าลงในกล่องกระดาษลูกฟูกอย่างแน่นหนา.	The clerk packed products securely into corrugated cardboard boxes.	nouns
+298	1	เดิน	to walk	ยายเดินออกกำลังกายรอบหมู่บ้านทุกตอนเย็น.	Grandmother walks for exercise around the village every evening.	verbs
+299	1	คุณสัญญากับฉันไหม?	do you promise me?	ถ้าเล่าความลับเรื่องนี้ให้ฟังแล้ว คุณสัญญากับฉันไหมว่าจะไม่บอกใครต่อ?	If I share this secret, do you promise me not to tell anyone?	others
+300	1	บ่น	to complain	คุณลุงชอบบ่นเรื่องสภาพอากาศร้อนอบอ้าวทุกบ่าย.	The uncle likes to complain about the muggy hot weather every afternoon.	verbs
+301	1	ทันท่วงที	on time	หน่วยกู้ภัยนำส่งผู้บาดเจ็บถึงมือแพทย์ได้อย่างทันท่วงที.	The rescue team transported the injured to doctors on time.	adverbs
+302	1	เปรี้ยว	sour	น้ำมะนาวคั้นสดมีรสชาติเปรี้ยวจี๊ดถึงใจ.	Freshly squeezed lime juice carries a sharply sour tang.	adjectives
+303	1	นาฬิกา	clock	เสียงเข็มนาฬิกาแขวนผนังเดินบอกเวลาอย่างสม่ำเสมอในห้องเงียบ.	The wall clock tick-tock movement reliably marks the time in the quiet room.	nouns
+304	1	เข้าใจผิด	to be mistaken	ฉันเข้าใจผิดคิดว่าวันนี้เป็นวันหยุดราชการ.	I was mistaken thinking that today was a public holiday.	verbs
+305	1	ฉันไม่รำคาญ	it doesn't bother me	เด็กๆ จะวิ่งเล่นส่งเสียงเจื้อยแจ้วในสวนก็ปล่อยเขาเถอะ ฉันไม่รำคาญ.	Children chattering playfully in the yard is fine; it doesn't bother me.	others
+306	1	เชื่อฟัง	to obey	ลูกที่ดีควรเชื่อฟังคำสั่งสอนของบิดามารดา.	Good children should obey the teachings of their parents.	verbs
+307	1	เป็นครั้งคราว	occasionally	เขาชอบออกไปนั่งตกปลาริมแม่น้ำเป็นครั้งคราวช่วงวันหยุด.	He likes going out to fish by the river occasionally on weekends.	adverbs
+308	1	เค็ม	salty	น้ำทะเลมีรสชาติเค็มจัดเพราะมีปริมาณเกลือละลายอยู่มาก.	Sea water tastes very salty due to high amounts of dissolved salt.	adjectives
+309	1	หมวก	hat	ชาวสวนสวมหมวกปีกกว้างเพื่อกันแสงแดดแผดเผาตอนเที่ยงวัน.	The farmer wears a wide-brimmed hat to shield against the scorching noon sun.	nouns
+310	1	เดา	to guess	นักเรียนลองเดาคำตอบก่อนที่ครูจะเฉลย.	The student tried to guess the answer before the teacher revealed it.	verbs
+311	1	คุณทำให้ฉันคลั่ง	you drive me crazy	เปิดเพลงเสียงเบสกระหึ่มทั้งคืนโดยไม่หลับไม่นอน คุณทำให้ฉันคลั่ง.	Blasting booming bass music all night without sleeping, you drive me crazy.	others
+312	1	หายไป	to disappear	นกพิราบตัวนั้นบินหายไปในหมอกยามเช้า.	That pigeon flew and disappeared into the morning mist.	verbs
+313	1	นานๆ ครั้ง	rarely	นานๆ ครั้งพวกเราถึงจะได้มีโอกาสนัดรวมรุ่นทานข้าวด้วยกัน.	Rarely do we get the chance to meet up for alumni dinners together.	adverbs
+314	1	ไม่อดทน	impatient	คนขับรถที่ไม่อดทนมักจะบีบแตรไล่รถคันอื่นทันทีที่ไฟเขียว.	An impatient driver honks at other cars the instant lights turn green.	adjectives
+315	1	รองเท้า	shoe	นักวิ่งสวมรองเท้ากีฬาคู่ใหม่ลงฝึกซ้อมในสนามลู่ปูน.	The runner wore a new pair of athletic shoes to train on the concrete track.	nouns
+316	1	นำทาง	to navigate	คนในท้องถิ่นช่วยนำทางกลุ่มนักท่องเที่ยวเดินป่า.	A local resident helped navigate the trekking group through the forest.	verbs
+317	1	น่าอายจัง!	how embarrassing!	เผลอจำคนผิดแล้วเดินเข้าไปทักทายเสียงดังกลางห้าง น่าอายจัง!	Mistook a stranger and greeted aloud in the mall; how embarrassing!	others
+318	1	หนี	to flee	กระต่ายป่ารีบวิ่งหนีสุนัขจิ้งจอกเข้าไปในโพรงหญ้า.	The wild hare quickly ran to flee the fox into the grass burrow.	verbs
+319	1	บ่อยครั้ง	often	การนั่งทำงานหน้าคอมพิวเตอร์ติดต่อกันนานทำให้ปวดหลังบ่อยครั้ง.	Working before computers continuously causes back pains often.	adverbs
+320	1	อดทน	patient	คุณครูมีความอดทนสูงในการสอนเด็กเล็กหัดเขียนหนังสือ.	The teacher is very patient tutoring little kids learning to write.	adjectives
+321	1	เสื้อผ้า	clothes	เธอซักและตากเสื้อผ้าหลากสีไว้บนราวระเบียงหลังบ้าน.	She washed and hung colorful clothes on the backyard balcony rack.	nouns
+322	1	สืบสวน	to investigate	ตำรวจเร่งสืบสวนหาตัวคนร้ายที่ขโมยทรัพย์สิน.	Police quickly investigate to find the culprit who stole property.	verbs
+323	1	ใจเย็นๆ	take it easy	อย่าเพิ่งด่วนตัดสินใจตอนที่อารมณ์ยังร้อนอยู่ ใจเย็นๆ แล้วค่อยคุยกัน.	Don't rush choices while heated; take it easy, then talk.	others
+324	1	ทำบาป	to sin	ศาสนาสอนให้คนละเว้นจากการทำบาปทั้งปวง.	Religion teaches people to refrain from sinning altogether.	verbs
+325	1	ล่วงหน้า	in advance	นักท่องเที่ยวจองห้องพักโรงแรมสำหรับทริปนี้ล่วงหน้าสามเดือน.	Tourists booked hotel rooms for this trip three months in advance.	adverbs
+326	1	ลังเล	doubtful	เขายังคงลังเลว่าจะเลือกซื้อบ้านเดี่ยวหรือคอนโดมิเนียม.	He remains doubtful whether to buy a detached house or condo.	adjectives
+327	1	ฝักบัว	shower	น้ำอุ่นจากฝักบัวช่วยคลายกล้ามเนื้อหลังออกกำลังกายหนัก.	Warm water from the shower head helps loosen muscles after heavy workouts.	nouns
+328	1	โกหก	to lie	คนดีจะไม่พูดโกหกเพื่อหลอกลวงผู้อื่น.	Good people will not lie to deceive others.	verbs
+329	1	พอแล้ว	enough already	รับประทานอาหารจนอิ่มแน่นท้องแล้ว ขอบคุณมาก พอแล้วครับ.	Ate until completely stuffed; thank you very much, enough already.	others
+330	1	ไว้ใจ	to trust	เราสามารถไว้ใจเพื่อนสนิทคนนี้ได้เสมอ.	We can always trust this close friend.	verbs
+331	1	ทุกที่	everywhere	ดอกไม้ป่าสีเหลืองสดใสบานสะพรั่งอยู่ทุกที่ตามริมเนินเขา.	Bright yellow wildflowers blossom everywhere along the hillsides.	adverbs
+332	1	มั่นใจ	certain	ผู้สมัครตอบคำถามอย่างฉะฉานด้วยความรู้สึกมั่นใจในความสามารถ.	The candidate answered queries firmly, certain of their abilities.	adjectives
+333	1	ห้องน้ำ	bathroom	แม่บ้านทำความสะอาดกระเบื้องและอ่างล้างมือในห้องน้ำจนเอี่ยม.	The housekeeper scrubbed tiles and sinks in the bathroom until spotless.	nouns
+334	1	ขอบคุณ	to thank	เด็กน้อยยกมือไหว้ขอบคุณผู้ใหญ่ที่ให้ขนม.	The little child bowed to thank the adult who gave snacks.	verbs
+335	1	ฉันไม่อยากทำ	I don't want to do it	งานที่เอาเปรียบคนอื่นแบบนั้น ฉันไม่อยากทำและจะไม่เข้าร่วมเด็ดขาด.	Work exploiting others like that, I don't want to do it at all.	others
+336	1	ลง	to descend	ผู้โดยสารค่อยๆ เดินลงจากบันไดเครื่องบิน.	Passengers slowly walk to descend from the airplane stairs.	verbs
+337	1	ที่ไหนสักแห่ง	somewhere	ฉันน่าจะเผลอลืมกุญแจรถวางไว้ที่ไหนสักแห่งในห้องนั่งเล่น.	I might have accidentally left the car key somewhere in the living room.	adverbs
+338	1	ไม่สบาย	uncomfortable	เขารู้สึกอึดอัดและไม่สบายตัวเวลานั่งทำงานบนเก้าอี้ไม้แข็งๆ.	He feels stiff and uncomfortable working on hard wooden chairs.	adjectives
+339	1	เตียง	bed	เขาล้มตัวลงนอนบนเตียงนุ่มทันทีที่ถึงบ้านด้วยความเหนื่อยล้า.	He collapsed onto the soft bed upon reaching home out of exhaustion.	nouns
+340	1	เฉลิมฉลอง	to celebrate	ชาวบ้านร่วมกันเฉลิมฉลองเทศกาลปีใหม่ในลานหมู่บ้าน.	Villagers gather to celebrate the New Year festival in the village square.	verbs
+341	1	โชคดีจัง	what luck	วิ่งมาถึงชานชาลาก่อนที่ประตูรถไฟขบวนสุดท้ายจะปิด โชคดีจัง.	Reaching the platform before the last train doors shut; what luck!	others
+342	1	กังวล	to worry	แม่รู้สึกกังวลเมื่อลูกชายยังไม่กลับบ้านตามเวลา.	Mother feels worried when her son does not return home on time.	verbs
+343	1	ที่นั่น	there	เพื่อนๆ กำลังรวมตัวนั่งดื่มกาแฟคุยกันอยู่ที่นั่นตรงมุมห้อง.	Friends are gathering sipping coffee and chatting there at the room corner.	adverbs
+344	1	สบาย	comfortable	เก้าอี้โซฟาบุนวมตัวใหญ่นี้นั่งนุ่มสบายเหมาะแก่การพักผ่อน.	This oversized upholstered sofa seat feels comfortable for relaxing.	adjectives
+345	1	โรงแรม	hotel	นักท่องเที่ยวจองห้องพักในโรงแรมหรูริมชายหาดล่วงหน้า.	Tourists booked guest rooms in a luxury beachfront hotel ahead of time.	nouns
+346	1	ทำให้สับสน	to confuse	ป้ายบอกทางที่คลุมเครือทำให้สับสนอย่างมาก.	The ambiguous road signs confuse drivers greatly.	verbs
+347	1	สวยจังเลย	how beautiful	ทุ่งดอกทานตะวันสีเหลืองอร่ามตัดกับท้องฟ้าสีคราม สวยจังเลย.	Golden sunflower plains contrasted against blue skies; how beautiful!	others
+348	1	แก้ไข	to solve	โปรแกรมเมอร์แก้ไขข้อผิดพลาดในระบบเสร็จทันเวลา.	The programmer solved errors in the system in time.	verbs
+349	1	ที่นี่	here	ครอบครัวของเราตั้งรกรากเปิดร้านขายของชำอยู่ที่นี่มาหลายปี.	Our family has settled down running a grocery store here for years.	adverbs
+350	1	เปิดเผย	extroverted	เขาเป็นคนเปิดเผยและชอบพบปะพูดคุยกับเพื่อนใหม่ในงานสัมมนา.	He is an extroverted person who enjoys meeting new friends at seminars.	adjectives
+351	1	การเดินทาง	trip	การเดินทางข้ามจังหวัดในช่วงเทศกาลต้องเผื่อเวลาล่วงหน้า.	Travel trips across provinces during festivals require budgeting time in advance.	nouns
+352	1	ส่งมอบ	to deliver	บุรุษไปรษณีย์ส่งมอบพัสดุด่วนถึงมือผู้รับแล้ว.	The postman delivered the express parcel right into the recipient's hands.	verbs
+353	1	ชีวิตก็เป็นแบบนี้แหละ	that's life	มีทั้งวันที่สุขและวันที่เจอปัญหาปะปนกันไป ชีวิตก็เป็นแบบนี้แหละ.	Days of happiness blend with trouble; that's life.	others
+354	1	เปลี่ยน	to change	ใบไม้เริ่มเปลี่ยนเป็นสีเหลืองเมื่อเข้าสู่ฤดูใบไม้ร่วง.	Leaves begin to change to yellow when autumn arrives.	verbs
+355	1	ข้างนอก	outside	เด็กๆ วิ่งเล่นเตะฟุตบอลกันอย่างสนุกสนานอยู่ข้างนอกตัวบ้าน.	The children played soccer happily running outside the house.	adverbs
+356	1	ขี้อาย	shy	เด็กหญิงตัวเล็กเป็นคนขี้อายและมักหลบอยู่ข้างหลังแม่เสมอ.	The little girl is shy and always ducks behind her mother.	adjectives
+357	1	เกม	game	เด็กๆ รวมตัวกันเล่นเกมกระดานอย่างสนุกสนานบนโต๊ะไม้.	The kids gathered to play board games merrily on the wooden table.	nouns
+358	1	ล้ม	to fall over	ลมแรงพัดจนต้นไม้ใหญ่ล้มขวางถนนสายหลัก.	Strong wind blew until a large tree fell across the main road.	verbs
+359	1	จำเป็น	it's necessary	การตรวจสอบสภาพรถยนต์ก่อนออกเดินทางไกล จำเป็นต่อความปลอดภัย.	Inspecting the car before long drives; it's necessary for safety.	others
+360	1	อ่าน	to read	เด็กชายนั่งอ่านหนังสือนิทานอยู่บนเก้าอี้โยก.	The boy sits reading a storybook on the rocking chair.	verbs
+361	1	ข้างใน	inside	กรุณารออยู่ข้างในห้องรับแขกเพื่อหลบละอองฝนด้านนอก.	Please wait inside the parlor room to avoid the rain showers outside.	adverbs
+362	1	ร่าเริง	cheerful	เด็กๆ ส่งเสียงหัวเราะอย่างร่าเริงขณะวิ่งเล่นบนหาดทราย.	Children laughed with cheerful giggles while running on sand.	adjectives
+363	1	กีฬา	sport	การเล่นกีฬาแบดมินตันช่วยเสริมสร้างความว่องไวของร่างกาย.	Playing badminton sports helps enhance bodily agility.	nouns
+364	1	ต้องการ	to need	ผู้ประสบภัยต้องการน้ำดื่มสะอาดและอาหารแห้ง.	Disaster victims need clean drinking water and dry food.	verbs
+365	1	อร่อยจัง	how delicious	ต้มยำกุ้งน้ำข้นชามนี้รสชาติจัดจ้านถึงเครื่อง อร่อยจังเลย.	This rich shrimp tom yum is boldly spiced; how delicious!	others
+366	1	เอาออก	to take out	แม่เอาขนมปังออกจากเตาอบที่ร้อนจัด.	Mother took the bread out of the hot oven.	verbs
+367	1	เกือบจะ	almost	นักวิ่งเร่งฝีเท้าจนเกือบจะแตะเส้นชัยเป็นคนแรกของแถว.	The runner accelerated his pace until he almost crossed the finish line first.	adverbs
+368	1	ดั้งเดิม	traditional	ชาวบ้านยังคงรักษาวิถีชีวิตและประเพณีดั้งเดิมไว้อย่างเหนียวแน่น.	Villagers steadfastly uphold their traditional lifestyle customs.	adjectives
+369	1	ซีรีส์	series	เธอชอบดูซีรีส์เกาหลีจนดึกดื่นในคืนวันหยุดสุดสัปดาห์.	She likes binge-watching Korean series late into weekend nights.	nouns
+370	1	ให้บริการ	to serve	พนักงานเคาน์เตอร์ให้บริการลูกค้าด้วยรอยยิ้ม.	Counter staff serve customers with a polite smile.	verbs
+371	1	ไอเดียดีจัง	what a good idea	การนำของเหลือใช้มารีไซเคิลเป็นกระถางต้นไม้ ไอเดียดีจังเลยนะ.	Recycling discarded containers into plant pots; what a good idea.	others
+372	1	เริ่มต้น	to begin	บริษัทเริ่มต้นโครงการอนุรักษ์สิ่งแวดล้อมใหม่.	The company began a new environmental conservation project.	verbs
+373	1	แทบจะไม่	hardly	เขาแทบจะไม่พูดคุยอะไรกับใครเลยเพราะกำลังมีสมาธิทำงาน.	He hardly said anything to anyone because he was focused on work.	adverbs
+374	1	ทันสมัย	modern	อาคารสำนักงานแห่งนี้ติดตั้งระบบควบคุมไฟฟ้าที่ทันสมัย.	This office edifice houses a modern computerized electrical system.	adjectives
+375	1	ภาพยนตร์	movie	ครอบครัวของเราไปชมภาพยนตร์เรื่องใหม่ที่โรงหนังใกล้บ้าน.	Our family went to watch a new movie at the nearby cinema.	nouns
+376	1	ปรากฏ	to appear	รุ้งกินน้ำปรากฏขึ้นบนท้องฟ้าหลังฝนหยุดตก.	A rainbow appeared in the sky after the rain stopped.	verbs
+377	1	ขำจะตาย	dying of laughter	ดูนักแสดงตลกเล่าเรื่องวีรกรรมวัยเด็ก ขำจะตายจนน้ำตาไหล.	Watching comedians recount childhood antics, I was dying of laughter.	others
+378	1	จบ	to finish	ภาพยนตร์สนุกเรื่องนี้จบลงด้วยรอยยิ้มของทุกคน.	This fun movie finished with everyone's smiles.	verbs
+379	1	ค่อนข้าง	quite	อากาศตอนดึกบนยอดดอยค่อนข้างเย็นจนต้องใส่เสื้อกันหนาว.	The late-night air on the mountain peak is quite chilly, requiring a jacket.	adverbs
+380	1	ขี้เหร่	ugly	ถึงภายนอกจะดูขี้เหร่แต่เนื้อผลไม้ข้างในกลับหวานหอม.	Though exterior peel looks ugly, fruit pulp inside is fragrant.	adjectives
+381	1	หนังสือพิมพ์	newspaper	คุณพ่อกางหนังสือพิมพ์ฉบับเช้าออกอ่านคู่กับกาแฟ.	Father spreads out the morning newspaper to read along with coffee.	nouns
+382	1	ขอ	to ask for	ลูกค้าขอเมนูอาหารเพิ่มเติมจากพนักงานเสิร์ฟ.	The customer asked for additional menus from the waiter.	verbs
+383	1	ฉันแทบรอไม่ไหว	I can't wait	พรุ่งนี้จะได้ออกเดินทางไปเที่ยวทะเลเกาะสมุยแล้ว ฉันแทบรอไม่ไหว.	Heading off to Samui island beach tomorrow; I can't wait.	others
+384	1	เกิดขึ้น	to happen	อุบัติเหตุเล็กน้อยเกิดขึ้นบนสะพานข้ามแม่น้ำ.	A minor accident happened on the bridge across the river.	verbs
+385	1	บางครั้ง	sometimes	บางครั้งเขาก็เลือกเดินเท้ากลับบ้านแทนการนั่งรถโดยสาร.	Sometimes he chooses to walk back home instead of taking the bus.	adverbs
+386	1	สวย	beautiful	ทุ่งดอกบัวแดงบานสะพรั่งดูงดงามสวยจับตายามเช้าตรู่.	The blooming red lotus field looks strikingly beautiful at dawn.	adjectives
+387	1	นิตยสาร	magazine	ลูกค้าเปิดอ่านนิตยสารแฟชั่นระหว่างนั่งรอคิวในร้านตัดผม.	The customer flips through a fashion magazine while waiting at the barbershop.	nouns
+388	1	ผลิต	to produce	โรงงานแห่งนี้ผลิตชิ้นส่วนรถยนต์ส่งออกต่างประเทศ.	This factory produces car parts for export overseas.	verbs
+389	1	เหลือเชื่อเลย	it's incredible	เขาสามารถวิ่งมาราธอนจบได้โดยไม่หยุดพัก เหลือเชื่อเลยจริงๆ.	He finished the marathon without a single rest; it's incredible.	others
+390	1	แพ้	to lose a match	ทีมโรงเรียนเราแพ้การแข่งขันฟุตบอลนัดชิงชนะเลิศ.	Our school team lost the championship football match.	verbs
+391	1	อย่างสร้างสรรค์	creatively	นักออกแบบคิดค้นและแก้ปัญหาพื้นที่แคบได้อย่างสร้างสรรค์.	The designer engineered solutions for cramped spaces creatively.	adverbs
+392	1	อ้วน	fat	แมวส้มตัวกลมกินอาหารเยอะจนอ้วนท้วนสมบูรณ์.	The orange cat eats hearty amounts until it is pleasantly fat.	adjectives
+393	1	หนังสือ	book	เขายืมหนังสือประวัติศาสตร์เล่มหนามาจากห้องสมุดประชาชน.	He borrowed a thick history book from the public library.	nouns
+394	1	เขียน	to write	นักเขียนเขียนเรื่องสั้นเล่มใหม่เสร็จแล้ว.	The author finished writing the new short story.	verbs
+395	1	โชคร้ายจัง	what bad luck	เดินสะดุดก้อนหินจนโทรศัพท์ตกลงไปในท่อระบายน้ำ โชคร้ายจังเลย.	Tripping on stones until the phone fell into the drain; what bad luck.	others
+396	1	เข้า	to enter	นักท่องเที่ยวเดินเข้าพิพิธภัณฑ์อย่างเป็นระเบียบ.	Tourists walk to enter the museum in an orderly manner.	verbs
+397	1	ทางอารมณ์	emotionally	การฟังเพลงบรรเลงหวานซึ้งช่วยสร้างความผ่อนคลายทางอารมณ์.	Listening to mellow instrumental music helps relax emotionally.	adverbs
+398	1	ผอม	thin	เขาออกกำลังกายคุมน้ำหนักจนมีรูปร่างผอมเพรียวสมส่วน.	He worked out and managed his diet until he had a lean, thin build.	adjectives
+399	1	เพลง	song	วิทยุกำลังเปิดเพลงสากลยอดนิยมที่กำลังติดชาร์ต.	The radio is playing a popular hit song on the charts.	nouns
+400	1	ค้นหา	to search for	เขาใช้แว่นขยายค้นหากุญแจที่ทำตกไว้บนพื้น.	He used a magnifying glass to search for the keys dropped on the floor.	verbs
+401	1	น่าเสียดาย	what a shame	ฝนตกกระหน่ำจนต้องยกเลิกงานแสดงดนตรีกลางแจ้ง น่าเสียดายจริงๆ.	Pouring rain canceled the outdoor music concert; what a shame.	others
+402	1	รอ/หวัง	to wait or hope	พวกเรานั่งรอหวังว่าจะได้ยินข่าวดีในเร็ววัน.	We sit waiting and hoping to hear good news soon.	verbs
+403	1	ทางจิตใจ	mentally	การได้นั่งสมาธิใต้ต้นไม้ช่วยสร้างความสงบสุขทางจิตใจ.	Meditating under shady trees brings peace mentally.	adverbs
+404	1	จืด	tasteless	แกงจืดชามนี้ลืมใส่เครื่องปรุงรสจนทำให้มีรสชาติจืดชืด.	This broth bowl lacked seasonings, leaving it rather tasteless.	adjectives
+405	1	ดนตรี	music	เสียงดนตรีคลาสสิกเบาๆ ช่วยให้จิตใจสงบผ่อนคลาย.	Soft classical music helps calm and relax the mind.	nouns
+406	1	เริ่ม	to start	นักเรียนเริ่มทำข้อสอบเมื่อได้ยินเสียงสัญญาณ.	Students started doing the exam when they heard the signal.	verbs
+407	1	แล้วแต่	it depends	เรื่องจะแวะทานมื้อเย็นที่ไหนก่อนกลับบ้าน ก็แล้วแต่ความสะดวกของทุกคน.	Deciding where to grab dinner on the way home, it depends on everyone.	others
+408	1	นับ	to count	แม่ค้าเริ่มนับเงินทอนให้ลูกค้าอย่างรอบคอบ.	The shopkeeper begins to count change for customers carefully.	verbs
+409	1	ทางกายภาพ	physically	การยกของหนักบ่อยๆ อาจทำให้บาดเจ็บทางกายภาพได้ง่าย.	Lifting heavy loads frequently can easily cause physical injury.	adverbs
+410	1	อร่อย	delicious	ก๋วยเตี๋ยวเรือร้านนี้ปรุงน้ำซุปได้เข้มข้นและอร่อยมาก.	This boat noodle vendor prepares richly seasoned and delicious broth.	adjectives
+411	1	ช็อกโกแลต	chocolate	น้องสาวเก็บช็อกโกแลตแท่งโปรดไว้ในตู้เย็น.	Little sister keeps her favorite chocolate bar in the refrigerator.	nouns
+412	1	มอง	to look at	เด็กๆ ยืนมองขบวนพาเหรดที่เคลื่อนผ่านไป.	Children stand looking at the parade passing by.	verbs
+413	1	ตามที่คุณต้องการ	as you wish	ช่างตัดเสื้อจะจัดทรงชุดตามที่คุณต้องการอย่างประณีตที่สุด.	The tailor will craft the outfit as you wish with utmost precision.	others
+414	1	รู้สึก	to feel	ฉันรู้สึกสดชื่นหลังจากได้ดื่มน้ำผลไม้เย็นๆ.	I feel refreshed after having a cold fruit juice.	verbs
+415	1	ในทางลบ	negatively	ความเครียดสะสมส่งผลกระทบในทางลบต่อประสิทธิภาพการทำงาน.	Accumulated stress impacts work performance negatively.	adverbs
+416	1	ฉลาด	wise	เด็กชายคิดค้นวิธีลัดในการแก้โจทย์ปัญหาได้อย่างฉลาดหลักแหลม.	The boy figured out shortcuts to solve the problem in a clever, wise way.	adjectives
+417	1	นม	milk	เด็กวัยกำลังโตควรดื่มนมโคสดรสจืดทุกวัน.	Growing children should drink fresh plain cow milk every day.	nouns
+418	1	อาศัย	to reside	ครอบครัวของฉันอาศัยอยู่ในอพาร์ตเมนต์กลางเมือง.	My family resides in an apartment downtown.	verbs
+419	1	ไม่มีทาง	no way	ให้ยอมแพ้ต่อความอยุติธรรมแบบนั้นน่ะหรือ ไม่มีทางยอมเด็ดขาด.	Giving in to injustice like that? There is no way I'd ever accept it.	others
+420	1	รู้จัก	to know someone	ฉันรู้จักเขามาตั้งแต่สมัยเรียนชั้นมัธยม.	I have known him since high school.	verbs
+421	1	ในทางบวก	positively	การมองโลกในทางบวกช่วยเสริมสร้างพลังใจให้ฟันฝ่าอุปสรรค.	Looking at the world positively helps build inner resolve to overcome hurdles.	adverbs
+422	1	โง่	foolish	การเชื่อข่าวปลอมโดยไม่ตรวจสอบข้อเท็จจริงเป็นการตัดสินใจที่โง่เขลา.	Trusting fake news without fact-checking is a foolish choice.	adjectives
+423	1	ชา	tea	คุณยายชอบดื่มชาร้อนใบเตยหลังจากรับประทานอาหาร.	Grandmother likes drinking hot pandan tea after meals.	nouns
+424	1	เอา	to take	อย่าลืมเอาสมุดจดบันทึกติดตัวไปด้วยนะ.	Do not forget to take the notebook with you.	verbs
+425	1	หวังว่า	hopefully	ท้องฟ้าเริ่มโปร่งแล้ว หวังว่าเย็นนี้ฝนจะไม่ตกลงมาขัดจังหวะงานเดินเล่น.	Skies are clearing; hopefully, rain won't interrupt our evening walk.	others
+426	1	กลับ	to return	พ่อกลับถึงบ้านตอนหกโมงเย็นทุกวัน.	Father returns home at six in the evening every day.	verbs
+427	1	จริงๆ	really	อาหารจานนี้ปรุงรสชาติได้ถูกปากและอร่อยจริงๆ.	This food plate was seasoned suitably to taste and was really delicious.	adverbs
+428	1	โบราณ	ancient	เมืองโบราณแห่งนี้มีซากปรักหักพังของวัดเก่าแก่หลายร้อยปี.	This ancient city retains centuries-old ruins of temples.	adjectives
+429	1	กาแฟ	coffee	กลิ่นหอมกรุ่นของกาแฟคั่วบดลอยฟุ้งไปทั่วทั้งห้อง.	The fragrant aroma of roasted coffee fills the entire room.	nouns
+430	1	ออกไป	to go out	พวกเราตัดสินใจออกไปเดินเล่นรับลมหนาวข้างนอก.	We decided to go out for a walk in the cool breeze outside.	verbs
+431	1	ฉันไม่ถือสา	I don't mind	คุณจะเปิดหน้าต่างรับลมธรรมชาติก็ได้นะ ฉันไม่ถือสาเรื่องเสียงลม.	You can open windows for natural breezes; I don't mind wind noise.	others
+432	1	คิด	to think	เขากำลังคิดหาวิธีแก้ปัญหาเรื่องงาน.	He is thinking of a way to solve the work problem.	verbs
+433	1	อย่างจำเป็น	essentially	เอกสารสำคัญเหล่านี้ต้องเก็บรักษาไว้ในตู้เซฟอย่างจำเป็น.	These vital documents must essentially be kept inside the safe.	adverbs
+434	1	ป่วย	sick	เขาต้องนอนพักรักษาตัวอยู่ที่บ้านเพราะป่วยเป็นไข้หวัดใหญ่.	He must lie resting at home because he is sick with the flu.	adjectives
+435	1	ไวน์	wine	พนักงานเสิร์ฟรินไวน์แดงชั้นดีลงในแก้วทรงสูง.	The waiter pours fine red wine into the tall glass.	nouns
+436	1	มา	to come	แขกหลายคนมางานเลี้ยงฉลองวันขึ้นปีใหม่.	Many guests come to the New Year celebration party.	verbs
+437	1	ไม่มีปัญหา	no problem	ถ้าต้องการยืมหนังสือเล่มนี้ไปอ่านต่อที่บ้าน ไม่มีปัญหาเลย เอาไปได้.	If you want to borrow this book to read at home, no problem, take it.	others
+438	1	โทร	to call	ลูกสาวโทรหาคุณแม่เพื่อบอกว่าถึงบ้านแล้ว.	The daughter called mother to tell her that she had reached home.	verbs
+439	1	อย่างต่อเนื่อง	constantly	กระแสน้ำในแม่น้ำยังคงไหลลงสู่ทะเลอย่างต่อเนื่องตลอดวัน.	Currents in the river constantly flow into the ocean all day.	adverbs
+440	1	สุขภาพดี	healthy	คนที่รับประทานอาหารครบหมู่และออกกำลังกายมักมีร่างกายสุขภาพดี.	Those eating balanced meals and exercising often stay healthy.	adjectives
+441	1	เกลือ	salt	แม่ครัวเหยาะเกลือป่นเล็กน้อยลงในหม้อแกงจืด.	The cook adds a pinch of fine salt into the soup pot.	nouns
+442	1	พบ	to meet	เพื่อนเก่าบังเอิญพบกันที่ร้านกาแฟใกล้สถานี.	Old friends happened to meet at the coffee shop near the station.	verbs
+443	1	เดี๋ยวก็รู้	we'll see	ไม่ต้องรีบคาดเดาผลการแข่งขันหรอก รอประกาศคะแนนเดี๋ยวก็รู้.	Don't rush to guess match outcomes; wait for scores, we'll see.	others
+444	1	ติดตาม	to follow	ประชาชนติดตามข่าวสารพยากรณ์อากาศทางโทรทัศน์.	People follow weather forecast news on television.	verbs
+445	1	อย่างเท่าเทียม	equally	แบ่งผลกำไรจากการทำธุรกิจให้หุ้นส่วนทุกคนอย่างเท่าเทียม.	Distribute business profits to all partners equally.	adverbs
+446	1	สนุก	fun	เด็กๆ ร้องเพลงและเล่นเกมกันอย่างสนุกในงานวันเด็ก.	Children sang songs and played games in a fun mood on Children's Day.	adjectives
+447	1	น้ำตาล	sugar	อย่าเติมน้ำตาลในกาแฟมากเกินไปเพราะจะหวานเกิน.	Do not add too much sugar to the coffee because it will be overly sweet.	nouns
+448	1	นำไป	to carry	เขาช่วยนำไปส่งพัสดุกล่องนี้ที่ไปรษณีย์.	He helped take and deliver this parcel to the post office.	verbs
+449	1	น่าประหลาดใจจัง	what a surprise	ไม่คิดว่าจะได้พบเพื่อนเก่าสมัยมัธยมที่นี่ น่าประหลาดใจจังเลย.	Never thought of meeting high school friends here; what a surprise.	others
+450	1	เชื่อ	to believe	ฉันเชื่อในความสามารถของเพื่อนร่วมงานทุกคน.	I believe in the capability of all my coworkers.	verbs
+451	1	แม้แต่	even	ในยามวิกฤต แม้แต่เด็กเล็กก็ยังช่วยงานเก็บของเล็กๆ น้อยๆ.	In times of crisis, even small children still help tidy up bits of belongings.	adverbs
+452	1	จริงจัง	serious	ทีมงานทุกคนมีท่าทางจริงจังขณะร่วมวางแผนแก้ปัญหาวิกฤต.	All crew members maintain a serious posture planning crisis remedies.	adjectives
+453	1	ขนมปัง	bread	เขาทาเนยสดลงบนขนมปังปิ้งร้อนๆ สำหรับมื้อเช้า.	He spreads fresh butter on hot toasted bread for breakfast.	nouns
+454	1	อยู่	to stay	คุณยายชอบอยู่บ้านเงียบๆ ในวันอาทิตย์.	Grandmother likes staying at home quietly on Sundays.	verbs
+455	1	จริงเหรอ?	really?	คุณบอกว่าตั๋วเครื่องบินไปเชียงใหม่ลดราคาครึ่งหนึ่ง จริงเหรอ?	You said flight tickets to Chiang Mai are half off; really?	others
+456	1	ดูเหมือน	to seem	ท้องฟ้ามืดครึ้มดูเหมือนว่าฝนกำลังจะตก.	The dark sky seems like it is going to rain.	verbs
+457	1	พร้อมกัน	simultaneously	นักเรียนทุกคนในห้องยืนขึ้นทำความเคารพครูพร้อมกัน.	Every student in the classroom stood up greeting the teacher simultaneously.	adverbs
+458	1	เบา	light	กระเป๋าเป้ใบนี้ทำจากผ้าสังเคราะห์พิเศษจึงมีน้ำหนักเบา.	This backpack is made of specialty synthetic cloth, making it light.	adjectives
+459	1	ผัก	vegetable	การรับประทานผักใบเขียวเป็นประจำมีประโยชน์ต่อสุขภาพ.	Eating green leafy vegetables regularly is beneficial for health.	nouns
+460	1	ต้อง	must	นักเรียนทุกคนต้องทำการบ้านส่งครูในวันพรุ่งนี้.	Every student must submit homework to the teacher tomorrow.	verbs
+461	1	แล้วเจอกันทีหลัง	see you later	ฉันต้องรีบไปส่งพัสดุที่ไปรษณีย์ก่อน แล้วเจอกันทีหลังที่ร้านกาแฟนะ.	I must ship parcels at the post office first; see you later at the cafe.	others
+462	1	ผ่าน	to pass	พวกเราเดินผ่านสวนสาธารณะระหว่างทางกลับบ้าน.	We walked past the park on the way back home.	verbs
+463	1	อย่างเหมาะสม	adequately	จัดสรรเวลาทำงานและพักผ่อนในแต่ละวันอย่างเหมาะสม.	Allocate work and rest hours in each day adequately.	adverbs
+464	1	หนัก	heavy	กล่องบรรจุอะไหล่เครื่องยนต์กล่องนี้มีน้ำหนักมากและยกหนักเกินไป.	This crate of engine parts carries great weight and is too heavy.	adjectives
+465	1	ผลไม้	fruit	แม่ซื้อผลไม้สดตามฤดูกาลหลายอย่างมาจากตลาดนัด.	Mom bought various fresh seasonal fruits from the market.	nouns
+466	1	มาถึง	to arrive	รถไฟขบวนแรกมาถึงชานชาลาตอนเช้าตรู่.	The first train arrived at the platform in the early morning.	verbs
+467	1	นานมาแล้ว	a long time ago	บ้านไม้ทรงไทยโบราณหลังนี้ถูกสร้างขึ้นมาตั้งแต่เมื่อนานมาแล้ว.	This traditional Thai wooden house was built a long time ago.	others
+468	1	เพื่อ	for the purpose of	เขากำลังเก็บหอมรอมริบเพื่อสร้างบ้านหลังใหม่ให้ครอบครัว.	He is saving earnings for the purpose of building a new home for the family.	prepositions
+469	1	อยาก	to want	น้องชายอยากกินไอศกรีมรสวานิลลาหลังเลิกเรียน.	My younger brother wants to eat vanilla ice cream after school.	verbs
+470	1	อย่างเป็นวิทยาศาสตร์	scientifically	ข้อมูลผลการทดลองนี้สามารถอธิบายได้อย่างเป็นวิทยาศาสตร์.	This experiment data can be explained scientifically.	adverbs
+471	1	ตื้น	shallow	เด็กเล็กสามารถลงเล่นน้ำในลำธารส่วนที่ตื้นได้อย่างปลอดภัย.	Young kids can splash safely in the shallow parts of the brook.	adjectives
+472	1	ปลา	fish	ฝูงปลาตัวเล็กแหวกว่ายอย่างอิสระในลำธารใสแจ๋ว.	A school of small fish swims freely in the clear stream.	nouns
+473	1	รู้	to know	ทุกคนรู้ว่าห้องสมุดปิดเวลาหกโมงเย็น.	Everyone knows that the library closes at six in the evening.	verbs
+474	1	มันเป็นไปไม่ได้	it's impossible	จะเดินเท้าขึ้นยอดดอยสูงชันให้ทันภายในครึ่งชั่วโมง มันเป็นไปไม่ได้หรอก.	Hiking the steep peak in thirty minutes; it's impossible.	others
+475	1	พ้น	beyond	คนขับพาผู้โดยสารแล่นรถผ่านพ้นเขตอันตรายดินถล่มได้อย่างปลอดภัย.	The driver took passengers safely past beyond the landslide hazard area.	prepositions
+476	1	ให้	to give	พ่อให้เงินค่าขนมแก่ลูกชายทุกเช้า.	Father gives snack money to his son every morning.	verbs
+477	1	โดยเปรียบเทียบ	relatively	ค่าครองชีพในเมืองนี้ยังนับว่าถูกโดยเปรียบเทียบกับเมืองหลวง.	Living costs in this town are considered cheap relatively compared to the capital.	adverbs
+478	1	ลึก	deep	บ่อน้ำโบราณหลังวัดขุดลึกลงไปในชั้นหินหลายสิบเมตร.	The ancient well behind the temple is dug deep into bedrock.	adjectives
+479	1	เนื้อ	meat	พ่อครัวเลือกซื้อเนื้อวัวสดคุณภาพดีมาทำสเต๊กมื้อค่ำ.	The chef purchases fine fresh beef cuts for dinner steaks.	nouns
+480	1	เห็น	to see	ฉันเห็นนกสีสวยเกาะอยู่บนกิ่งไม้.	I see a beautiful bird perched on the branch.	verbs
+481	1	บอกฉันเพิ่มเติม	tell me more	โครงการท่องเที่ยวชุมชนนี้น่าสนใจมาก ช่วยบอกฉันเพิ่มเติมหน่อยสิ.	This community tourism project is very neat; please tell me more.	others
+482	1	เผื่อว่า	just in case	พกร่มพับคันเล็กติดไว้ในกระเป๋าเป้ เผื่อว่าจะมีฝนตกลงมาระหว่างเดินทางกลับ.	Tuck a small umbrella into your bag, just in case rain falls on the way back.	conjunctions
+483	1	ตลอด	throughout	เขาทำงานหนักด้วยความซื่อสัตย์สุจริตมาตลอดช่วงชีวิตการทำงาน.	He worked hard with integrity throughout his entire professional life.	prepositions
+484	1	พูด	to say	อาจารย์พูดเตือนใจให้นักศึกษาทุกคนตั้งใจเรียน.	The teacher speaks words of encouragement for all students to study hard.	verbs
+485	1	อย่างแม่นยำ	accurately	นาฬิกาดิจิทัลเรือนนี้บอกเวลาได้อย่างแม่นยำทุกวินาที.	This digital clock tells time accurately every single second.	adverbs
+486	1	เหมือนกัน	same	ฝาแฝดคู่นี้สวมชุดนักเรียนลายเดียวกันและไว้ทรงผมเหมือนกัน.	These twins wear identical uniform prints and the same haircut.	adjectives
+487	1	เก้าอี้	chair	เขาลากเก้าอี้ไม้มานั่งพักเหนื่อยใต้ร่มเงาของต้นไม้ใหญ่.	He dragged wooden chairs under shady big branches to rest.	nouns
+488	1	สามารถ	to be able to	เขาสามารถพูดภาษาอังกฤษได้อย่างคล่องแคล่ว.	He is able to speak English fluently.	verbs
+489	1	คุณคิดว่าไง?	what do you think?	สีทาห้องนั่งเล่นเฉดสีเทาอ่อนดูสบายตาดีนะ คุณคิดว่าไง?	Light gray paint for the living room looks soothing; what do you think?	others
+490	1	คือ	namely	ปัจจัยสำคัญที่สุดในการทำงานชิ้นนี้ให้สำเร็จ คือความซื่อสัตย์และความสามัคคี.	The key factor in finishing this work, namely honesty and solidarity, is vital.	conjunctions
+491	1	สืบเนื่องจาก	subsequent to	ยอดสั่งซื้อสินค้าพุ่งสูงขึ้นสืบเนื่องจากโปรโมชันลดราคาประจำปี.	Product purchase orders soared subsequent to the annual discount sale promotion.	prepositions
+492	1	ซ่อม	to fix	ช่างมาที่บ้านเพื่อซ่อมเครื่องซักผ้าที่เสีย.	The technician came to the house to fix the broken washing machine.	verbs
+493	1	พื้นฐาน	basically	โดยพื้นฐานโปรแกรมนี้ออกแบบมาเพื่อให้ใช้งานได้ง่ายทุกคน.	Basically, this program was designed so everyone can use it easily.	adverbs
+494	1	แตกต่าง	different	สองพี่น้องมีบุคลิกภาพและความสนใจที่แตกต่างกันอย่างสิ้นเชิง.	The two siblings have entirely different personalities and interests.	adjectives
+495	1	หน้าต่าง	window	ลมเย็นพัดผ่านเข้ามาทางหน้าต่างห้องนอนที่เปิดกว้าง.	Cool breezes draft inward through open bedroom windows.	nouns
+496	1	ฝัน	to dream	เมื่อคืนฉันฝันว่าได้เดินทางไปต่างประเทศ.	Last night I dreamed that I traveled abroad.	verbs
+497	1	มันเป็นยังไงบ้าง?	how was it?	เมื่อวานไปร่วมงานนิทรรศการศิลปะร่วมสมัยมา มันเป็นยังไงบ้าง?	You attended the contemporary art exhibition yesterday; how was it?	others
+498	1	ทั้งๆ ที่	even though	เขายังคงฝืนเดินไปทำงานต่อ ทั้งๆ ที่มีอาการไข้ขึ้นสูงตั้งแต่เช้า.	He still forced himself to walk to work, even though he had a high fever.	conjunctions
+499	1	อันเนื่องมาจาก	owing to	ถนนสายนี้ชำรุดเสียหายอันเนื่องมาจากน้ำท่วมใหญ่เมื่อสัปดาห์ก่อน.	This roadway was damaged owing to the massive flood last week.	prepositions
+500	1	วาดรูป	to draw	เด็กหญิงใช้สีไม้วาดรูปดอกไม้บนกระดาษ.	The young girl uses colored pencils to draw flowers on paper.	verbs
+501	1	ในที่สุด	finally	ในที่สุดเขาก็สามารถสอบผ่านใบขับขี่รถยนต์ได้สำเร็จ.	Finally he was able to pass his driver's license test successfully.	adverbs
+502	1	ไม่รับผิดชอบ	irresponsible	การทิ้งงานกลางคันโดยไม่แจ้งล่วงหน้าเป็นการกระทำที่ไม่รับผิดชอบ.	Abandoning work halfway without prior notice is irresponsible.	adjectives
+503	1	ประตู	door	อย่าลืมปิดล็อคประตูหน้าบ้านให้เรียบร้อยก่อนเข้านอน.	Do not forget to lock front entry doors tightly before retiring.	nouns
+504	1	ทำอาหาร	to cook	ยายทำอาหารรสชาติอร่อยให้ทุกคนในบ้านกิน.	Grandmother cooks delicious meals for everyone in the house to eat.	verbs
+505	1	ไม่ต้องกังวล	don't worry	เรามีทีมงานคอยดูแลตรวจเช็กความปลอดภัยตลอดงาน ไม่ต้องกังวลนะ.	We have safety teams checking continuously; don't worry.	others
+506	1	ถึงแม้	albeit	เขายอมรับข้อเสนอในการร่วมงาน ถึงแม้จะได้รับผลตอบแทนน้อยกว่าที่คาดไว้.	He accepted the work offer, albeit with less compensation than expected.	conjunctions
+507	1	ในนามของ	on behalf of	ผู้จัดการกล่าวเปิดงานเลี้ยงต้อนรับในนามของพนักงานทุกคน.	The manager gave the welcoming speech on behalf of all staff members.	prepositions
+508	1	เต้นรำ	to dance	คู่รักเต้นรำอย่างมีความสุขในงานเลี้ยงกลางคืน.	The couple danced happily at the evening party.	verbs
+509	1	ทันที	immediately	หน่วยกู้ภัยรุดไปยังจุดเกิดเหตุทันทีหลังจากรับแจ้งทางโทรศัพท์.	Rescue units rushed to the accident scene immediately after receiving the call.	adverbs
+510	1	รับผิดชอบ	responsible	เขาเป็นหัวหน้าครอบครัวที่มีความรับผิดชอบต่องานและลูกๆ.	He is a responsible head of household toward his work and kids.	adjectives
+511	1	โต๊ะ	table	แม่วางแจกันดอกไม้สดไว้ตรงกลางโต๊ะรับประทานอาหาร.	Mother set a fresh flower vase down right at dining room tables.	nouns
+512	1	ครอบงำ	to dominate	ความกลัวเริ่มครอบงำจิตใจของเขาในความมืด.	Fear began to dominate his mind in the dark.	verbs
+513	1	เขายุ่งอยู่	he is busy	อย่าเพิ่งเข้าไปรบกวนในห้องทำงานตอนนี้เลย เขายุ่งอยู่กับการตรวจแบบ.	Don't disturb the office right now; he is busy checking blueprints.	others
+514	1	ไม่เพียงแต่...เท่านั้น	not only... but also	เขาไม่เพียงแต่พูดภาษาอังกฤษได้คล่องเท่านั้น แต่ยังสื่อสารภาษาจีนได้ดีอีกด้วย.	He not only speaks fluent English, but also communicates well in Chinese.	conjunctions
+515	1	เทียบกับ	compared to	ราคาผลไม้ในตลาดนี้ถือว่าย่อมเยาเมื่อเทียบกับห้างสรรพสินค้าใหญ่.	Fruit prices in this market are affordable compared to large department stores.	prepositions
+516	1	แปลความ	to interpret	ล่ามแปลความหมายของสุนทรพจน์ได้อย่างคล่องแคล่ว.	The interpreter interprets the meaning of the speech fluently.	verbs
+517	1	น่าเสียดาย	unfortunately	น่าเสียดายที่ตั๋วคอนเสิร์ตการกุศลขายหมดเกลี้ยงตั้งแต่เช้า.	Unfortunately charity concert tickets were sold out completely since morning.	adverbs
+518	1	ว่าง	free	วันนี้ห้องประชุมใหญ่ยังคงว่างและสามารถจองใช้งานได้.	The main conference hall is still free today and can be booked.	adjectives
+519	1	ทุ่งนา	rice field	ต้นข้าวในทุ่งนาเริ่มออกรวงสีเขียวขจีทอดยาวสุดสายตา.	Rice stalks in paddies are turning lush green across horizons.	nouns
+520	1	กล่าวหา	to accuse	อย่ากล่าวหาผู้อื่นโดยไม่มีหลักฐานชัดเจน.	Do not accuse others without clear evidence.	verbs
+521	1	ระวังนะ	be careful	พื้นบันไดหน้าบ้านเพิ่งขัดใหม่และยังเปียกลื่นอยู่ เดินก้าวระวังนะ.	The front stairs were just polished and are slippery; walk, be careful.	others
+522	1	หลังจากที่	after	เขากลับมารู้สึกสดชื่นกระปรี้กระเปร่า หลังจากที่ได้อาบน้ำอุ่นและนอนพักผ่อน.	He felt refreshed after taking a warm bath and resting.	conjunctions
+523	1	ผ่านทาง	by way of	คุณสามารถส่งเอกสารยืนยันตัวตนผ่านทางระบบออนไลน์ได้ทันที.	You can submit identity verification files by way of the online portal right away.	prepositions
+524	1	ลด	to reduce	ห้างสรรพสินค้าลดราคาสินค้าเพื่อต้อนรับปีใหม่.	The department store reduces merchandise prices for the New Year.	verbs
+525	1	โชคดี	fortunately	โชคดีที่เราพกร่มติดตัวมาด้วยก่อนที่พายุฝนจะพัดกระหน่ำ.	Fortunately we brought umbrellas along before the rainstorm hammered.	adverbs
+526	1	ยุ่ง	busy	หัวหน้าแผนกกำลังยุ่งอยู่กับการเตรียมเอกสารประชุมด่วน.	The department head is busy preparing urgent meeting documents.	adjectives
+527	1	ตอนบ่าย	afternoon	ฉันชอบนั่งจิบชาร้อนและอ่านหนังสือเงียบๆ ในตอนบ่าย.	I enjoy sipping hot brewed tea reading quietly in the afternoon.	nouns
+528	1	ซ่อน	to hide	เด็กน้อยซ่อนของเล่นชิ้นโปรดไว้ใต้เตียงนอน.	The little child hides the favorite toy under the bed.	verbs
+529	1	ฉันรีบ	I'm in a hurry	ขบวนรถไฟใกล้จะออกจากชานชาลาแล้ว ขอตัวก่อนนะเพราะฉันรีบ.	The train is departing the platform; excuse me, I'm in a hurry.	others
+530	1	ก่อนที่	before	กรุณาตรวจเช็กสิ่งของมีค่าในกระเป๋าให้เรียบร้อย ก่อนที่จะก้าวลงจากรถแท็กซี่.	Please inspect valuables in bags before stepping out of the taxi.	conjunctions
+531	1	เรียบตาม	along	เราปั่นจักรยานออกกำลังกายเรียบตามแนวชายหาดในตอนเช้าตรู่.	We pedaled bicycles for exercise along the shoreline at dawn.	prepositions
+532	1	กระตุ้น	to provoke	กาแฟช่วยกระตุ้นให้ร่างกายรู้สึกตื่นตัวตอนเช้า.	Coffee helps stimulate the body to feel awake in the morning.	verbs
+533	1	ส่วนใหญ่	mainly	นักท่องเที่ยวส่วนใหญ่ชอบเดินทางมาชมวัดวาอารามเก่าแก่.	Tourists mainly like traveling to admire ancient temples.	adverbs
+534	1	ไม่จำเป็น	unnecessary	การซื้อสิ่งของฟุ่มเฟือยในช่วงนี้เป็นรายจ่ายที่ไม่จำเป็น.	Buying luxury trinkets right now is an unnecessary expense.	adjectives
+535	1	ตอนเช้า	morning	อากาศสดชื่นในตอนเช้าเหมาะกับการเดินเล่นสูดลมบริสุทธิ์.	Fresh air in the morning is ideal for strolling and inhaling pure breezes.	nouns
+536	1	ปกป้อง	to defend	สุนัขเห่าเพื่อปกป้องเจ้าของจากคนแปลกหน้า.	The dog barks to defend its owner against strangers.	verbs
+537	1	ล้อเล่นใช่ไหม	it's a joke right?	คุณบอกว่าจะลาออกจากงานสิ้นเดือนนี้ ล้อเล่นใช่ไหมเนี่ย?	You said you're resigning at the end of the month; it's a joke, right?	others
+538	1	นับตั้งแต่	ever since	เขาหันมาดูแลใส่ใจสุขภาพอย่างเคร่งครัด นับตั้งแต่ฟื้นตัวจากการเจ็บป่วย.	He took strict care of his health ever since recovering from his illness.	conjunctions
+539	1	ข้าม	across	คนเดินเท้าควรใช้สะพานลอยเมื่อต้องการเดินข้ามถนนที่มีรถพลุกพล่าน.	Pedestrians should use overpasses when needing to walk across busy roads.	prepositions
+540	1	เสี่ยง	to risk	คนขับรถไม่ควรเสี่ยงขับรถเร็วขณะฝนตกหนัก.	Drivers should not risk speeding during heavy rainfall.	verbs
+541	1	มักจะ	usually	น้องสาวมักจะเปิดวิทยุฟังเพลงเบาๆ ระหว่างทำการบ้าน.	Little sister usually turns on the radio to listen to music while doing homework.	adverbs
+542	1	จำเป็น	necessary	น้ำสะอาดและยารักษาโรคเป็นสิ่งจำเป็นต่อการดำรงชีวิต.	Clean water and medicine are necessary for sustaining life.	adjectives
+543	1	สัปดาห์	week	เขาไปออกกำลังกายที่ฟิตเนสสามครั้งต่อสัปดาห์.	He visits fitness centers for exercise workouts thrice a week.	nouns
+544	1	ตรวจสอบ	to check	เจ้าหน้าที่ตรวจสอบเอกสารของผู้โดยสารที่ด่านตรวจ.	The officer checks passengers' travel documents at the checkpoint.	verbs
+545	1	ไม่รู้เลย	no idea	เรื่องที่เขาย้ายแผนกไปทำงานสาขาอื่นเมื่อเช้านี้ ฉันไม่รู้เลยจริงๆ.	About him transferring to another branch this morning, I had no idea.	others
+546	1	สมมติว่า	supposing that	สมมติว่าเรามีงบประมาณจำกัด เราควรจัดลำดับความสำคัญของงานอย่างไร.	Supposing that we have a limited budget, how should we prioritize tasks?	conjunctions
+547	1	มุ่งหน้าสู่	bound for	ขบวนรถไฟด่วนกำลังแล่นมุ่งหน้าสู่สถานีปลายทางทางภาคเหนือ.	The express train is speeding bound for the northern terminus.	prepositions
+548	1	สนับสนุน	to support	พ่อแม่สนับสนุนการเรียนศิลปะของลูกสาวอย่างเต็มที่.	Parents fully support their daughter's art studies.	verbs
+549	1	โดยทั่วไป	generally	โดยทั่วไปสภาพอากาศแถบนี้มักจะมีฝนตกชุกเกือบทั้งปี.	Generally the weather in this belt tends to have heavy rain almost all year.	adverbs
+550	1	อันตราย	dangerous	การขับรถเร็วเกินอัตราที่กำหนดบนถนนเปียกลื่นนั้นอันตรายมาก.	Speeding beyond limits on wet roads is extremely dangerous.	adjectives
+551	1	เดือน	month	ครอบครัวของเราวางแผนจะไปเที่ยวทะเลในเดือนหน้า.	Our family mapped out itineraries to visit oceans next month.	nouns
+552	1	รับรอง	to assure	ผู้จัดการรับรองคุณภาพสินค้าว่าปลอดภัยทุกชิ้น.	The manager assures the quality of all goods is safe.	verbs
+553	1	แน่นอนอยู่แล้ว	of course it is	การรับประทานอาหารที่มีประโยชน์ย่อมดีต่อสุขภาพแน่นอนอยู่แล้ว.	Eating nutritious meals is good for health, of course it is.	others
+554	1	ฉะนั้น	consequently	สินค้าล็อตนี้ผลิตไม่ได้มาตรฐาน ฉะนั้นโรงงานจึงต้องเรียกคืนทั้งหมด.	This product lot was substandard; consequently, the plant recalled it entirely.	conjunctions
+555	1	ล้อมรอบด้วย	surrounded by	บ้านพักตากอากาศหลังงามล้อมรอบด้วยทิวเขาสลับซับซ้อนและป่าสน.	The handsome holiday home is surrounded by rolling hills and pine woods.	prepositions
+556	1	เปรียบเทียบ	to compare	ผู้ซื้อเปรียบเทียบราคาสินค้าจากสองร้านก่อนตัดสินใจ.	The buyer compares product prices between two stores before deciding.	verbs
+557	1	โดยปกติ	normally	โดยปกติแล้วเขาจะตื่นนอนตอนหกโมงเช้าเพื่อมาวิ่ง.	Normally he will wake up at six in the morning to run.	adverbs
+558	1	ปลอดภัย	safe	ผู้โดยสารทุกคนคาดเข็มขัดนิรภัยเพื่อการเดินทางที่ปลอดภัย.	Every passenger fastens seatbelts for safe travel.	adjectives
+559	1	วินาที	second	เขาวิ่งผ่านเข้าเส้นชัยได้ก่อนคู่แข่งเพียงเสี้ยววินาที.	He crossed finishing ribbons ahead of rivals by a fraction of a second.	nouns
+560	1	ยืนยัน	to affirm	ผู้โดยสารต้องยืนยันที่นั่งก่อนขึ้นเครื่องบิน.	Passengers must confirm their seats before boarding the airplane.	verbs
+561	1	แน่นอน	of course	ถ้าคุณต้องการความช่วยเหลือเรื่องงานแปลเอกสาร ฉันยินดีช่วยแน่นอน.	If you need assistance with document translation, of course I'll help.	others
+562	1	จนกระทั่ง	until	คนไข้นั่งรอตรวจอย่างใจเย็นอยู่ในคลินิก จนกระทั่งหมอเรียกชื่อเข้าห้องตรวจ.	The patient waited patiently in the clinic until the doctor called his name.	conjunctions
+563	1	ถัดจาก	next to	ห้องอ่านหนังสือตั้งอยู่ถัดจากห้องคอมพิวเตอร์บนชั้นสอง.	The reading room is located next to the computer lab on the second floor.	prepositions
+564	1	ประกาศ	to declare	รัฐบาลประกาศวันหยุดราชการเพิ่มเติมในปีนี้.	The government declares additional public holidays this year.	verbs
+565	1	โดยเฉพาะอย่างยิ่ง	especially	เราต้องระวังสุขภาพโดยเฉพาะอย่างยิ่งในช่วงฤดูฝน.	We must watch our health, especially during the rainy season.	adverbs
+566	1	ไม่ยุติธรรม	unfair	การตัดสิทธิ์ผู้แข่งขันโดยไม่มีเหตุผลชัดเจนถือว่าไม่ยุติธรรม.	Disqualifying candidates without clear reasons is unfair.	adjectives
+567	1	พลัง	energy	อาหารเช้าที่มีประโยชน์ช่วยเติมเต็มพลังสำหรับการทำงานตลอดวัน.	Wholesome nutritious breakfast replenishes bodily energies for work.	nouns
+568	1	อนุญาต	to allow	คุณครูอนุญาตให้นักเรียนออกไปดื่มน้ำได้.	The teacher allows students to go out and drink water.	verbs
+569	1	ฉันไม่แน่ใจ	I'm not sure	เรื่องเวลาเปิดปิดของร้านวันหยุดนี้ฉันไม่แน่ใจ ต้องโทรเช็กก่อน.	Regarding weekend store hours, I'm not sure; we must call first.	others
+570	1	แต่ทว่า	nevertheless	พวกเราวางแผนท่องเที่ยวไว้อย่างดี แต่ทว่าพายุฝนทำให้ต้องเปลี่ยนแผน.	We planned the trip thoroughly; nevertheless, a storm forced changes.	conjunctions
+571	1	ตรงข้ามกับ	opposite to	ร้านขายยาตั้งอยู่ตรงข้ามกับโรงพยาบาลประจำจังหวัดพอดี.	The pharmacy is situated right opposite to the provincial hospital.	prepositions
+572	1	ให้ยืม	to lend	ฉันให้ยืมปากกาสีน้ำเงินแก่เพื่อนร่วมชั้น.	I lent a blue pen to my classmate.	verbs
+573	1	โดยสิ้นเชิง	totally	ความคิดเห็นของเขาทั้งสองคนขัดแย้งกันโดยสิ้นเชิง.	The viewpoints of both people contradicted each other totally.	adverbs
+574	1	ยุติธรรม	fair	ผู้ตัดสินทำหน้าที่ควบคุมการแข่งขันอย่างซื่อตรงและยุติธรรม.	The referee managed the game uprightly and fair.	adjectives
+575	1	ความสัมพันธ์	relationship	การสื่อสารที่ดีช่วยส่งเสริมความสัมพันธ์อันอบอุ่นในครอบครัว.	Good mutual communication cultivates warm relationships within homes.	nouns
+576	1	ทนทุกข์	to suffer	ผู้ป่วยทนทุกข์จากอาการปวดฟันอย่างรุนแรง.	The patient suffers from a severe toothache.	verbs
+577	1	ฉันเห็นด้วย	I agree	แผนการปรับปรุงพื้นที่ส่วนกลางนี้น่าสนใจมาก และฉันเห็นด้วยทุกข้อ.	This plan to renovate common areas is interesting, and I agree on all points.	others
+578	1	มิหนำซ้ำ	furthermore	เขาลืมกระเป๋าสตางค์ไว้ที่บ้าน มิหนำซ้ำโทรศัพท์มือถือก็แบตเตอรี่หมดด้วย.	He forgot his wallet at home; furthermore, his phone battery ran out too.	conjunctions
+579	1	นอกจาก	besides	นอกจากผลไม้สดแล้ว ร้านนี้ยังมีขนมอบและเครื่องดื่มสมุนไพรจำหน่าย.	Besides fresh fruit, this shop also sells baked pastries and herbal drinks.	prepositions
+580	1	เลือก	to choose	ลูกค้าเลือกซื้อผักสดในตลาดเช้า.	Customers choose fresh vegetables in the morning market.	verbs
+581	1	อย่างสมบูรณ์	completely	งานก่อสร้างอาคารหลังใหม่แล้วเสร็จลงอย่างสมบูรณ์.	Construction of the new building was completed completely.	adverbs
+582	1	ไม่ซื่อสัตย์	unfaithful	หุ้นส่วนที่ไม่ซื่อสัตย์แอบยักยอกเงินทุนของบริษัท.	The unfaithful business partner secretly embezzled company funds.	adjectives
+583	1	กลุ่ม	group	นักเรียนแบ่งกลุ่มกันทำรายงานค้นคว้าเรื่องสิ่งแวดล้อม.	Students form small study groups working on environmental topics.	nouns
+584	1	หยุด	to stop	คนขับหยุดรถหน้าทางม้าลายเพื่อให้คนข้าม.	The driver stops the car in front of the zebra crossing for pedestrians.	verbs
+585	1	แล้วเจอกันเร็วๆ นี้	see you soon	ยินดีที่ได้คุยกันนะ ไว้หายเหนื่อยแล้วเจอกันเร็วๆ นี้เพื่อทานข้าว.	Glad we chatted; once rested, see you soon to have a meal.	others
+586	1	ในทางตรงกันข้าม	conversely	การนอนหลับเพียงพอทำให้สดชื่น ในทางตรงกันข้ามการอดนอนบั่นทอนสุขภาพ.	Adequate sleep refreshes; conversely, sleep deprivation ruins health.	conjunctions
+587	1	เว้นแต่	except	ทุกคนต้องเข้าร่วมการประชุมนี้ เว้นแต่ผู้ที่ได้รับอนุญาตลาป่วย.	Everyone must attend this meeting, except those permitted sick leave.	prepositions
+588	1	ได้รับ	to receive	เธอได้รับของขวัญวันเกิดจากเพื่อนสนิท.	She received a birthday gift from her close friend.	verbs
+589	1	ประจำปี	annually	โรงเรียนจัดกิจกรรมแข่งขันกีฬาประจำปีช่วงฤดูหนาว.	The school holds its athletic games annually during winter.	adverbs
+590	1	หยาบคาย	rude	การตะโกนด่าทอผู้อื่นในที่สาธารณะเป็นพฤติกรรมที่หยาบคาย.	Yelling insults at others in public is rude behavior.	adjectives
+591	1	ร่างกาย	body	การออกกำลังกายสม่ำเสมอช่วยเสริมสร้างให้ร่างกายแข็งแรง.	Consistent physical exercise builds bodily conditioning and health.	nouns
+592	1	จินตนาการ	to imagine	เด็กๆ จินตนาการถึงการเดินทางไปดวงจันทร์.	Children imagine traveling to the moon.	verbs
+593	1	โชคดี	good luck	ขอให้โชคดีและทำคะแนนได้ยอดเยี่ยมในการสอบชิงทุนพรุ่งนี้นะ.	Good luck, and score excellently on your scholarship exam tomorrow.	others
+594	1	ในทางกลับกัน	on the contrary	คนบางคนกลัวความล้มเหลว ในทางกลับกันบางคนมองว่ามันคือบทเรียนล้ำค่า.	Some people fear failure; on the contrary, others see it as a valuable lesson.	conjunctions
+595	1	ภายนอก	outside	ผนังภายนอกของอาคารทาด้วยสีกันน้ำเพื่อป้องกันความชื้น.	The outside walls of the building are painted with waterproof paint to resist dampness.	prepositions
+596	1	เข้าร่วม	to participate	ชาวบ้านเข้าร่วมงานประเพณีลอยกระทงอย่างคึกคัก.	Villagers actively participate in the Loy Krathong festival.	verbs
+597	1	รายเดือน	monthly	พนักงานบริษัทได้รับเงินเดือนและการจ่ายผลตอบแทนแบบรายเดือน.	Office staff receive salaries and compensation disbursements monthly.	adverbs
+598	1	สุภาพ	polite	บริกรหนุ่มคอยต้อนรับลูกค้าทุกคนด้วยกิริยาท่าทางที่สุภาพ.	The young waiter attends to every customer with polite manners.	adjectives
+599	1	เงิน	money	เขาทำงานหนักเพื่อเก็บออมเงินไว้ใช้จ่ายในยามจำเป็น.	He works laboriously saving spare money set aside for emergencies.	nouns
+600	1	ก่อตั้ง	to establish	กลุ่มอาจารย์ร่วมกันก่อตั้งโรงเรียนสอนดนตรีแห่งใหม่.	A group of teachers joined together to establish a new music school.	verbs
+601	1	สุขสันต์วันเกิด	happy birthday	สุขสันต์วันเกิด ขอให้มีสุขภาพแข็งแรงและมีความสุขตลอดปี.	Happy birthday; may you enjoy robust health and happiness all year long.	others
+602	1	ยิ่ง...ก็ยิ่ง	the more... the more	ยิ่งฝึกฝนทำโจทย์บ่อยๆ ความชำนาญในการคิดคำนวณก็ยิ่งเพิ่มขึ้น.	The more you practice solving problems, the more your math skill grows.	conjunctions
+603	1	ภายใน	within	กรุณาส่งแบบฟอร์มคำร้องคืนเจ้าหน้าที่ภายในสามวันทำการ.	Please submit the application form back to officers within three working days.	prepositions
+604	1	ยก	to lift	คนงานยกกล่องสินค้าหนักขึ้นบนท้ายรถบรรทุก.	The worker lifts heavy product boxes onto the back of the truck.	verbs
+605	1	ทุกวัน	daily	คุณตาชอบเดินออกกำลังกายรอบสระน้ำในหมู่บ้านทุกวัน.	Grandfather likes walking for exercise around the pond daily.	adverbs
+606	1	โหดร้าย	cruel	การทอดทิ้งสัตว์เลี้ยงไว้ข้างถนนเป็นการกระทำที่โหดร้าย.	Abandoning pets on street curbs is a cruel act.	adjectives
+607	1	ลูกสาว	daughter	ลูกสาวฝึกซ้อมเปียโนอย่างตั้งใจเพื่อเตรียมขึ้นแสดงบนเวที.	The daughter trains hard on the piano preparing stage recitals.	nouns
+608	1	ทำตาม	to fulfill	พนักงานทำตามคำแนะนำของผู้จัดการอย่างเคร่งครัด.	Employees follow the manager's instructions strictly.	verbs
+609	1	อากาศหนาว	it's cold	บนยอดดอยอากาศหนาวมากในตอนกลางคืนจนน้ำค้างกลายเป็นเกล็ด.	On the mountain summit it's cold at night until dew turns to frost.	others
+610	1	นอกจากว่า	except that	พวกเราพร้อมออกเดินทางตามกำหนดเดิม นอกจากว่าสภาพอากาศจะเลวร้ายลง.	We are ready to leave on schedule, except that severe weather might intervene.	conjunctions
+611	1	ตั้งแต่	since	ครอบครัวนี้อาศัยอยู่ในย่านนี้ตั้งแต่สมัยคุณปู่ยังเป็นเด็ก.	This family has lived in this neighborhood since grandfather was a child.	prepositions
+612	1	เข้าใจ	to understand	นักเรียนทุกคนเข้าใจเนื้อหาบทเรียนของวันนี้.	All students understand the lesson content today.	verbs
+613	1	บ่อย	frequently	เขาแวะมาดื่มกาแฟและอ่านหนังสือที่ร้านนี้บ่อยมาก.	He stops by to drink coffee and read books at this shop frequently.	adverbs
+614	1	ใจดี	kind	คุณยายใจดีแบ่งปันขนมหวานให้เด็กๆ ข้างบ้านเสมอ.	The kind grandmother always shares sweets with the neighbor children.	adjectives
+615	1	ลูกชาย	son	ลูกชายของเขาสอบผ่านและเข้าเรียนต่อมหาวิทยาลัยได้สำเร็จ.	His son passed the entrance exam and enrolled into university.	nouns
+616	1	ค้นพบ	to discover	นักวิทยาศาสตร์ค้นพบวิธีรักษาโรคแบบใหม่.	Scientists discovered a new way to treat the disease.	verbs
+617	1	อากาศร้อน	it's hot	วันนี้อากาศร้อนจัด ควรหลีกเลี่ยงการเดินตากแดดตอนเที่ยงวัน.	Today it's hot; one should avoid walking under the midday sun.	others
+618	1	ทันทีที่	as soon as	นักเรียนทุกคนลุกขึ้นยืนทำความเคารพ ทันทีที่ครูเดินก้าวเข้ามาในห้อง.	Students stood up greeting the teacher as soon as she walked into the room.	conjunctions
+619	1	ทั่ว	throughout	ข่าวสารงานเทศกาลปีใหม่แพร่สะพัดไปทั่วเมืองอย่างรวดเร็ว.	News about the New Year festival spread throughout the town quickly.	prepositions
+620	1	เสนอ	to offer	บริษัทเสนอเงินเดือนสูงเพื่อดึงดูดผู้สมัครฝีมือดี.	The company offers a high salary to attract skilled applicants.	verbs
+621	1	โดยเฉพาะ	particularly	ผลไม้เมืองร้อนได้รับความนิยมมากโดยเฉพาะมะม่วงสุก.	Tropical fruits are popular, particularly ripe mangoes.	adverbs
+622	1	กระปรี้กระเปร่า	energetic	การดื่มน้ำเย็นและการยืดเส้นยืดสายทำให้เขารู้สึกกระปรี้กระเปร่า.	Drinking cold water and stretching made him feel energetic.	adjectives
+623	1	พี่สาว	older sister	พี่สาวกำลังเลือกซื้อของขวัญวันเกิดชิ้นพิเศษให้น้องสาวคนเล็ก.	Older sister is browsing special birthday gifts for little sisters.	nouns
+624	1	เตรียม	to prepare	แม่เตรียมวัตถุดิบทำกับข้าวสำหรับมื้อเย็น.	Mom prepares cooking ingredients for dinner.	verbs
+625	1	ฉันช่วยอะไรได้บ้าง?	can I help you?	เห็นคุณยืนมองแผนที่อยู่นาน มีอะไรที่ฉันช่วยอะไรได้บ้าง?	Seeing you gaze at the map so long, is there anything I can help you with?	others
+626	1	ตราบเท่าที่	as long as	เราจะช่วยสนับสนุนทุนการศึกษา ตราบเท่าที่เขายังคงตั้งใจเล่าเรียน.	We will sponsor the scholarship as long as he remains dedicated to his studies.	conjunctions
+627	1	เพื่อประโยชน์ของ	for the benefit of	มาตรการประหยัดพลังงานนี้จัดทำขึ้นเพื่อประโยชน์ของทุกคนในองค์กร.	This energy-saving measure was drafted for the benefit of everyone in the firm.	prepositions
+628	1	ชี้	to point out	ไกด์ชี้มือไปที่ยอดปราสาทบนเนินเขา.	The guide points to the top of the castle on the hill.	verbs
+629	1	ตามธรรมชาติ	naturally	พืชพรรณเจริญเติบโตผลิดอกออกผลขึ้นมาตามธรรมชาติ.	Foliage grows and blossoms naturally.	adverbs
+630	1	โกหก	lying	คนที่มีนิสัยโกหกมักจะสูญเสียความน่าเชื่อถือจากเพื่อนฝูง.	A lying person often loses credibility among peers.	adjectives
+631	1	พี่ชาย	older brother	พี่ชายช่วยน้องทำการบ้านวิชาคณิตศาสตร์ที่โต๊ะเขียนหนังสือ.	Older brother tutors siblings with math exercises at desks.	nouns
+632	1	พัฒนา	to develop	วิศวกรพัฒนาซอฟต์แวร์ให้ทำงานเร็วขึ้นกว่าเดิม.	Engineers develop software to work faster than before.	verbs
+633	1	ยินดีต้อนรับ	welcome	ยินดีต้อนรับแขกผู้มีเกียรติทุกท่านเข้าสู่โรงแรมของเรา.	Welcome, honorable guests, to our hospitality hotel.	others
+634	1	มิฉะนั้น	otherwise	คนขับรถต้องปฏิบัติตามป้ายเตือน มิฉะนั้นอาจเกิดอุบัติเหตุร้ายแรงได้.	Drivers must follow warning signs; otherwise, serious accidents may happen.	conjunctions
+635	1	ระหว่างทาง	on the way to	เราแวะซื้อผลไม้สดริมถนนระหว่างทางไปทะเล.	We stopped to buy fresh fruit by the road on the way to the sea.	prepositions
+636	1	พยายาม	to try	นักกีฬาพยายามฝึกซ้อมทุกวันเพื่อคว้าเหรียญทอง.	The athlete tries to practice every day to win the gold medal.	verbs
+637	1	อย่างเศร้า	sadly	เขามองดูนกตัวน้อยที่บาดเจ็บบนพื้นดินอย่างเศร้าสร้อย.	He looked at the injured little bird on the ground sadly.	adverbs
+638	1	ซื่อสัตย์	honest	พนักงานเก็บเงินที่ซื่อสัตย์ส่งคืนกระเป๋าสตางค์ให้ลูกค้า.	The honest cashier returned the lost wallet to the customer.	adjectives
+639	1	แม่	mother	แม่ตื่นแต่เช้ามาเตรียมข้าวกล่องแสนอร่อยให้ลูกไปโรงเรียน.	Mother wakes up early preparing delicious lunch boxes for school.	nouns
+640	1	ฟัง	to listen	เขาชอบนั่งฟังเพลงเบาๆ ก่อนนอน.	He likes sitting and listening to soft music before bed.	verbs
+641	1	ขอแสดงความยินดี	congratulations	ขอแสดงความยินดีกับความสำเร็จในการสอบเข้ามหาวิทยาลัยในครั้งนี้.	Congratulations on your success in passing the university entrance exam.	others
+642	1	ถ้า...ก็	provided that	ถ้าคุณเตรียมเอกสารพร้อมครบถ้วน เจ้าหน้าที่ก็จะอนุมัติคำร้องทันที.	Provided that you prepare all documents, the officer will approve your request.	conjunctions
+643	1	แทนที่	instead of	เขาเลือกดื่มน้ำเปล่าสะอาดแทนที่น้ำอัดลมที่มีน้ำตาลสูง.	He chose to drink clean plain water instead of sugary soda.	prepositions
+644	1	เล่น	to play	เด็กๆ วิ่งเล่นฟุตบอลในสนามหญ้า.	The children run around playing football on the grass pitch.	verbs
+645	1	กัน	each other	เพื่อนสนิทสองคนพูดคุยและปรึกษากันอย่างเปิดอก.	Two close friends talked and consulted with each other candidly.	pronouns
+646	1	อย่างมีความสุข	happily	ครอบครัวนั่งร่วมรับประทานอาหารค่ำอย่างมีความสุข.	The family sat dining together at dinner happily.	adverbs
+647	1	น่าเบื่อ	boring	การนั่งฟังบรรยายที่ยาวนานโดยไม่มีการพักเป็นเรื่องน่าเบื่อ.	Sitting through long lectures without breaks is boring.	adjectives
+648	1	พ่อ	father	พ่อสอนลูกชายให้หัดขี่จักรยานสองล้อในสวนสาธารณะ.	Father teaches his son to ride two-wheeled bikes at the public park.	nouns
+649	1	ชอบ	to like	เด็กๆ ชอบกินไอศกรีมรสช็อกโกแลตมาก.	Children like eating chocolate ice cream very much.	verbs
+650	1	ดูแลตัวเองด้วยนะ	take care	ช่วงนี้อากาศเปลี่ยนแปลงบ่อย เดินทางไกลก็ดูแลตัวเองด้วยนะ.	The weather changes often; traveling far, take care of yourself too.	others
+651	1	เนื่องจากว่า	due to the fact that	โรงเรียนต้องปิดการสอนชั่วคราว เนื่องจากว่ามีน้ำท่วมขังรอบอาคาร.	The school suspended classes due to the fact that floodwaters surrounded the halls.	conjunctions
+652	1	สนับสนุน	in favor of	ประชาชนส่วนใหญ่ลงคะแนนสนับสนุนการสร้างสวนสาธารณะแห่งใหม่.	Most citizens voted in favor of constructing the new public park.	prepositions
+653	1	ช่วย	to help	โปรดช่วยเปิดหน้าต่างบานนั้นให้หน่อย.	Please help open that window for a moment.	verbs
+654	1	ผู้อื่น	others	เราควรเคารพความคิดเห็นและสิทธิส่วนบุคคลของผู้อื่น.	We should respect the opinions and personal rights of others.	pronouns
+655	1	โชคร้าย	unfortunately	โชคร้ายที่ร้านเบเกอรี่เจ้าประจำปิดซ่อมแซมวันนี้.	Unfortunately, the regular bakery shop was closed for maintenance today.	adverbs
+656	1	น่าสนใจ	interesting	สารคดีธรรมชาติชุดนี้นำเสนอเกร็ดความรู้ที่น่าสนใจมากมาย.	This nature documentary presents an array of interesting facts.	adjectives
+657	1	เรื่องราว	story	คุณปู่เล่าเรื่องราวชีวิตในอดีตให้หลานๆ ฟังอย่างสนุกสนาน.	Grandfather recounts old stories of youth to grandchildren delightfully.	nouns
+658	1	จ่าย	to pay	เขาจ่ายเงินค่าอาหารด้วยบัตรเครดิต.	He paid for the food bill using a credit card.	verbs
+659	1	ฉันรักคุณ	I love you	ขอบคุณที่คอยอยู่เคียงข้างและดูแลกันเสมอมา ฉันรักคุณนะ.	Thank you for standing by and taking care of me; I love you.	others
+660	1	เพราะฉะนั้น	therefore	เราต้องเผื่อเวลาเดินทางช่วงเช้า เพราะฉะนั้นควรตื่นนอนก่อนหกโมง.	We must budget morning commute time; therefore, we should wake up before six.	conjunctions
+661	1	ในเรื่องของ	with regard to	ในเรื่องของความสะอาด ร้านอาหารแห่งนี้ผ่านเกณฑ์มาตรฐานระดับสูง.	With regard to cleanliness, this restaurant passed high standard criteria.	prepositions
+662	1	ใช้	to use	คนทำงานใช้คอมพิวเตอร์พิมพ์รายงานประจำวัน.	Workers use computers to type daily reports.	verbs
+663	1	ไม่มีอะไร	nothing	ตรวจดูในตู้เก็บของแล้วพบว่าไม่มีอะไรเสียหายเลย.	Checking inside the locker revealed that nothing was damaged at all.	pronouns
+664	1	แน่นอน	definitely	เขามาร่วมงานเลี้ยงสังสรรค์ฉลองปีใหม่นี้แน่นอน.	He will attend this New Year gathering party definitely.	adverbs
+665	1	ปิด	closed	ร้านสะดวกซื้อต้องปิดประตูซ่อมแซมระบบไฟฟ้าชั่วคราว.	The convenience store had to remain closed to repair electrical systems temporarily.	adjectives
+666	1	ครอบครัว	family	สมาชิกทุกคนในครอบครัวร่วมรับประทานอาหารเย็นพร้อมหน้ากัน.	All members in the family eat dinner gatherings side by side.	nouns
+667	1	วิ่ง	to run	พวกเราออกไปวิ่งออกกำลังกายที่สวนสาธารณะ.	We went out to run for exercise at the public park.	verbs
+668	1	ฉันคิดถึงคุณ	I miss you	ไม่ได้พบหน้ากันหลายเดือน ฉันคิดถึงคุณและครอบครัวของคุณเสมอ.	We haven't seen each other for months; I miss you and your family always.	others
+669	1	ด้วยวิธีที่	in such a way that	ช่างไม้ออกแบบโต๊ะพับ ด้วยวิธีที่สามารถประหยัดพื้นที่จัดเก็บได้มาก.	The carpenter designed folding tables in such a way that stores compactly.	conjunctions
+670	1	เกี่ยวกับ	regarding	นักศึกษาค้นคว้าข้อมูลเพิ่มเติมเกี่ยวกับประวัติศาสตร์ท้องถิ่นในหอสมุด.	Students researched extra details regarding local history in the library.	prepositions
+671	1	กำกับ	to direct	เขาทำหน้าที่กำกับภาพยนตร์เรื่องใหม่นี้.	He acts to direct this new movie.	verbs
+672	1	ไม่มีใคร	nobody	ไม่มีใครอยู่ในห้องทำงานเลยเพราะถึงเวลาพักกลางวันแล้ว.	There is nobody in the office because it is already lunchtime.	pronouns
+673	1	น่าจะ	probably	พัสดุที่คุณสั่งซื้อน่าจะมาส่งถึงบ้านในวันพรุ่งนี้.	The parcel you ordered will probably arrive at home tomorrow.	adverbs
+674	1	เปิด	open	ประตูหน้าต่างทุกบานเปิดกว้างเพื่อรับลมเย็นยามสาย.	All doors and windows are open wide to catch the late morning breeze.	adjectives
+675	1	ถนน	street	มีร้านค้าและแผงลอยเปิดขายของเรียงรายอยู่สองข้างถนน.	Shops and retail stalls open lined along both sides of streets.	nouns
+676	1	เกิด	to be born	ลูกสุนัขเพิ่งเกิดมาได้เพียงสามสัปดาห์.	The puppy was born just three weeks ago.	verbs
+677	1	ไปกันเถอะ	let's go	รถไฟกำลังจะเทียบชานชาลาแล้ว รีบหยิบกระเป๋าแล้วไปกันเถอะ.	The train is about to dock at the platform; grab bags and let's go.	others
+678	1	ดังนั้นจึง	so that	สะพานไม้ชำรุดเสียหาย ดังนั้นจึงต้องปิดการจราจรชั่วคราวเพื่อซ่อมแซม.	The wooden bridge was damaged, so that traffic had to be closed for repairs.	conjunctions
+679	1	ด้านล่าง	below	ห้องออกกำลังกายของอาคารตั้งอยู่ด้านล่างบริเวณชั้นใต้ดิน.	The building gym is located below in the basement area.	prepositions
+680	1	ไปถึง	to reach	รถไฟไปถึงสถานีปลายทางตรงเวลาพอดี.	The train reached the terminal station right on time.	verbs
+681	1	บางสิ่ง	something	มีบางสิ่งเคลื่อนไหวอยู่ใต้พุ่มไม้หลังบ้านตอนพลบค่ำ.	There was something moving under the backyard bushes at dusk.	pronouns
+682	1	อย่างเป็นไปได้	possibly	การประชุมอาจจะเลื่อนเวลาออกไปก่อนอย่างเป็นไปได้.	The meeting could possibly be postponed for the time being.	adverbs
+683	1	จน	poor	ครอบครัวที่ยากจนยังคงได้รับความช่วยเหลือเรื่องอาหารแห้ง.	The poor family still receives assistance with dry rations.	adjectives
+684	1	รถ	car	พ่อล้างทำความสะอาดรถคันใหม่ในโรงจอดรถทุกวันเสาร์.	Father washes the new car clean inside the garage every Saturday.	nouns
+685	1	ศึกษา	to study	นักศึกษาตั้งใจศึกษาค้นคว้าข้อมูลในหอสมุด.	The university students intend to study and research information in the library.	verbs
+686	1	ไม่เป็นไร	it's okay	ไม่ต้องกังวลเรื่องที่ทำแก้วน้ำร้าว ไม่เป็นไรเลย เดี๋ยวซื้อใหม่ได้.	Don't worry about cracking the glass; it's okay, we can buy a new one.	others
+687	1	แม้ว่ามากเพียงใด	no matter how much	แม้ว่ามากเพียงใดก็ตาม เราก็จะไม่ยอมแพ้ต่ออุปสรรคตรงหน้า.	No matter how much hardship there is, we will not surrender to obstacles.	conjunctions
+688	1	แม้ว่า	despite	แม้ว่าฝนจะตกพรำๆ นักกีฬาก็ยังคงฝึกซ้อมกลางแจ้งต่อไป.	Despite the light rain, athletes continued training outdoors.	prepositions
+689	1	จำได้	to recognize	ฉันจำได้ว่าเคยพบเขาที่ห้องสมุดเมื่อปีก่อน.	I recognize having met him at the library last year.	verbs
+690	1	บางคน	someone	บางคนชอบอ่านหนังสือเงียบๆ อยู่ที่มุมห้องสมุด.	Some people like reading books quietly at the library corner.	pronouns
+691	1	อย่างช้าๆ	slowly	คนขับรถชะลอความเร็วแล่นผ่านชุมชนอย่างช้าๆ.	The driver slowed down, cruising through the community slowly.	adverbs
+692	1	รวย	rich	เศรษฐีใจบุญที่ร่ำรวยบริจาคเงินสร้างโรงเรียนในชนบท.	The rich philanthropist donated money to build a rural school.	adjectives
+693	1	คืน	night	คืนนี้ท้องฟ้าโปร่งใสจนมองเห็นแสงดาวส่องประกายระยิบระยับ.	Tonight the skies are cloudless, revealing sparkling stars clearly.	nouns
+694	1	สัมผัส	to touch	มือของเขาเริ่มสัมผัสผิวน้ำอันเย็นเฉียบ.	His hand began to touch the icy water surface.	verbs
+695	1	พูดว่าอย่างไร?	how do you say?	คำศัพท์คำนี้ในภาษาอังกฤษออกเสียงและพูดว่าอย่างไร?	How do you pronounce and say this vocabulary word in English?	others
+696	1	อย่างไรก็ตาม	however	เส้นทางขึ้นเขาชันและลื่น อย่างไรก็ตามพวกเขาก็เดินขึ้นไปถึงยอดได้.	The mountain trail was steep and slick; however, they reached the summit.	conjunctions
+697	1	ทางขวา	to the right of	ตู้เอทีเอ็มตั้งอยู่ทางขวาของประตูทางเข้าซูเปอร์มาร์เก็ต.	The automated teller machine is located to the right of the supermarket entrance.	prepositions
+698	1	ถาม	to ask	นักท่องเที่ยวถามทางไปสถานีรถไฟ.	The tourist asks for directions to the train station.	verbs
+699	1	ทุกสิ่ง	everything	จัดเก็บทุกสิ่งเข้าที่อย่างเป็นระเบียบเรียบร้อยก่อนปิดห้อง.	Organize everything in its place neatly before closing the room.	pronouns
+700	1	อย่างรวดเร็ว	quickly	เจ้าหน้าที่ดับเพลิงควบคุมไฟป่าได้อย่างรวดเร็วก่อนลุกลาม.	Firefighters controlled the forest fire quickly before it spread.	adverbs
+701	1	ไม่รู้จัก	unknown	นักเดินทางเดินหลงเข้าไปในตรอกที่ไม่รู้จักเพียงลำพัง.	The traveler wandered alone into an unknown alley.	adjectives
+702	1	น้ำ	water	เราควรดื่มน้ำสะอาดบริสุทธิ์วันละหลายแก้วเพื่อสุขภาพ.	We ought to drink pure water glasses daily for good health.	nouns
+703	1	อธิบาย	to explain	ครูอธิบายบทเรียนอย่างละเอียดให้นักเรียนฟัง.	The teacher explains the lesson thoroughly to the students.	verbs
+704	1	คุณพูดว่าอะไร?	what did you say?	ข้างนอกมีเสียงฟ้าร้องดังกลบ คุณพูดว่าอะไรนะเมื่อสักครู่นี้?	Thunder outside drowned out the sound; what did you say just now?	others
+705	1	มากเท่ากับ	as much as	เขาทำงานหนักเพื่อความก้าวหน้า มากเท่ากับที่เขาใส่ใจดูแลครอบครัว.	He works hard for advancement, as much as he cares for his family.	conjunctions
+706	1	ทางซ้าย	to the left of	เลี้ยวรถไปทางซ้ายของสี่แยกเพื่อเข้าสู่ถนนสายหลัก.	Turn the car to the left of the intersection to enter the main highway.	prepositions
+707	1	ประสบความสำเร็จ	to achieve	เธอพยายามอย่างหนักจนประสบความสำเร็จในการเรียน.	She worked hard until she succeeded in her studies.	verbs
+708	1	ทุกคน	everyone	ทุกคนพร้อมใจกันช่วยทำความสะอาดลานหน้าหมู่บ้าน.	Everyone willingly helped clean up the village square.	pronouns
+709	1	อย่างชัดเจน	clearly	ครูเขียนคำอธิบายบนกระดานดำให้นักเรียนอ่านอย่างชัดเจน.	The teacher wrote explanations on the blackboard clearly for students.	adverbs
+710	1	มีชื่อเสียง	famous	เขาเป็นนักร้องที่มีชื่อเสียงโด่งดังไปทั่วทั้งภูมิภาค.	He is a famous singer renowned across the entire region.	adjectives
+711	1	เมือง	city	เมืองนี้มีระบบขนส่งสาธารณะที่สะดวกรวดเร็วและสะอาด.	This city possesses public transport links that run fast and clean.	nouns
+712	1	ยอมรับ	to accept	เขาพร้อมยอมรับความผิดพลาดของตัวเอง.	He is ready to accept his own mistakes.	verbs
+713	1	ฉันกำลังกลับบ้าน	I'm going home	เลิกงานเรียบร้อยแล้วและฉันกำลังกลับบ้านทางรถไฟฟ้าใต้ดิน.	Work is done, and I'm going home via the underground subway.	others
+714	1	แม้แต่	even	ถนนสายนี้มืดสนิทในตอนดึก แม้แต่คนในพื้นที่ก็ยังไม่กล้าเดินผ่าน.	This road is pitch dark late at night; even locals do not dare walk through.	conjunctions
+715	1	เนื่องจาก	because of	เครื่องบินล่าช้าเนื่องจากสภาพอากาศแปรปรวนและมีหมอกลงจัด.	The flight was delayed because of turbulent weather and thick mist.	prepositions
+716	1	นำเสนอ	to present	ทีมงานนำเสนอแผนงานใหม่ต่อผู้จัดการ.	The team presents the new plan to the manager.	verbs
+717	1	ตัวเอง	oneself	ทุกคนควรดูแลรักษาสุขภาพร่างกายของตัวเองให้แข็งแรง.	Everyone should take good care of the health of oneself to stay strong.	pronouns
+718	1	อย่างเดียว	simply	การฝึกซ้อมอย่างเดียวไม่พอ ต้องมีความเข้าใจร่วมด้วย.	Simply practicing alone is not enough; there must also be understanding.	adverbs
+719	1	ขม	bitter	ยาต้มสมุนไพรหม้อนี้มีรสชาติขมจัดแต่รักษาโรคได้ดี.	This pot of boiled herbal medicine tastes very bitter but cures illness well.	adjectives
+720	1	สิทธิ / กฎหมาย	right or law	ประชาชนทุกคนย่อมได้รับการคุ้มครองภายใต้สิทธิ / กฎหมาย.	All citizens naturally receive protection under equal rights and laws.	nouns
+721	1	ดาวน์โหลด	to download	นักเรียนดาวน์โหลดเอกสารประกอบการเรียนจากระบบ.	Students download study materials from the system.	verbs
+722	1	คุณกำลังทำอะไร?	what are you doing?	เสียงเปิดเอกสารดังอยู่นาน คุณกำลังทำอะไรอยู่ในห้องทำงาน?	Paper rustling lasted a while; what are you doing in the office?	others
+723	1	แต่ยัง	but also	การออกกำลังกายนอกจากทำให้ร่างกายแข็งแรง แต่ยังช่วยผ่อนคลายจิตใจ.	Exercise makes the body strong, but also helps relax the mind.	conjunctions
+724	1	ร่วมกับ	together with	เขาทำงานวิจัยชิ้นนี้ร่วมกับอาจารย์ที่ปรึกษาจากมหาวิทยาลัย.	He conducted this research together with an advisor from the university.	prepositions
+725	1	ชาร์จ	to charge	ฉันเสียบสายชาร์จแบตเตอรี่โทรศัพท์มือถือ.	I plugged in the cable to charge the mobile phone battery.	verbs
+726	1	ซึ่ง	which	โครงการนี้ได้รับการอนุมัติงบประมาณ ซึ่งเป็นข่าวดีของชุมชน.	This project was approved for funding, which is good news for the community.	pronouns
+727	1	เพียง	only	เขาขอเวลาเตรียมตัวนำเสนอผลงานเพียงสิบนาทีเท่านั้น.	He asked for only ten minutes to prepare his presentation.	adverbs
+728	1	หวาน	sweet	มะม่วงสุกจานนี้มีรสชาติหวานฉ่ำชื่นใจมาก.	This plate of ripe mango tastes wonderfully juicy and sweet.	adjectives
+729	1	เพื่อนผู้หญิง	female friend	เธอชวนเพื่อนผู้หญิงไปเดินซื้อเสื้อผ้าใหม่ที่ศูนย์การค้า.	She invited a female friend to go shop for clothes at the mall.	nouns
+730	1	ใช้จ่าย	to spend	อย่าใช้จ่ายเงินเกินตัวจนเป็นหนี้.	Do not spend beyond your means and fall into debt.	verbs
+731	1	ฉันไม่ชอบมัน	I don't like it	กาแฟแก้วนี้หวานแสบคอเกินไป ฉันไม่ชอบมันเลย.	This cup of coffee is overly cloying; I don't like it at all.	others
+732	1	ไม่เพียงแต่	not only	เขาไม่เพียงแต่มีน้ำใจดี แต่ยังมีความรับผิดชอบต่องานสูงมาก.	He is not only kind-hearted, but also highly responsible toward work.	conjunctions
+733	1	ข้างหลัง	behind	มีแปลงปลูกผักสวนครัวขนาดย่อมอยู่ข้างหลังห้องครัว.	There is a modest kitchen garden plot behind the kitchen.	prepositions
+734	1	ออมเงิน	to save money	เด็กดีหยอดกระปุกเพื่อออมเงินทุกวัน.	The good child drops coins in the piggy bank to save money every day.	verbs
+735	1	ที่	that	เขาคืนหนังสือเล่มที่ฉันให้ยืมไปเมื่อสัปดาห์ก่อน.	He returned the book that I lent him last week.	pronouns
+736	1	อย่างแน่นอน	definitely	ทีมของเราจะคว้าชัยชนะในการแข่งขันรอบนี้อย่างแน่นอน.	Our team will win the match this round definitely.	adverbs
+737	1	ว่างเปล่า	empty	ห้องทำงานดูเงียบเหงาและว่างเปล่าหลังจากทุกคนกลับบ้าน.	The office looks quiet and empty after everyone has gone home.	adjectives
+738	1	เพื่อนผู้ชาย	male friend	เพื่อนผู้ชายของฉันอาสาช่วยยกของหนักขึ้นท้ายรถบรรทุก.	My male friend volunteered to help lift heavy luggage onto truck beds.	nouns
+739	1	คำนวณ	to calculate	วิศวกรคำนวณค่าใช้จ่ายในการก่อสร้าง.	The engineer calculates the expenses for construction.	verbs
+740	1	ฉันชอบมัน	I like it	รสชาติของอาหารจานนี้เข้มข้นกลมกล่อมดี ฉันชอบมันมาก.	The flavor of this dish is rich and well-rounded; I like it a lot.	others
+741	1	มากยิ่งขึ้น	even more	หากขยันฝึกฝนซ้อมเปียโนทุกวัน ฝีมือของเธอก็จะพัฒนามากยิ่งขึ้น.	If you practice the piano every day, your skills will improve even more.	conjunctions
+742	1	กลาง	in the middle of	มีน้ำพุหินอ่อนสวยงามตั้งอยู่กลางสวนหย่อมของโรงแรม.	A beautiful marble fountain stands in the middle of the hotel garden.	prepositions
+743	1	อดทน	to endure	เขาอดทนต่อความยากลำบากเพื่ออนาคต.	He endures hardships for the sake of the future.	verbs
+744	1	ไหน	which	เส้นทางสายไหนที่จะพาพวกเราไปถึงสถานีรถไฟได้เร็วที่สุด.	Which route will take us to the train station the fastest?	pronouns
+745	1	ประมาณ	approximately	การเดินทางโดยรถไฟใช้เวลาประมาณสองชั่วโมงครึ่ง.	Traveling by train takes approximately two and a half hours.	adverbs
+746	1	เต็ม	full	ลานจอดรถของห้างสรรพสินค้ามีรถจอดอยู่จนเต็มทุกช่อง.	The mall parking lot is completely full of parked cars in every slot.	adjectives
+747	1	ชื่อ	name	โปรดเขียนชื่อและนามสกุลด้วยตัวบรรจงบนใบสมัคร.	Please write your first name and last name neatly on application forms.	nouns
+748	1	เดินทาง	to travel	ครอบครัวเราเดินทางไปเที่ยวภูเขาช่วงวันหยุด.	Our family travels to visit the mountains over the holidays.	verbs
+749	1	ฉันเหนื่อย	I'm tired	แบกสัมภาระขึ้นบันไดสูงชันจนฉันเหนื่อยแทบหมดแรง.	Carrying baggage up steep steps made me so tired, almost out of energy.	others
+750	1	นอกจากนี้	besides	อาหารร้านนี้อร่อยมาก นอกจากนี้ราคายังย่อมเยาและบริการดีเยี่ยม.	Food in this shop is delicious; besides, prices are affordable and service is great.	conjunctions
+751	1	ผ่าน	through	แสงแดดยามเช้าส่องทะลุผ่านม่านหน้าต่างเข้ามาในห้องนอน.	Morning sunlight beams through window drapes into the bedroom.	prepositions
+752	1	รอ	to wait	พวกเรายืนรอรถประจำทางที่ป้าย.	We stand waiting for the bus at the bus stop.	verbs
+753	1	อะไร	what	คุณต้องการสั่งอะไรมารับประทานเพิ่มเติมไหมครับ.	What would you like to order to eat additionally?	pronouns
+754	1	พอ	enough	เงินสดที่พกติดตัวมามีจำนวนพอสำหรับค่าอาหารกลางวัน.	The cash carried along is enough for the lunch cost.	adverbs
+755	1	สกปรก	dirty	อย่าสวมรองเท้าที่เปื้อนโคลนสกปรกเข้ามาเดินในบ้าน.	Do not wear muddy, dirty shoes to walk inside the house.	adjectives
+756	1	ข้อเท็จจริง	fact	รายงานชิ้นนี้สรุปข้อเท็จจริงจากการสำรวจตลาดอย่างเป็นกลาง.	This paper sums up facts from market surveys objectively.	nouns
+757	1	เก็บ	to pick up	เด็กๆ ช่วยกันเก็บของเล่นเข้ากล่อง.	The children helped collect the toys into the box.	verbs
+758	1	ฉันง่วงนอน	I'm sleepy	เมื่อคืนนอนดึกไปหน่อย พอถึงช่วงบ่ายฉันง่วงนอนมาก.	Last night I stayed up late; by afternoon, I'm feeling very sleepy.	others
+759	1	ไม่ว่าจะว่า	regardless of	ไม่ว่าจะว่าอย่างไร โครงการอนุรักษ์ป่าไม้ก็ยังคงต้องดำเนินต่อไป.	Regardless of what is said, the forest conservation project must continue.	conjunctions
+760	1	ตาม	according to	พนักงานทุกคนต้องปฏิบัติตามกฎระเบียบความปลอดภัยอย่างเคร่งครัด.	All employees must act according to safety regulations strictly.	prepositions
+761	1	ส่ง	to send	เขาไปที่ทำการไปรษณีย์เพื่อส่งจดหมาย.	He went to the post office to send a letter.	verbs
+762	1	ใคร	who	ใครเป็นคนลืมกุญแจรถทิ้งไว้บนโต๊ะอาหารในครัว.	Who left the car keys behind on the kitchen dining table?	pronouns
+763	1	มากเกินไป	too much	อย่าเติมเกลือลงในแกงมากเกินไปเพราะจะเค็มจัด.	Do not put too much salt into the curry because it will taste overly salty.	adverbs
+764	1	สะอาด	clean	จานชามในห้องครัวถูกล้างและเช็ดจนแห้งสะอาดปราศจากคราบมัน.	Kitchen dishware got washed and dried clean, devoid of grease stains.	adjectives
+765	1	เด็กผู้หญิง	girl	เด็กผู้หญิงคนนั้นถือช่อดอกกุหลาบสีชมพูเดินเข้ามาในห้อง.	That girl carried a bouquet of pink roses walking into the room.	nouns
+766	1	แยก	to separate	เราควรแยกขยะรีไซเคิลก่อนทิ้ง.	We should separate recyclable waste before throwing it away.	verbs
+767	1	ฉันกระหายน้ำ	I'm thirsty	อากาศตอนบ่ายร้อนจัดจนฉันกระหายน้ำมาก ขอน้ำเย็นสักแก้วเถอะ.	Afternoon air is scorching and I'm thirsty; please give me cold water.	others
+768	1	ไม่ว่าจะเป็น	whether it be	ทุกคนต้องปฏิบัติตามกฎ ไม่ว่าจะเป็นพนักงานใหม่หรือผู้จัดการ.	Everyone must follow the rules, whether it be a new employee or a manager.	conjunctions
+769	1	เหมือน	like	เด็กน้อยยิ้มแย้มแจ่มใสดูสดชื่นเหมือนดอกไม้แรกแย้มยามเช้า.	The toddler smiles brightly, looking fresh like morning blooming flowers.	prepositions
+770	1	รวบรวม	to gather	อาจารย์รวบรวมรายงานจากนักเรียนทุกคน.	The teacher gathers reports from all students.	verbs
+771	1	แก	you	เย็นนี้แกจะไปออกกำลังกายที่สนามกีฬากับพวกเราไหม.	Will you go exercise at the sports stadium with us this evening?	pronouns
+772	1	น้อยกว่า	less	รถยนต์รุ่นใหม่นี้ใช้น้ำมันน้อยกว่ารุ่นเดิมเกือบครึ่ง.	This new car model consumes less fuel than the old model by almost half.	adverbs
+773	1	นุ่ม	soft	เด็กน้อยชอบนอนกอดตุ๊กตาหมีขนปุยเนื้อนุ่มบนเตียงนอน.	The infant cuddles the soft fluffy teddy bear on the crib cot.	adjectives
+774	1	เด็กผู้ชาย	boy	เด็กผู้ชายตัวเล็กกำลังวิ่งไล่ตามลูกฟุตบอลอย่างสนุกสนาน.	The little boy is running after the soccer ball excitedly.	nouns
+775	1	จำ	to remember	เขาจำเบอร์โทรศัพท์ของเพื่อนได้แม่นยำ.	He remembers his friend's phone number accurately.	verbs
+776	1	ฉันหิว	I'm hungry	พวกเราเดินเที่ยวมาทั้งวันจนฉันหิวข้าวแล้วตอนนี้.	We strolled the whole day until I'm hungry for a meal right now.	others
+777	1	หรือไม่ก็	or else	เราควรไปขึ้นรถไฟเที่ยวเช้า หรือไม่ก็รอขึ้นเที่ยวบ่ายสองโมง.	We should catch the morning train, or else wait for the two o'clock afternoon one.	conjunctions
+778	1	ไกลจาก	far from	โรงแรมแห่งนี้ตั้งอยู่ไกลจากชายหาดจึงมีบรรยากาศที่เงียบสงบ.	This hotel is located far from the beach, thus having a peaceful ambiance.	prepositions
+779	1	ลืม	to forget	ฉันลืมกุญแจห้องไว้ข้างใน.	I forgot my room keys inside.	verbs
+780	1	ท่าน	you	ขอเชิญท่านร่วมเป็นเกียรติในพิธีเปิดอาคารใหม่.	You are cordially invited to honor us at the new building opening ceremony.	pronouns
+781	1	มากกว่า	more	เขาชอบดื่มชาเขียวร้อนมากกว่ากาแฟดำเข้มข้น.	He prefers drinking hot green tea more than strong black coffee.	adverbs
+782	1	แข็ง	hard	ก้อนหินริมลำธารมีเนื้อแน่นและแข็งจนทุบไม่แตกง่ายๆ.	River bank boulders possess dense mass, rock hard against easy cracking.	adjectives
+783	1	บัญชี	account	เขาเปิดบัญชีเงินฝากประจำเล่มใหม่กับธนาคารใกล้บ้าน.	He opened a new fixed deposit account at a branch near home.	nouns
+784	1	สงสัย	to doubt	ตำรวจสงสัยพฤติกรรมของชายแปลกหน้า.	The police doubted the behavior of the strange man.	verbs
+785	1	ฉันไม่รู้	I don't know	เรื่องกำหนดการสัมมนาครั้งใหม่ฉันไม่รู้ ต้องลองถามหัวหน้าดู.	Regarding the new seminar schedule, I don't know; ask the lead.	others
+786	1	ไม่ว่าจะ	no matter if	ไม่ว่าจะเกิดปัญหาอะไรขึ้น ครอบครัวจะคอยอยู่เคียงข้างเธอเสมอ.	No matter if problems arise, the family will always stand by your side.	conjunctions
+787	1	ใกล้	near	ร้านสะดวกซื้อเปิดใหม่อยู่ใกล้กับทางเข้าหมู่บ้านของเรา.	The newly opened convenience store is near the entrance of our village.	prepositions
+788	1	อาบน้ำ	to bathe	ฉันอาบน้ำอุ่นหลังจากกลับมาจากข้างนอก.	I take a warm bath after returning from outside.	verbs
+789	1	หนู	I	หนูทำการบ้านวิชาคณิตศาสตร์เสร็จเรียบร้อยแล้วค่ะคุณแม่.	I have finished my math homework already, Mother.	pronouns
+790	1	น้อย	a little	เขากินข้าวน้อยลงเพราะกำลังรู้สึกไม่ค่อยสบาย.	He ate a little less food because he was feeling slightly unwell.	adverbs
+791	1	มืด	dark	พอตะวันลับขอบฟ้า ทางเดินในซอยเปลี่ยวก็เปลี่ยนเป็นมืดสนิท.	Once the sun set beyond horizons, the alleyway turned pitch dark.	adjectives
+792	1	ปัญหา	problem	ทุกคนช่วยกันระดมความคิดเพื่อหาทางคลี่คลายปัญหาเรื่องน้ำท่วม.	Everyone brainstorms together to resolve flooding problems.	nouns
+793	1	โกนหนวด	to shave	พ่อโกนหนวดทุกเช้าก่อนไปทำงาน.	Father shaves his beard every morning before going to work.	verbs
+794	1	ตอนนี้กี่โมง?	what time is it?	ลืมใส่นาฬิกาข้อมือมา ไม่ทราบว่าตอนนี้กี่โมงแล้ว?	I forgot my wristwatch; do you know what time it is right now?	others
+795	1	หรือไม่	or not	โปรดแจ้งยืนยันว่าคุณจะมาร่วมงานเลี้ยงรุ่นหรือไม่ภายในสัปดาห์นี้.	Please confirm whether you will attend the reunion party or not by this week.	conjunctions
+796	1	ท่ามกลาง	among	บ้านไม้หลังเล็กตั้งอยู่อย่างสงบสุขท่ามกลางสวนผลไม้ร่มรื่น.	The small wooden cottage is situated peacefully among shady orchards.	prepositions
+797	1	หวีผม	to comb hair	น้องสาวหวีผมหน้ากระจกทุกเช้า.	Little sister combs her hair in front of the mirror every morning.	verbs
+798	1	ผม	I	ผมขออนุญาตส่งรายงานการประชุมผ่านทางอีเมลครับ.	I ask for permission to send the meeting report via email.	pronouns
+799	1	มาก	a lot	วันนี้มีลูกค้าแวะเวียนมาอุดหนุนที่ร้านมากเป็นพิเศษ.	Today there are customers stopping by to support the shop a lot especially.	adverbs
+800	1	ชัดเจน	clear	อาจารย์อธิบายเนื้อหาและยกตัวอย่างประกอบได้ชัดเจนเข้าใจง่าย.	The lecturer clarifies subject chapters, furnishing clear explanations.	adjectives
+801	1	ด้าน	side	บ้านหลังนี้มีสวนหย่อมร่มรื่นอยู่ทางด้านทิศตะวันออก.	This house features a breezy garden patch situated on the east side.	nouns
+802	1	วาง	to place	เขาวางแก้วน้ำไว้บนโต๊ะทำงาน.	He placed the glass of water on the desk.	verbs
+803	1	ช่วยฉันหน่อยได้ไหม?	can you help me?	กระเป๋าเดินทางใบนี้หนักเกินไป ช่วยฉันหน่อยได้ไหม?	This suitcase is too heavy; can you help me for a moment?	others
+804	1	เพื่อว่า	in order that	เขาอธิบายแผนงานอย่างละเอียด เพื่อว่าทุกคนจะได้เข้าใจตรงกัน.	He explained the plan thoroughly in order that everyone would understand uniformly.	conjunctions
+805	1	ข้างนอก	outside of	อย่าวางรองเท้าทิ้งไว้ข้างนอกบ้านตอนฝนกำลังจะตก.	Do not leave shoes outside of the house when it is about to rain.	prepositions
+806	1	สร้าง	to build	คนงานช่วยกันสร้างสะพานข้ามคลอง.	The workers helped build a bridge over the canal.	verbs
+807	1	พวกเราเอง	ourselves	พวกเราสามารถปรุงอาหารมื้อเย็นนี้ได้ด้วยพวกเราเอง.	We can cook this dinner by ourselves.	pronouns
+808	1	ไกล	far	หมู่บ้านบนภูเขาอยู่ห่างไกลจากตัวเมืองใหญ่หลายร้อยกิโลเมตร.	The mountain village is located far from the big city by hundreds of kilometers.	adverbs
+809	1	หนาว	cold	ลมพัดแรงบนยอดดอยทำให้อากาศยามค่ำคืนหนาวเหน็บจับใจ.	Gale winds howling on mountain peaks turn night temperatures bitterly cold.	adjectives
+810	1	ตัวอย่าง	example	ครูยกตัวอย่างโจทย์เลขง่ายๆ เพื่อให้นักเรียนเข้าใจหลักการ.	The teacher gives an easy math example so students grasp fundamentals.	nouns
+811	1	เปิด	to turn on	เขาเปิดพัดลมเพื่อคลายร้อน.	He turned on the fan to cool down.	verbs
+812	1	ฉันไม่เข้าใจ	I don't understand	กรุณาอธิบายอีกครั้งได้ไหม เพราะฉันไม่เข้าใจขั้นตอนสุดท้ายนี้เลย.	Could you explain again? I don't understand this last step at all.	others
+813	1	เพื่อที่ว่า	so that	เราต้องรีบออกเดินทางแต่เช้าตรู่ เพื่อที่ว่าพวกเราจะได้ไปถึงก่อนเที่ยง.	We must set out early in the morning so that we can arrive before noon.	conjunctions
+814	1	ข้างใน	inside of	กรุณารออยู่ข้างในห้องรับรองเพื่อดื่มน้ำชาคลายร้อน.	Please wait inside of the reception room to sip tea and cool down.	prepositions
+815	1	ปิด	to turn off	อย่าลืมปิดไฟก่อนออกจากห้อง.	Do not forget to turn off the lights before leaving the room.	verbs
+816	1	มัน	it	ลูกแมวตัวนี้น่ารักมาก มันชอบนอนเล่นบนพรม.	This kitten is very cute; it likes sleeping on the rug.	pronouns
+817	1	ใกล้	near	บ้านพักของฉันตั้งอยู่ใกล้กับสถานีรถไฟใต้ดินมาก.	My residence is situated very near the subway station.	adverbs
+818	1	ร้อน	hot	แสงแดดตอนเที่ยงวันส่องจ้าทำให้อากาศภายนอกร้อนอบอ้าวมาก.	Noontime solar glare shines searingly, making outside air swelteringly hot.	adjectives
+819	1	ประเภท	type	ร้านนี้จำหน่ายเครื่องเขียนหลากหลายประเภทสำหรับนักเรียน.	This shop retails multiple types of stationery for students.	nouns
+820	1	คูณ	to multiply	นักเรียนฝึกท่องสูตรคูณทุกเช้า.	Students practice reciting multiplication tables every morning.	verbs
+821	1	อยู่ที่ไหน?	where is it?	ร้านขายยาที่เปิดตลอดยี่สิบสี่ชั่วโมงในย่านนี้อยู่ที่ไหน?	Where is the twenty-four-hour pharmacy in this neighborhood located?	others
+822	1	เช่นเดียวกับที่	as well as	การว่ายน้ำช่วยเสริมกล้ามเนื้อ เช่นเดียวกับที่การวิ่งช่วยฝึกความอดทน.	Swimming builds muscle, as well as running develops stamina.	conjunctions
+823	1	ข้างหน้า	in front of	มีต้นจำปีขนาดใหญ่ยืนต้นออกดอกหอมอยู่ข้างหน้าตัวบ้าน.	A large white champaka tree stands blooming fragrantly in front of the house.	prepositions
+824	1	ลบ	to subtract	เอาห้าลบสองเหลือเท่ากับสาม.	Subtracting two from five leaves three.	verbs
+825	1	พวกนี้	these	เอกสารสัญญาพวกนี้ต้องมีลายเซ็นรับรองทุกหน้า.	These contract documents must have certified signatures on every page.	pronouns
+826	1	แย่	badly	ผลการทดสอบออกมาแย่เพราะเขาไม่ได้เตรียมตัวมา.	The test result turned out badly because he did not prepare.	adverbs
+827	1	เศร้า	sad	ใบหน้าของเขาดูหม่นหมองและเศร้าเมื่อได้ยินข่าวที่ไม่สู้ดี.	His expression turned gloomy and sad hearing unflattering tidings.	adjectives
+828	1	จุดจบ	end	นิทานเรื่องนี้มีจุดจบที่เปี่ยมไปด้วยรอยยิ้มและความสุข.	This tale meets an end brimming with smiles and gladness.	nouns
+829	1	บวก	to add	ครูสอนให้นักเรียนบวกเลขหลักสิบ.	The teacher teaches the students to add double-digit numbers.	verbs
+830	1	ราคาเท่าไหร่?	how much does it cost?	เสื้อเชิ้ตแขนยาวผ้าฝ้ายสีขาวตัวนี้ราคาเท่าไหร่?	How much does this white long-sleeved cotton shirt cost?	others
+831	1	เช่นเดียวกับ	just as	ต้นไม้ต้องการแสงแดด เช่นเดียวกับที่มนุษย์ต้องการอากาศบริสุทธิ์.	Plants need sunlight, just as human beings require fresh air.	conjunctions
+832	1	ข้างๆ	next to	เขาวางแก้วกาแฟร้อนไว้ข้างๆ สมุดบันทึกบนโต๊ะทำงาน.	He placed the cup of hot coffee next to the notebook on the desk.	prepositions
+833	1	แบ่ง	to divide	แม่แบ่งเค้กให้ลูกทุกคนเท่ากัน.	Mother divided the cake equally for all children.	verbs
+834	1	อันนี้	this one	ขนมปังไส้ฟักทองอันนี้อร่อยและหวานกำลังดี.	This pumpkin-filled bread is delicious and suitably sweet.	pronouns
+835	1	ดี	well	เครื่องยนต์ของรถคันเก่านี้ยังคงทำงานได้ดีเยี่ยม.	The engine of this old car still works extremely well.	adverbs
+836	1	มีความสุข	happy	ทุกคนในครอบครัวยิ้มแย้มและมีความสุขกับการได้รับประทานอาหารพร้อมหน้า.	Everyone in the household grinned, truly happy sharing meals together.	adjectives
+837	1	ชั่วโมง	hour	การเดินทางโดยรถไฟใช้เวลาประมาณสองชั่วโมงถึงจุดหมาย.	Travel by train takes about two hours to reach destinations.	nouns
+838	1	ผสม	to mix	เชฟผสมแป้งกับนมสดในชามใหญ่.	The chef mixes flour and fresh milk in a large bowl.	verbs
+839	1	ขอผ่านหน่อย	excuse me to pass	ทางเดินตรงนี้ค่อนข้างแคบ ขอผ่านหน่อยครับ.	This walkway is quite narrow; excuse me, let me pass, please.	others
+840	1	เหมือนกับว่า	as if	เขารู้จักเส้นทางในเมืองนี้ดีมาก เหมือนกับว่าอาศัยอยู่ที่นี่มานาน.	He knows city alleys very well, as if he had resided here for years.	conjunctions
+841	1	รอบๆ	around	คนสวนปลูกต้นไม้พุ่มดอกสีสดใสไว้รอบๆ สระบัว.	The gardener planted vibrant flowering shrubs around the lotus pond.	prepositions
+842	1	พับ	to fold	พี่สาวพับผ้าห่มบนเตียงอย่างเรียบร้อย.	The older sister folded the blanket on the bed neatly.	verbs
+843	1	พวกนั้น	those	กล่องพัสดุพวกนั้นต้องส่งไปรษณีย์ในวันพรุ่งนี้.	Those parcel boxes must be sent by post tomorrow.	pronouns
+844	1	อย่างนี้	thus	ถ้าทำตามขั้นตอนอย่างนี้งานจะเสร็จเร็วขึ้นมาก.	If you follow steps thus, the work will finish much faster.	adverbs
+845	1	อ่อนแอ	weak	ลูกนกที่เพิ่งฟักออกจากไข่ยังมีร่างกายที่อ่อนแอมาก.	Hatchlings that just cracked shells still possess fragile, weak bodies.	adjectives
+846	1	ผู้คน	people	ผู้คนมากมายต่างพากันออกมาเดินจับจ่ายซื้อของที่ตลาดนัด.	A crowd of people came out to browse and shop at the flea market.	nouns
+847	1	แก้	to untie	เขาพยายามแก้ปมเชือกที่แน่นมาก.	He tried to untie the very tight knot.	verbs
+848	1	ขอโทษนะ	excuse me	ขอโทษนะ ทางไปห้องสมุดประชาชนต้องเดินตรงไปอีกไกลไหม.	Excuse me, is it much farther to walk straight to the public library?	others
+849	1	เว้นแต่	unless	เราจะเริ่มประชุมตรงเวลา เว้นแต่จะมีประกาศเลื่อนกะทันหัน.	We will start the meeting on time, unless an unexpected postponement is announced.	conjunctions
+850	1	ต่อต้าน	against	ชาวบ้านร่วมตัวกันต่อต้านโครงการตัดไม้ทำลายป่าต้นน้ำ.	Villagers rallied against the project logging upstream forests.	prepositions
+851	1	ผูก	to tie	เด็กชายผูกเชือกรองเท้าด้วยตนเอง.	The boy ties his own shoelaces.	verbs
+852	1	อันนั้น	that one	โปรดหยิบหนังสือเล่มหนาอันนั้นส่งให้ฉันที.	Please hand that thick book over to me.	pronouns
+853	1	ด้วย	also	พี่ชายไปซื้อของที่ตลาดและฉันขอไปด้วยคน.	Older brother went shopping at the market, and I asked to go also.	adverbs
+854	1	แข็งแรง	strong	นักกีฬายกน้ำหนักมีโครงสร้างร่างกายกำยำและมีกล้ามเนื้อแข็งแรง.	Weightlifters possess brawny frames with remarkably strong muscles.	adjectives
+855	1	มือ	hand	เด็กๆ ล้างมือด้วยสบู่ทุกครั้งก่อนเริ่มรับประทานอาหาร.	Children wash hands with soap every time before eating food.	nouns
+856	1	ตัด	to cut	ช่างตัดกิ่งไม้แห้งออกจากต้น.	The gardener cuts dry branches off the tree.	verbs
+857	1	ขอโทษ	I'm sorry	ขอโทษที่ทำให้คุณต้องเสียเวลารอนานหน้าสถานีรถไฟ.	I'm sorry for making you waste time waiting long at the train station.	others
+858	1	ในกรณีที่	in case	ในกรณีที่เกิดเหตุเพลิงไหม้ ให้ใช้บันไดหนีไฟแทนการใช้ลิฟต์.	In case of a fire breakout, use emergency fire stairs instead of lifts.	conjunctions
+859	1	เหนือ	over	ฝูงนกบินร่อนอยู่เหนือกิ่งไม้สูงในยามเย็น.	A flock of birds glides over the high branches in the evening.	prepositions
+860	1	โยน	to throw	เขาโยนขวดเปล่าลงในถังขยะ.	He threw the empty bottle into the trash bin.	verbs
+861	1	พวกเขาเอง	themselves	เด็กๆ สามารถจัดโต๊ะทำการบ้านได้ด้วยพวกเขาเอง.	The children can arrange their study desks by themselves.	pronouns
+862	1	ก็ไม่	neither	ฉันไม่ได้ชวนเขาและเขาก็ไม่ติดต่อกลับมาเช่นกัน.	I did not invite him, and neither did he contact back.	adverbs
+863	1	ถูก	cheap	ผักสดที่ตลาดเช้ามีราคาถูกและคุณภาพดีเพราะชาวสวนนำมาขายเอง.	Produce at morning stalls is cheap and quality as growers sell direct.	adjectives
+864	1	จุด	point	ป้ายเตือนระบุว่าเป็นจุดอันตรายที่มีอุบัติเหตุบ่อยครั้ง.	The sign indicates that it is a hazardous point prone to frequent accidents.	nouns
+865	1	ผลัก	to push	ลูกค้าผลักประตูบานใหญ่เข้าไปในร้าน.	The customer pushed the big door to enter the shop.	verbs
+866	1	ได้โปรด	please	ได้โปรดลดเสียงโทรทัศน์ลงเล็กน้อย เพราะเด็กๆ กำลังนอนหลับ.	Please lower the TV volume a bit, because the children are sleeping.	others
+867	1	ถ้า	if	ถ้าวันพรุ่งนี้แดดออก พวกเราจะพากันไปปั่นจักรยานที่สวนสาธารณะ.	If it is sunny tomorrow, we will go cycling together at the park.	conjunctions
+868	1	ใต้	under	ลูกแมวนอนหลับอย่างอบอุ่นอยู่ใต้โต๊ะไม้ในห้องครัว.	The kitten is sleeping warmly under the wooden table in the kitchen.	prepositions
+869	1	ปล่อย	to release	เด็กๆ ปล่อยนกกลับคืนสู่ธรรมชาติ.	The children released the birds back into nature.	verbs
+870	1	ของคุณ	your	ร่มคันยาวลายทางคันนี้เป็นของคุณหรือเปล่า.	Is this long striped umbrella yours?	pronouns
+871	1	เร็วๆนี้	soon	ภาพยนตร์เรื่องใหม่นี้จะเข้าฉายในโรงเร็วๆนี้.	This new movie will be shown in cinemas soon.	adverbs
+872	1	แพง	expensive	นาฬิกาข้อมือเรือนหรูในตู้โชว์มีราคาแพงลิบลิ่วเกินเอื้อม.	The luxury wristwatch displayed behind glass carries an expensive tag.	adjectives
+873	1	งาน	work	เขามีงานค้างต้องสะสางให้เสร็จก่อนวันหยุดสุดสัปดาห์นี้.	He has pending work that must get sorted out before this weekend.	nouns
+874	1	จับ	to grab	เขาจับราวบันไดขณะเดินลง.	He held the handrail while walking down.	verbs
+875	1	ยินดี	you're welcome	ไม่เป็นไรครับ ทางเรายินดีที่ได้มีโอกาสช่วยเหลือเสมอ.	You're welcome; our team is always glad to have the chance to help.	others
+876	1	เมื่อ	when	เมื่อเดินทางถึงสนามบิน กรุณาโทรติดต่อแจ้งให้ครอบครัวทราบด้วย.	When you arrive at the airport, please call to inform the family too.	conjunctions
+877	1	จนถึง	until	ห้องสมุดประชาชนเปิดให้บริการตั้งแต่เช้าจนถึงสองทุ่มทุกวัน.	The public library is open for service from morning until eight at night daily.	prepositions
+878	1	ทำความสะอาด	to clean	พวกเราทำความสะอาดห้องนั่งเล่นทุกวันเสาร์.	We clean the living room every Saturday.	verbs
+879	1	ของพวกเธอ	yours	สัมภาระทั้งหมดที่วางอยู่ตรงนี้เป็นของพวกเธอใช่ไหม.	Is all this luggage sitting here yours?	pronouns
+880	1	งั้น	in that case	ถ้าฝนจะตก งั้นเราพักรออยู่ที่นี่ก่อนเถอะ.	If it is going to rain, in that case let us wait here first.	adverbs
+881	1	เก่า	old	บ้านไม้เก่าแก่ริมคลองหลังนี้สร้างขึ้นมาตั้งแต่สมัยคุณทวด.	This old wooden canal house was constructed back in great-grandfather's era.	adjectives
+882	1	ชีวิต	life	การใช้ชีวิตอย่างเรียบง่ายทำให้เขามีความสงบสุขทางใจ.	Living a simple life gives him profound internal peace.	nouns
+883	1	ทำให้สกปรก	to dirty	รองเท้าเปื้อนโคลนทำให้สกปรกพื้นบ้าน.	Muddy shoes dirtied the floor of the house.	verbs
+884	1	ขอบคุณมาก	thank you very much	ขอบคุณมากสำหรับการต้อนรับที่แสนอบอุ่นในบ้านของคุณ.	Thank you very much for the warm hospitality in your home.	others
+885	1	ในขณะที่	while	เขานั่งจิบชาร้อนเงียบๆ ในขณะที่ฝนกำลังตกหนักอยู่นอกบ้าน.	He sat quietly sipping hot tea while heavy rain fell outside the house.	conjunctions
+886	1	ก่อน	before	นักเรียนควรทบทวนตำราเรียนอย่างละเอียดก่อนเข้าห้องสอบ.	Students should review textbooks thoroughly before entering exam rooms.	prepositions
+887	1	รักษา	to heal	หมอรักษาบาดแผลสดอย่างระมัดระวัง.	The doctor treats the fresh wound carefully.	verbs
+888	1	ของเรา	our	เป้าหมายหลักของเราคือการพัฒนาคุณภาพชีวิตของชุมชน.	Our primary goal is to improve the quality of life in the community.	pronouns
+889	1	แล้วก็	then	เขาทำการบ้านเสร็จแล้วก็ออกไปวิ่งเล่นกับเพื่อน.	He finished homework and then went out to play with friends.	adverbs
+890	1	ใหม่	new	เขาถอยรถยนต์คันใหม่ป้ายแดงออกมาใช้งานเดินทางไปทำงาน.	He drove the brand new red-plated car out for work trips.	adjectives
+891	1	ส่วน	part	นักเรียนแบ่งขนมออกเป็นสี่ส่วนเท่าๆ กันเพื่อแจกเพื่อน.	The student divides the snack into four equal parts to share with friends.	nouns
+892	1	เลือดออก	to bleed	มีดบาดนิ้วจนเลือดออกไม่หยุด.	The knife cut the finger until it bled without stopping.	verbs
+893	1	ขอบคุณ	thank you	ขอบคุณสำหรับคำแนะนำดีๆ ที่ช่วยแก้ปัญหาเรื่องงานในครั้งนี้.	Thank you for the good advice that helped solve this work issue.	others
+894	1	แล้วก็	and then	เธอจัดโต๊ะทำงานเสร็จแล้วก็เริ่มเปิดคอมพิวเตอร์พิมพ์รายงาน.	She tidied her desk, and then she turned on the computer to type the report.	conjunctions
+895	1	หลังจาก	after	หลังจากรับประทานอาหารเสร็จพวกเราก็ออกไปเดินเล่นในสวน.	After finishing the meal, we went out for a walk in the park.	prepositions
+896	1	ทำร้าย	to hurt	อย่าทำร้ายสัตว์ตัวเล็กๆ.	Do not hurt little animals.	verbs
+897	1	ของเขา	his	รถยนต์คันสีขาวที่จอดอยู่หน้าบ้านเป็นของเขา.	The white car parked in front of the house is his.	pronouns
+898	1	หลัง	after	พวกเราจะออกไปเดินย่อยอาหารหลังมื้อค่ำเสร็จสิ้น.	We will go out for a digestive walk after dinner ends.	adverbs
+899	1	ช้า	slow	เต่าเดินก้าวขาอย่างช้าๆ ข้ามพื้นถนนดินในสวนผลไม้.	The tortoise moves legs slow paces crossing dirt alleys in orchards.	adjectives
+900	1	รูปแบบ	pattern	สถาปนิกออกแบบอาคารด้วยรูปแบบสถาปัตยกรรมร่วมสมัย.	The architect designed the edifice following contemporary architectural patterns.	nouns
+901	1	เกลียด	to hate	ฉันเกลียดแมลงสาบที่บินในห้อง.	I hate cockroaches flying in the room.	verbs
+902	1	ลาก่อน	goodbye	ลาก่อน ขอให้เดินทางโดยสวัสดิภาพและโชคดีในการเริ่มต้นงานใหม่.	Goodbye; have a safe journey and good luck in starting your new job.	others
+903	1	งั้นก็	then	ถ้าคุณไม่สะดวกมาร่วมประชุม งั้นก็ส่งตัวแทนมาแทนได้.	If you are not available for the meeting, then you may send a proxy instead.	conjunctions
+904	1	ในระหว่าง	during	กรุณาปิดเสียงโทรศัพท์มือถือในระหว่างการประชุมสำคัญ.	Please mute mobile phones during the important meeting.	prepositions
+905	1	รัก	to love	แม่รักลูกสุดหัวใจเสมอ.	A mother loves her child with all her heart.	verbs
+906	1	ของเธอ	your	กระเป๋าเป้ใบนี้เป็นของเธอใช่ไหม ลืมไว้บนเก้าอี้.	Is this backpack yours? It was left on the chair.	pronouns
+907	1	ก่อน	before	กรุณาล้างมือให้สะอาดก่อนรับประทานอาหารทุกครั้ง.	Please wash your hands clean before eating meals every time.	adverbs
+908	1	เร็ว	fast	รถไฟด่วนขบวนใหม่แล่นด้วยความเร็วสูงมุ่งหน้าสู่หัวเมืองใหญ่.	The express bullet train glides at high fast speeds towards capitals.	adjectives
+909	1	ช่วงเวลา	moment	ช่วงเวลานี้เป็นจังหวะที่เหมาะสมสำหรับการเริ่มต้นทำธุรกิจ.	This moment serves as a suitable window for launching business ventures.	nouns
+910	1	ชั่งน้ำหนัก	to weigh	พยาบาลชั่งน้ำหนักเด็กทารกทุกเดือน.	The nurse weighs the infant every month.	verbs
+911	1	แล้วเจอกัน	see you	ขอบคุณมากสำหรับกาแฟอร่อยๆ ถ้วยนี้ แล้วเจอกันสัปดาห์หน้านะ.	Thanks a lot for this delicious coffee; see you next week.	others
+912	1	ด้วยเหตุนี้	for that reason	สภาพอากาศแปรปรวน ด้วยเหตุนี้เที่ยวบินจึงต้องถูกยกเลิกชั่วคราว.	The weather became turbulent; for that reason, flights had to be canceled temporarily.	conjunctions
+913	1	ไปยัง	towards	กลุ่มนักท่องเที่ยวเดินมุ่งหน้าไปยังยอดเขาเพื่อชมพระอาทิตย์ขึ้น.	The group of hikers walked towards the summit to watch the sunrise.	prepositions
+914	1	วัด	to measure	ช่างตัดเสื้อวัดขนาดรอบเอว.	The tailor measures the waist size.	verbs
+915	1	ของฉัน	my	สมุดบันทึกเล่มสีเขียวเล่มนี้เป็นของฉัน.	This green notebook is mine.	pronouns
+916	1	ยัง	still	เขายังคงนั่งอ่านหนังสืออยู่ในห้องสมุดจนถึงบัดนี้.	He is still sitting and reading books in the library until now.	adverbs
+917	1	ยาก	difficult	โจทย์ปัญหาคณิตศาสตร์ข้อนี้นับว่ายากเกินกว่าที่เด็กประถมจะแก้ได้.	This math problem counts as too difficult for grade schoolers to resolve.	adjectives
+918	1	ประเทศ	country	ประเทศไทยมีสถานที่ท่องเที่ยวทางธรรมชาติที่สวยงามมากมาย.	Thailand has abundant beautiful natural tourist attractions.	nouns
+919	1	เตือน	to warn	ป้ายเตือนระวังพื้นลื่น.	The sign warns people about the slippery floor.	verbs
+920	1	พบกันพรุ่งนี้	see you tomorrow	เลิกงานแล้วกลับบ้านดีๆ นะ แล้วพบกันพรุ่งนี้ตอนเช้า.	Work is done, get home safe; see you tomorrow morning.	others
+921	1	ดังนั้น	therefore	เขาขยันอ่านหนังสือทบทวนบทเรียน ดังนั้นเขาจึงสอบผ่านได้คะแนนดี.	He studied hard reviewing lessons; therefore, he passed exams with good grades.	conjunctions
+922	1	ระหว่าง	between	ร้านกาแฟตั้งอยู่ระหว่างธนาคารและร้านขายยาหัวมุมถนน.	The coffee shop is situated between the bank and the corner pharmacy.	prepositions
+923	1	ร้องเพลง	to sing	น้องสาวร้องเพลงระหว่างอาบน้ำ.	My little sister sings while taking a bath.	verbs
+924	1	เรา	us	คุณครูชวนพวกเราทุกคนไปทัศนศึกษาที่พิพิธภัณฑ์.	The teacher invited all of us on a field trip to the museum.	pronouns
+925	1	แล้ว	already	ฉันรับประทานอาหารกลางวันเสร็จเรียบร้อยแล้ว.	I have already finished having lunch.	adverbs
+926	1	ง่าย	easy	ข้อสอบวิชาภาษาไทยชุดนี้ทำได้ไม่ยากและเข้าใจคำถามง่ายมาก.	This Thai examination section wasn't arduous, and queries were very easy.	adjectives
+927	1	กรณี	case	ในกรณีฉุกเฉินให้ใช้บันไดหนีไฟแทนลิฟต์โดยสารทันที.	In case of emergencies, use fire escape staircases instead of lifts at once.	nouns
+928	1	ตะโกน	to shout	เขาตะโกนเรียกเพื่อนข้ามถนน.	He shouted to call his friend across the street.	verbs
+929	1	เจอกันใหม่	see you later	วันนี้ต้องรีบไปก่อนแล้ว ไว้วันพรุ่งนี้เจอกันใหม่ที่เดิมนะ.	I have to rush off today; see you later tomorrow at the same spot.	others
+930	1	เช่น	for example	ผลไม้ไทยมีรสชาติหวานอร่อย เช่น ทุเรียน มะม่วง และมังคุด.	Thai fruits are sweet and delicious, for example durian, mango, and mangosteen.	conjunctions
+931	1	บน/เกี่ยวกับ	on or about	เขาวางหนังสือประวัติศาสตร์เกี่ยวกับธรรมชาติไว้บนโต๊ะ.	He laid the history book about nature on the table.	prepositions
+932	1	หัวเราะ	to laugh	ทุกคนหัวเราะกับเรื่องเล่าสนุกๆ.	Everyone laughed at the funny story.	verbs
+933	1	พวกเขา	they	พวกเขากำลังซ้อมดนตรีอยู่ในห้องเก็บเสียงชั้นใต้ดิน.	They are practicing music in the basement soundproof room.	pronouns
+934	1	พรุ่งนี้	tomorrow	พรุ่งนี้โรงเรียนจะปิดทำการเนื่องในวันหยุดราชการ.	Tomorrow the school will be closed due to an official holiday.	adverbs
+935	1	สั้น	short	เด็กนักเรียนสวมกางเกงขาสั้นสีน้ำเงินไปโรงเรียนทุกวัน.	The school pupil wears short blue shorts to school every day.	adjectives
+936	1	สิ่งของ	thing	อย่าวางสิ่งของมีค่าทิ้งไว้ในรถโดยไม่มีคนดูแล.	Do not leave valuable things inside cars unattended by anyone.	nouns
+937	1	ร้องไห้	to cry	เด็กน้อยร้องไห้เพราะหกล้ม.	The little child cried because of a fall.	verbs
+938	1	ยินดีที่ได้รู้จัก	nice to meet you	ยินดีที่ได้รู้จัก หวังว่าพวกเราจะได้ร่วมงานกันอย่างราบรื่นในโครงการนี้.	Nice to meet you; I hope we work smoothly together on this project.	others
+939	1	ก็	then	เมื่อฝนหยุดตกแล้ว พวกเราก็ออกเดินทางกันต่อทันที.	When the rain stopped, then we continued our trip immediately.	conjunctions
+940	1	สำหรับ	for	อาหารจานนี้จัดเตรียมไว้สำหรับแขกคนพิเศษโดยเฉพาะ.	This dish was prepared for the special guest specifically.	prepositions
+941	1	ทำให้เปียก	to wet	น้ำฝนทำให้เปียกเสื้อผ้าหมดเลย.	The rain made all the clothes wet.	verbs
+942	1	พวกเธอ	you all	พวกเธอควรวางแผนการเดินทางล่วงหน้าก่อนออกเดินทาง.	You all should plan the trip in advance before departing.	pronouns
+943	1	วันนี้	today	วันนี้อากาศปลอดโปร่งเหมาะกับการออกไปเดินเล่นในสวน.	Today the weather is clear, suitable for a walk in the park.	adverbs
+944	1	ยาว	long	แม่น้ำสายยาวไหลคดเคี้ยวพาดผ่านพื้นที่เกษตรกรรมหลายจังหวัด.	The long winding river snakes through agricultural acreage across provinces.	adjectives
+945	1	ผู้หญิง	woman	ผู้หญิงสวมเสื้อสีแดงนั่งอ่านหนังสืออยู่ตรงมุมห้อง.	The woman wearing a red blouse sits reading books at the room corner.	nouns
+946	1	ตี	to hit	เขาใช้ไม้ตีลูกบอลข้ามรั้ว.	He used a bat to hit the ball over the fence.	verbs
+947	1	มีอะไรใหม่?	what's up?	มีอะไรใหม่? ได้ข่าวว่าเพิ่งย้ายไปอยู่บ้านหลังใหม่แถบชานเมือง.	What's up? I heard you recently moved into a new suburban house.	others
+948	1	เพราะว่า	because	เขามาทำงานสายเพราะว่าการจราจรบนถนนติดขัดอย่างหนัก.	He arrived late to work because the traffic on the road was heavily congested.	conjunctions
+949	1	โดย	by	เดินทางไปทำงานทุกเช้าโดยรถไฟฟ้าเพื่อหลีกเลี่ยงรถติด.	Travel to work every morning by sky train to avoid traffic.	prepositions
+950	1	ขยับ	to move	โปรดขยับเก้าอี้ไปทางซ้าย.	Please move the chair to the left.	verbs
+951	1	พวกเรา	we	พวกเราช่วยกันปลูกต้นไม้ในสวนสาธารณะท้ายหมู่บ้าน.	We helped each other plant trees in the public park behind the village.	pronouns
+952	1	เมื่อวาน	yesterday	เมื่อวานมีฝนตกหนักจนน้ำท่วมขังถนนสายหลัก.	Yesterday heavy rain fell until water flooded the main road.	adverbs
+953	1	เตี้ย	short	รั้วไม้เตี้ยหน้าบ้านช่วยให้มองเห็นทิวทัศน์ของสวนดอกไม้ได้ชัดเจน.	The short wooden fence allows an unobstructed view of the flower beds.	adjectives
+954	1	ผู้ชาย	man	ผู้ชายในชุดสูทสีดำเดินเข้ามาทักทายแขกในงานเลี้ยง.	The man in a black suit walked in to greet guests at the banquet.	nouns
+955	1	กระโดด	to jump	กบกระโดดลงไปในสระน้ำ.	The frog jumped into the pond.	verbs
+956	1	เป็นอย่างไรบ้าง?	how's it going?	เป็นอย่างไรบ้าง? การเริ่มงานในสัปดาห์แรกราบรื่นดีไหม.	How's it going? Did your first week of work go smoothly?	others
+957	1	แม้ว่า	although	แม้ว่าอากาศจะหนาวจัด นักกีฬาก็ยังคงฝึกซ้อมกลางแจ้ง.	Although the weather was freezing, the athletes still trained outdoors.	conjunctions
+958	1	โดยไม่มี	without	อย่าขับรถออกไปบนถนนมืดโดยไม่มีไฟส่องสว่างหน้ารถ.	Do not drive out onto dark roads without front headlights.	prepositions
+959	1	ต่อสู้	to fight	ทหารต่อสู้เพื่อปกป้องประชาชน.	Soldiers fight to protect the people.	verbs
+960	1	คุณ	you	คุณต้องการรับกาแฟร้อนหรือน้ำผลไม้สดครับ.	Would you like to have hot coffee or fresh fruit juice?	pronouns
+961	1	เช้า	early	คนสวนตื่นมาทำงานตั้งแต่เช้าตรู่ก่อนที่แดดจะเริ่มส่องร้อน.	The gardener woke up early at dawn before the sun grew hot.	adverbs
+962	1	สูง	tall	ตึกระฟ้าหลังนี้มีความสูงตระหง่านมองเห็นได้จากระยะไกล.	This tall skyscraper stands imposingly, visible from long distances.	adjectives
+963	1	คน	person	มีคนยืนรอเข้าคิวซื้อตั๋วรถไฟยาวเหยียดหน้าสถานี.	There are persons standing in long queues buying train tickets outside stations.	nouns
+964	1	ตอบ	to answer	นักเรียนตอบคำถามของครูทันที.	The student answered the teacher's question immediately.	verbs
+965	1	ราตรีสวัสดิ์	good night	ราตรีสวัสดิ์ ขอให้นอนหลับพักผ่อนอย่างสบายและฝันดี.	Good night; have a comfortable rest and sweet dreams.	others
+966	1	แต่ว่า	but rather	ฉันไม่ได้โกรธเขา แต่ว่ารู้สึกผิดหวังกับการกระทำมากกว่า.	I am not angry with him, but rather disappointed with the action.	conjunctions
+967	1	กับ	with	เขานั่งรับประทานอาหารค่ำร่วมกับเพื่อนสนิทที่ร้านอาหารริมน้ำ.	He sat dining at dinner with his close friend at the riverside restaurant.	prepositions
+968	1	พักผ่อน	to rest	พ่อพักผ่อนใต้ต้นไม้ในสวน.	Father rests under the tree in the garden.	verbs
+969	1	เขา	he	เขาทำงานเป็นวิศวกรประจำบริษัทข้ามชาติแห่งนี้.	He works as an engineer at this multinational company.	pronouns
+970	1	สาย	late	วันนี้นักเรียนตื่นสายจึงต้องรีบวิ่งไปขึ้นรถโรงเรียนให้ทัน.	The pupil woke up late today and had to sprint to catch the bus.	adverbs
+971	1	เล็ก	small	นกกระจอกตัวเล็กกระโดดหาเศษอาหารอยู่บนพื้นสนามหญ้า.	The small sparrow hops scouring food scraps on the grass lawn.	adjectives
+972	1	ครั้ง	time	นี่เป็นครั้งแรกที่ฉันได้ลองชิมอาหารพื้นเมืองจานนี้.	This is the first time I have tasted this regional dish.	nouns
+973	1	ดึงดูด	to attract	ดอกไม้ส่งกลิ่นดึงดูดผึ้งเข้ามา.	The flower gives off a scent to attract bees.	verbs
+974	1	สวัสดีตอนบ่าย	good afternoon	สวัสดีตอนบ่าย ขอเชิญทุกท่านนั่งพักดื่มน้ำเย็นก่อนเริ่มสัมมนา.	Good afternoon; please sit down and drink cold water before the seminar.	others
+975	1	แต่	but	เขาอยากไปวิ่งออกกำลังกายแต่ฝนเริ่มตกลงมาพอดี.	He wanted to go for a run, but it started raining.	conjunctions
+976	1	ใน/บน	in or on	จัดวางสมุดบันทึกไว้ในลิ้นชักและวางแก้วน้ำไว้บนโต๊ะทำงาน.	Place the notebook in the drawer and set the water glass on the desk.	prepositions
+977	1	ปกคลุม	to cover	หมอกหนาปกคลุมยอดเขาตอนเช้า.	Thick fog covers the mountain peak in the morning.	verbs
+978	1	เธอ	you	เธอจะไปร่วมงานเลี้ยงวันเกิดของเพื่อนไหมเย็นนี้.	Will you attend our friend's birthday party this evening?	pronouns
+979	1	ไม่เคย	never	เขาไม่เคยลืมวันเกิดของคนในครอบครัวเลยแม้แต่ปีเดียว.	He has never forgotten family members' birthdays, not even once.	adverbs
+980	1	ใหญ่	big	บ้านหลังใหญ่ริมแม่น้ำมีสวนหย่อมกว้างขวางและร่มรื่นมาก.	The big house beside the river has an expansive, shady lawn.	adjectives
+981	1	วัน	day	วันนี้เป็นวันที่อากาศแจ่มใสและแดดส่องสว่างทั่วท้องฟ้า.	Today is a sunny day with bright light beaming across skies.	nouns
+982	1	ทำลาย	to destroy	พายุทำลายบ้านเรือนริมทะเล.	The storm destroyed houses by the sea.	verbs
+983	1	อรุณสวัสดิ์	good morning	อรุณสวัสดิ์เพื่อนร่วมงานทุกคน ขอให้วันนี้เป็นวันที่ราบรื่น.	Good morning, all coworkers; may today be a smooth day.	others
+984	1	หรือ	or	คุณต้องการเดินทางโดยรถไฟหรือรถโดยสารประจำทาง.	Do you prefer to travel by train or by bus?	conjunctions
+985	1	ถึง	to	ขบวนรถไฟแล่นจากสถานีต้นทางไปถึงสถานีปลายทางตรงเวลา.	The train ran from the starting station to the destination station on time.	prepositions
+986	1	ทำ	to do	แม่ทำอาหารเย็นในครัว.	Mom makes dinner in the kitchen.	verbs
+987	1	นั้น	that	ร้านกาแฟร้านนั้นมีขนมปังอบสดใหม่ทุกเช้า.	That coffee shop has freshly baked bread every morning.	pronouns
+988	1	เสมอ	always	แม่จะคอยยืนส่งลูกๆ ที่หน้าประตูรั้วบ้านตอนเช้าเสมอ.	Mother will always stand waving goodbye to the kids at the gate.	adverbs
+989	1	ไม่ดี	bad	การนอนดึกเป็นประจำส่งผลเสียไม่ดีต่อสุขภาพร่างกายระยะยาว.	Staying up late systematically brings bad side-effects to bodily health.	adjectives
+990	1	ปี	year	เขาทำงานเก็บเงินอยู่ที่นี่มานานกว่าสามปีแล้ว.	He has been working and saving money here for over three years.	nouns
+991	1	ถือ	to hold	เขาถือร่มในวันที่ฝนตก.	He holds an umbrella on a rainy day.	verbs
+992	1	สวัสดี คุณเป็นอย่างไร?	hello, how are you?	สวัสดี คุณเป็นอย่างไร? ไม่ได้เจอกันนานเลยนะ.	Hello, how are you? We haven't seen each other in a long time.	others
+993	1	และ	and	พ่อชอบดื่มกาแฟร้อนและอ่านหนังสือพิมพ์ยามเช้า.	Father likes to drink hot coffee and read the newspaper in the morning.	conjunctions
+994	1	ของ/จาก	of or from	กระเป๋าใบนี้ทำมาจากหนังแท้คุณภาพดีของช่างฝีมือพื้นเมือง.	This bag is made from genuine quality leather of local craftsmen.	prepositions
+995	1	มี	to have	ฉันมีเงินสดติดตัวนิดหน่อย.	I have a little cash with me.	verbs
+996	1	ฉัน	I	ฉันชอบดื่มน้ำอุ่นหลังจากตื่นนอนตอนเช้า.	I like to drink warm water after waking up in the morning.	pronouns
+997	1	ตอนนี้	now	ตอนนี้ฝนเริ่มหยุดตกและท้องฟ้าเริ่มกลับมาสว่างสดใสอีกครั้ง.	Now the rain has stopped and skies turn bright once more.	adverbs
+998	1	ดี	good	เขาเป็นคนมีน้ำใจดีและคอยให้ความช่วยเหลือผู้อื่นอยู่เสมอ.	He is a kind-hearted good person who consistently assists others.	adjectives
+999	1	เวลา	time	ฉันไม่มีเวลาว่างมากพอสำหรับการไปเที่ยวต่างจังหวัด.	I do not have enough free time for traveling upcountry.	nouns
+1000	1	เป็น	to be	เขาเป็นหมอใจดี.	He is a kind doctor.	verbs
