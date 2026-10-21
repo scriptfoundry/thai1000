@@ -1,0 +1,15 @@
+main.start {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space);
+	min-height: 100%;
+	text-align: center;
+
+	.start-button {
+		min-width: 12rem;
+		min-height: 64px;
+		font-size: 1.25rem;
+	}
+}

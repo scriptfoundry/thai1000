@@ -1,4 +1,4 @@
 export interface Component {
-	mount: () => void;
-	unmount: () => void;
+	mount: (parent: HTMLElement) => Promise<void>;
+	unmount: () => Promise<void>;
 }

@@ -1,0 +1,11 @@
+main.home {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space) * 1.5);
+
+	.home-section {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--space) * 0.5);
+	}
+}
