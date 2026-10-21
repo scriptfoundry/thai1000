@@ -93,3 +93,80 @@ export const recordGrade = (
 		store.put(next);
 		return next;
 	});
+
+export interface WordRecord {
+	card: Card;
+	forward: Progress | null;
+	backward: Progress | null;
+}
+
+export const loadWord = async (
+	db: IDBDatabase,
+	cardId: number,
+): Promise<WordRecord | null> => {
+	const tx = db.transaction(['cards', 'progress']);
+	const progress = tx.objectStore('progress');
+	const [card, forward, backward] = await Promise.all([
+		request(
+			tx.objectStore('cards').get(cardId) as IDBRequest<Card | undefined>,
+		),
+		request(
+			progress.get([cardId, 'forward']) as IDBRequest<
+				Progress | undefined
+			>,
+		),
+		request(
+			progress.get([cardId, 'backward']) as IDBRequest<
+				Progress | undefined
+			>,
+		),
+	]);
+	return card
+		? { card, forward: forward ?? null, backward: backward ?? null }
+		: null;
+};
+
+const updateCard = (
+	db: IDBDatabase,
+	cardId: number,
+	change: (card: Card) => Card,
+): Promise<void> =>
+	transact(db, ['cards'], async (tx) => {
+		const store = tx.objectStore('cards');
+		const card = await request(
+			store.get(cardId) as IDBRequest<Card | undefined>,
+		);
+		if (!card) {
+			throw new Error(`Card ${cardId} not found`);
+		}
+		store.put(change(card));
+	});
+
+/** Hidden cards leave every deck in both directions; reversible. */
+export const setHidden = (
+	db: IDBDatabase,
+	cardId: number,
+	hidden: boolean,
+): Promise<void> => updateCard(db, cardId, (card) => ({ ...card, hidden }));
+
+/** "Practice next": a queued NEW card goes ahead of ordinary NEW cards. */
+export const setQueued = (
+	db: IDBDatabase,
+	cardId: number,
+	queued: boolean,
+): Promise<void> => updateCard(db, cardId, (card) => ({ ...card, queued }));
+
+/** Both directions back to NEW (progress deleted). `hidden` is kept. */
+export const resetWord = (db: IDBDatabase, cardId: number): Promise<void> =>
+	transact(db, ['cards', 'progress'], async (tx) => {
+		const progress = tx.objectStore('progress');
+		progress.delete([cardId, 'forward']);
+		progress.delete([cardId, 'backward']);
+		const cards = tx.objectStore('cards');
+		const card = await request(
+			cards.get(cardId) as IDBRequest<Card | undefined>,
+		);
+		if (card?.queued) {
+			cards.put({ ...card, queued: false });
+		}
+	});
