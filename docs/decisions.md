@@ -59,6 +59,17 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - In the dialog, "Due" reads "Ready to test" / "Practise first" for LEARNING and RELEARN, since their `due` has no meaning before a test; REVIEW shows the date or "Due now".
 - "Queue for next practice" toggles, and only shows while some direction is still NEW and the word is not hidden. Reset asks for a second tap ("Tap again to reset") instead of a separate confirmation dialog. The dialog also has ▶ Thai / ▶ English buttons.
 
+## Export / import
+
+- The file is `{ format: 1, exportedAt, seedVersion, progress, flags }`, as in §12. `seedVersion` is null if no seed has been stored. Files are named `thai-flashcards-progress-YYYY-MM-DD.json` and downloaded with a blob link.
+- Validation runs before anything is written: format version, every progress field's type and range, no duplicate `[cardId, direction]`, and flag shapes. Up to 5 problems are listed. Unknown extra fields are dropped.
+- Import asks for confirmation in an app `<dialog>` (not `window.confirm`), then replaces everything in one transaction. Progress and flags for ids not in the database are skipped and counted. Cards missing from the file become NEW, unhidden and unqueued.
+- `yarn test` checks that export → JSON → validate restores every record exactly. The IndexedDB write itself needs a manual check in a browser.
+
+## Home
+
+- Each direction has its own panel with New / Learning / Relearn / Due-for-test counts and its own Practice and Test buttons. Test looks quieter when nothing is due but stays clickable; the test screen explains what to do.
+
 ## Interaction
 
 - Practice: right on front flips; right on back advances (wraps, cycle + 1); left goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
