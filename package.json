@@ -6,14 +6,12 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"lint": "eslint . --ext .ts",
+		"lint": "biome check",
+		"test": "node --test \"src/**/*.test.ts\"",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.5.15",
-		"@typescript-eslint/parser": "^8.71.2",
-		"eslint": "^10.13.0",
-		"globals": "^17.13.0",
 		"sass-embedded": "^1.105.2",
 		"typescript": "~6.0.2",
 		"vite": "^8.3.0",
