@@ -1,0 +1,93 @@
+dialog.word-dialog {
+	width: min(100% - 2 * var(--space), var(--content-width));
+	max-height: calc(100% - 2 * var(--space));
+	padding: 0;
+	border: 2px solid var(--border-color);
+	border-radius: calc(var(--radius) * 1.5);
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	&::backdrop {
+		background-color: rgb(28 79 130 / 35%);
+	}
+
+	.word-detail {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space);
+		padding: var(--space);
+	}
+
+	.word-header {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--space) * 0.25);
+	}
+
+	.word-id,
+	.word-category {
+		font-size: 0.9rem;
+	}
+
+	.word-thai {
+		font-size: 2.25rem;
+	}
+
+	.word-english {
+		font-size: 1.25rem;
+	}
+
+	.word-speak {
+		margin-top: calc(var(--space) * 0.5);
+
+		.button {
+			flex: 0 1 auto;
+			min-height: 40px;
+		}
+	}
+
+	.word-examples {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--space) * 0.25);
+		padding: calc(var(--space) * 0.75);
+		border-radius: var(--radius);
+		background-color: var(--surface-color);
+
+		&:has(p:empty:first-child + p:empty) {
+			display: none;
+		}
+	}
+
+	.word-progress-wrap {
+		overflow-x: auto;
+	}
+
+	.word-progress {
+		width: 100%;
+		border-collapse: collapse;
+		font-variant-numeric: tabular-nums;
+
+		th,
+		td {
+			padding: calc(var(--space) * 0.35) calc(var(--space) * 0.5);
+			border-bottom: 1px solid var(--border-color);
+			text-align: left;
+		}
+
+		tbody th {
+			font-weight: 600;
+			white-space: nowrap;
+		}
+	}
+
+	.word-notice:empty {
+		display: none;
+	}
+
+	.word-actions {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: calc(var(--space) * 0.5);
+	}
+}

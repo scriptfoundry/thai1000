@@ -52,7 +52,7 @@ export const stateOf = (progress: Progress | null): CardState =>
 /** Filter/status names shown in the UI. */
 export type Status = 'NEW' | 'LEARNING' | 'REVIEW' | 'RELEARN' | 'HIDDEN';
 
-const STATUS_BY_STATE: Record<CardState, Status> = {
+export const STATUS_BY_STATE: Record<CardState, Status> = {
 	New: 'NEW',
 	Learning: 'LEARNING',
 	Review: 'REVIEW',
