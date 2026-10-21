@@ -9,6 +9,14 @@ main.settings {
 		gap: var(--space);
 	}
 
+	.data-status {
+		white-space: pre-line;
+
+		&:empty {
+			display: none;
+		}
+	}
+
 	.voice {
 		display: flex;
 		flex-direction: column;

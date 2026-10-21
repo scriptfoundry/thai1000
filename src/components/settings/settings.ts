@@ -1,4 +1,10 @@
 import { BaseComponent, SCREEN_TRANSITION_MS } from '../../services/component';
+import { localDay } from '../../services/dates';
+import {
+	createExport,
+	importExport,
+	validateExport,
+} from '../../services/export';
 import {
 	RATE_MAX,
 	RATE_MIN,
@@ -7,6 +13,7 @@ import {
 } from '../../services/settings';
 import { speech } from '../../services/speech';
 import type { AppContext, Language, Settings } from '../../types';
+import { confirmDialog } from '../confirm-dialog/confirm-dialog';
 import SETTINGS_CONTENTS from './settings.html?raw';
 import './settings.scss';
 
@@ -38,10 +45,95 @@ export default class SettingsScreen extends BaseComponent {
 			this.bindVoice(language);
 		}
 		this.query('.app-version').textContent = __APP_VERSION__;
+		this.bindData();
 	}
 
 	protected override onUnmount(): void {
 		speech.cancel();
+	}
+
+	private bindData(): void {
+		const file = this.query<HTMLInputElement>('.data-file');
+		this.query('.data-export').addEventListener('click', () => {
+			void this.exportProgress();
+		});
+		this.query('.data-import').addEventListener('click', () =>
+			file.click(),
+		);
+		file.addEventListener('change', () => {
+			const chosen = file.files?.[0];
+			// Reset so choosing the same file again still fires `change`.
+			file.value = '';
+			if (chosen) {
+				void this.importProgress(chosen);
+			}
+		});
+	}
+
+	private setDataStatus(text: string): void {
+		this.query('.data-status').textContent = text;
+	}
+
+	private async exportProgress(): Promise<void> {
+		try {
+			const data = await createExport(this.app.db);
+			const blob = new Blob([JSON.stringify(data, null, '\t')], {
+				type: 'application/json',
+			});
+			const url = URL.createObjectURL(blob);
+			const link = document.createElement('a');
+			link.href = url;
+			link.download = `thai-flashcards-progress-${localDay(Date.now())}.json`;
+			link.click();
+			// Give the download time to start before releasing the blob.
+			window.setTimeout(() => URL.revokeObjectURL(url), 10_000);
+			this.setDataStatus(
+				`Exported ${data.progress.length} progress records.`,
+			);
+		} catch (error) {
+			console.error('Export failed:', error);
+			this.setDataStatus('Export failed. Please try again.');
+		}
+	}
+
+	private async importProgress(chosen: File): Promise<void> {
+		let parsed: unknown;
+		try {
+			parsed = JSON.parse(await chosen.text());
+		} catch {
+			this.setDataStatus(`${chosen.name} is not a valid JSON file.`);
+			return;
+		}
+		const result = validateExport(parsed);
+		if (!result.ok) {
+			this.setDataStatus(
+				`${chosen.name} cannot be imported:\n${result.errors.join('\n')}`,
+			);
+			return;
+		}
+		const { file } = result;
+		const exported = new Date(file.exportedAt).toLocaleString();
+		const confirmed = await confirmDialog({
+			title: 'Replace all progress?',
+			message: `This replaces all progress on this device with ${file.progress.length} records exported ${exported}.\nThis cannot be undone.`,
+			confirmLabel: 'Replace',
+		});
+		if (!confirmed) {
+			this.setDataStatus('Import cancelled.');
+			return;
+		}
+		try {
+			const { imported, ignored } = await importExport(this.app.db, file);
+			this.setDataStatus(
+				`Imported ${imported} progress records.` +
+					(ignored > 0
+						? ` ${ignored} entries were for words not in this word list and were skipped.`
+						: ''),
+			);
+		} catch (error) {
+			console.error('Import failed:', error);
+			this.setDataStatus('Import failed; your progress was not changed.');
+		}
 	}
 
 	private bindVoice(language: Language): void {
