@@ -1,0 +1,39 @@
+// Screens slide in from the right and out to the left.
+.screen {
+	position: fixed;
+	inset: 0;
+	overflow-y: auto;
+	padding: max(var(--space), env(safe-area-inset-top)) var(--space)
+		max(var(--space), env(safe-area-inset-bottom));
+	opacity: 0;
+	transform: translateX(var(--slide-distance));
+	transition:
+		opacity var(--screen-transition) ease,
+		transform var(--screen-transition) ease;
+
+	&.visible {
+		opacity: 1;
+		transform: none;
+	}
+
+	&.leaving {
+		opacity: 0;
+		transform: translateX(calc(var(--slide-distance) * -1));
+		pointer-events: none;
+	}
+
+	> main {
+		max-width: var(--content-width);
+		margin: 0 auto;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.screen {
+		transform: none;
+
+		&.leaving {
+			transform: none;
+		}
+	}
+}

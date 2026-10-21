@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	overscroll-behavior: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+	margin: 0;
+}
+
+button,
+input,
+select {
+	font: inherit;
+	color: inherit;
+}

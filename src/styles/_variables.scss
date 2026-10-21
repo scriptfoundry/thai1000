@@ -1,0 +1,21 @@
+$breakpoint-wide: 1024px;
+
+:root {
+	--text-color: #1c4f82;
+	--primary-color: #69b0f8;
+	--border-color: var(--primary-color);
+	--button-color: var(--primary-color);
+	--button-text-color: #fff;
+	--background-color: #fff;
+	--surface-color: #f2f8fe;
+
+	--font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Thai', sans-serif;
+	--radius: 12px;
+	--space: 16px;
+	--content-width: 40rem;
+
+	// Keep in sync with SCREEN_TRANSITION_MS / CARD_TRANSITION_MS in TypeScript.
+	--screen-transition: 300ms;
+	--card-transition: 200ms;
+	--slide-distance: 24px;
+}
