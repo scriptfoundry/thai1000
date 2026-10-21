@@ -1,5 +1,5 @@
 import type { Card } from '../types';
-import { count, done, get, request } from './db';
+import { count, get, request, transact } from './db';
 import { diffSeed, type ParsedSeed, parseSeed, type SeedDiff } from './seed';
 
 const SEED_URL = `${import.meta.env.BASE_URL}data/seed.tsv`;
@@ -34,13 +34,8 @@ const fetchSeed = async (): Promise<ParsedSeed> => {
 };
 
 /** Diff and write the seed in one transaction, together with its version. */
-const applySeed = async (
-	db: IDBDatabase,
-	seed: ParsedSeed,
-): Promise<SeedDiff> => {
-	const tx = db.transaction(['cards', 'progress', 'meta'], 'readwrite');
-	const committed = done(tx);
-	try {
+const applySeed = (db: IDBDatabase, seed: ParsedSeed): Promise<SeedDiff> =>
+	transact(db, ['cards', 'progress', 'meta'], async (tx) => {
 		const cards = tx.objectStore('cards');
 		const progress = tx.objectStore('progress');
 		const stored = await request(cards.getAll() as IDBRequest<Card[]>);
@@ -54,14 +49,8 @@ const applySeed = async (
 			progress.delete([id, 'backward']);
 		}
 		tx.objectStore('meta').put(seed.seedVersion, 'seedVersion');
-		await committed;
 		return diff;
-	} catch (error) {
-		// The transaction rejects too; swallow that so only `error` surfaces.
-		committed.catch(() => undefined);
-		throw error;
-	}
-};
+	});
 
 export const syncSeed = async (db: IDBDatabase): Promise<SeedSyncResult> => {
 	const hasCards = (await count(db, 'cards')) > 0;

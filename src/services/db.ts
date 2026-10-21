@@ -98,3 +98,31 @@ export const put = async (
 	tx.objectStore(store).put(value, key);
 	await done(tx);
 };
+
+/**
+ * Run `work` in one readwrite transaction and resolve after it commits.
+ * `work` may await requests on `tx` (microtasks keep it alive) but must not
+ * await anything else.
+ */
+export const transact = async <T>(
+	db: IDBDatabase,
+	stores: StoreName[],
+	work: (tx: IDBTransaction) => Promise<T>,
+): Promise<T> => {
+	const tx = db.transaction(stores, 'readwrite');
+	const committed = done(tx);
+	try {
+		const result = await work(tx);
+		await committed;
+		return result;
+	} catch (error) {
+		// The transaction rejects too; only surface the original error.
+		committed.catch(() => undefined);
+		try {
+			tx.abort();
+		} catch {
+			// Already finished or aborted.
+		}
+		throw error;
+	}
+};
