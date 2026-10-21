@@ -1,0 +1,81 @@
+.card {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space);
+	padding: calc(var(--space) * 1.5) var(--space);
+	border: 2px solid var(--border-color);
+	border-radius: calc(var(--radius) * 1.5);
+	background-color: var(--surface-color);
+	text-align: center;
+	opacity: 0;
+	transform: translateX(var(--slide-distance));
+	transition:
+		opacity var(--card-transition) ease,
+		transform var(--card-transition) ease;
+
+	&.from-left {
+		transform: translateX(calc(var(--slide-distance) * -1));
+	}
+
+	&.visible {
+		opacity: 1;
+		transform: none;
+	}
+
+	&.leaving {
+		transform: translateX(calc(var(--slide-distance) * -1));
+		pointer-events: none;
+	}
+
+	&.leaving.to-right {
+		transform: translateX(var(--slide-distance));
+	}
+
+	.card-language {
+		font-size: 0.9rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.card-text {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--space) * 0.5);
+	}
+
+	.card-primary {
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 1.3;
+		overflow-wrap: anywhere;
+	}
+
+	.card-secondary {
+		font-size: 1.5rem;
+		overflow-wrap: anywhere;
+	}
+
+	.card-listen {
+		font-size: 4rem;
+		line-height: 1;
+	}
+
+	&.card-front .card-text,
+	&.card-back .card-listen {
+		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.card,
+	.card.from-left,
+	.card.leaving,
+	.card.leaving.to-right {
+		transform: none;
+	}
+}

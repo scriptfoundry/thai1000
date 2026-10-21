@@ -4,6 +4,9 @@ import { wait, waitAnimationFrames } from './utils';
 /** Keep in sync with --screen-transition. */
 export const SCREEN_TRANSITION_MS = 300;
 
+/** Keep in sync with --card-transition. */
+export const CARD_TRANSITION_MS = 200;
+
 export interface ComponentOptions {
 	/** Space-separated classes for the root element. */
 	className: string;
