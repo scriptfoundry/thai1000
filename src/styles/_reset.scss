@@ -31,3 +31,8 @@ select {
 	font: inherit;
 	color: inherit;
 }
+
+// Components set `display` on classes; `hidden` must still win.
+[hidden] {
+	display: none !important;
+}
