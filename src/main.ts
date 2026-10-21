@@ -5,6 +5,7 @@ import SettingsScreen from './components/settings/settings';
 import Start from './components/start/start';
 import Words from './components/words/words';
 import { openDb } from './services/db';
+import { registerServiceWorker } from './services/pwa';
 import { Router } from './services/router';
 import { SeedUnavailableError, syncSeed } from './services/seed-sync';
 import { loadSettings, ratesOf } from './services/settings';
@@ -62,6 +63,12 @@ const main = (): void => {
 
 	// Set once boot succeeds; the router guard keeps other screens behind Start.
 	let app: AppContext | null = null;
+	registerServiceWorker((apply) => {
+		showNotice('A new version is available.', {
+			action: { label: 'Reload', onClick: apply },
+		});
+	});
+
 	const ready = boot().then((context) => {
 		app = context;
 		return context;
