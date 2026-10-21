@@ -6,7 +6,7 @@ export type RouteParams = Record<string, string>;
 export type RouteFactory = (params: RouteParams) => Component | null;
 
 export interface RouterOptions {
-	/** Path patterns such as `/practice/:dir`. */
+	/** Path patterns such as `/practice/:dir`; a `?query` adds params too. */
 	routes: Record<string, RouteFactory>;
 	/** Path shown for unknown routes. */
 	fallback: string;
@@ -109,10 +109,14 @@ export class Router {
 	}
 
 	private resolve(path: string): Component | null {
+		const [pathname = '', query = ''] = path.split('?', 2);
 		for (const route of this.routes) {
-			const match = route.regex.exec(path);
+			const match = route.regex.exec(pathname);
 			if (match) {
-				const params: RouteParams = {};
+				// Query values first, so path params win on a name clash.
+				const params: RouteParams = Object.fromEntries(
+					new URLSearchParams(query),
+				);
 				route.keys.forEach((key, index) => {
 					params[key] = decodeURIComponent(match[index + 1] ?? '');
 				});
