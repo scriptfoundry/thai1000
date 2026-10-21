@@ -56,6 +56,9 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - Practice: right on front flips; right on back advances (wraps, cycle + 1); left goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
 - Test: right on front flips. Grades are accepted only on the back face, then auto-advance. Left and single-pointer right on the back do nothing.
+- On a test card back, the Previous/Next buttons are replaced by Again / Hard / Good / Easy. Previous is not offered in tests, because a rated card cannot be re-rated.
+- The test summary reads "Memorized X of N · Failed Y" and offers **Another test deck** only while more cards in that direction are test-eligible, plus Practice and Home. "Another test deck" is a full test of that direction, even when the finished test came from a practice deck.
+- Ratings are saved in their own transaction as each card is rated. The summary counts the remaining cards after those writes, since IndexedDB runs a later read after earlier writes to the same store.
 - Gestures: pointer count = max simultaneous pointers (3+ discarded); a `pointercancel` discards the gesture. Swipe ≥ 50px of centroid travel with a dominant axis ≥ 1.5× the other. Tap: every pointer moves ≤ 10px and the gesture lasts ≤ 300ms (raised from 250ms so two-finger taps register). Taps within 300ms of each other form a multi-tap.
 - **Double taps act about 300ms after the second tap**, once no third tap has arrived; that delay is what lets triple taps be discarded. Single taps do nothing.
 - Presses that start on a button or link inside the card area are clicks, not gestures. Gesture keys call `preventDefault`, so Space never also activates a focused button.
