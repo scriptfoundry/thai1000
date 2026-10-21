@@ -50,5 +50,6 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - Gestures: pointer count = max simultaneous pointers (3+ discarded). Swipe ≥ 50px with a dominant axis ≥ 1.5× the other; two-pointer swipes use the centroid. Tap < 10px and < 250ms; double tap = two taps within 300ms; triple tap discarded.
 - **Separate speech rates** (user): Thai 0.7, English 1.0.
 - Voices match `voiceURI` or `name`, case-insensitive substring, because names like "Moira" and "Kanya" are not voiceURIs on every platform.
-- Component convention: `constructor(deps)`, `async mount(parent)`, `async unmount()`.
+- Component convention: `constructor(deps)`, `async mount(parent)`, `async unmount()`. Shared plumbing (template, fade/slide, `query`) lives in `BaseComponent` (`services/component.ts`); screens add the `screen` class for the 300ms transition.
+- Styles: `_controls.scss` (buttons) was added next to the variables/reset/typography/transitions partials.
 - Routes: `#/`, `#/home`, `#/practice/:dir`, `#/test/:dir`, `#/words`, `#/settings`. Every session starts at Start (the speech user-gesture requirement); a deep link resumes after Start.
