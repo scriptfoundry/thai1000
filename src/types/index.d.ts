@@ -44,3 +44,18 @@ export interface Progress {
 	/** Local `YYYY-MM-DD` of the last practice or test of this direction. */
 	lastTouchedDay: string | null;
 }
+
+/** Spoken languages; each has its own voice and rate. */
+export type Language = 'thai' | 'english';
+
+export interface Settings {
+	/** SpeechSynthesis rate, 0.5–1.5. */
+	thaiRate: number;
+	englishRate: number;
+}
+
+/** Shared by screens once the app has booted. */
+export interface AppContext {
+	db: IDBDatabase;
+	settings: Settings;
+}
