@@ -63,7 +63,7 @@ describe('buildPracticeDeck', () => {
 			progress(7, 'forward', 'Relearning', { due: NOW - DAY_MS }),
 			progress(8, 'forward', 'Relearning', { due: NOW - 3 * DAY_MS }),
 		]);
-		const deck = buildPracticeDeck(all, index, NOW);
+		const deck = buildPracticeDeck(all, index, NOW, 'forward');
 		assert.deepEqual(ids(deck).slice(0, 6), [
 			'8f',
 			'7f',
@@ -82,7 +82,7 @@ describe('buildPracticeDeck', () => {
 				progress(i + 1, 'forward', 'Learning'),
 			),
 		);
-		const deck = buildPracticeDeck(all, index, NOW);
+		const deck = buildPracticeDeck(all, index, NOW, 'forward');
 		assert.equal(deck.length, PRACTICE_SIZE);
 		assert.equal(deck.filter((e) => e.progress === null).length, 5);
 	});
@@ -93,26 +93,37 @@ describe('buildPracticeDeck', () => {
 			progress(1, 'forward', 'Review'),
 			progress(3, 'forward', 'Review'),
 		]);
-		assert.deepEqual(ids(buildPracticeDeck(all, index, NOW)), ['3b', '1b']);
 		assert.deepEqual(
-			buildPracticeDeck([card(1, { hidden: true })], new Map(), NOW),
+			ids(buildPracticeDeck(all, index, NOW, 'forward')),
+			[],
+		);
+		assert.deepEqual(ids(buildPracticeDeck(all, index, NOW, 'backward')), [
+			'3b',
+			'1b',
+		]);
+		assert.deepEqual(
+			buildPracticeDeck(
+				[card(1, { hidden: true })],
+				new Map(),
+				NOW,
+				'forward',
+			),
 			[],
 		);
 	});
 
 	test('backward NEW only unlocks once forward is REVIEW', () => {
 		const index = indexProgress([progress(1, 'forward', 'Learning')]);
-		const deck = buildPracticeDeck([card(1), card(2)], index, NOW, {
-			direction: 'backward',
-		});
+		const deck = buildPracticeDeck(
+			[card(1), card(2)],
+			index,
+			NOW,
+			'backward',
+		);
 		assert.deepEqual(deck, []);
 		const unlocked = indexProgress([progress(1, 'forward', 'Review')]);
 		assert.deepEqual(
-			ids(
-				buildPracticeDeck([card(1)], unlocked, NOW, {
-					direction: 'backward',
-				}),
-			),
+			ids(buildPracticeDeck([card(1)], unlocked, NOW, 'backward')),
 			['1b'],
 		);
 	});
@@ -123,17 +134,25 @@ describe('buildPracticeDeck', () => {
 			progress(2, 'forward', 'Review', { lastTouchedDay: YESTERDAY }),
 		]);
 		assert.deepEqual(
-			ids(buildPracticeDeck([card(1), card(2)], index, NOW)),
+			ids(buildPracticeDeck([card(1), card(2)], index, NOW, 'backward')),
 			['2b'],
 		);
 	});
 
-	test('never includes both directions of one card', () => {
+	test('only contains the requested direction', () => {
 		const index = indexProgress([
 			progress(1, 'forward', 'Relearning'),
 			progress(1, 'backward', 'Learning'),
+			progress(2, 'forward', 'Review'),
 		]);
-		assert.deepEqual(ids(buildPracticeDeck([card(1)], index, NOW)), ['1f']);
+		assert.deepEqual(
+			ids(buildPracticeDeck([card(1), card(2)], index, NOW, 'forward')),
+			['1f'],
+		);
+		assert.deepEqual(
+			ids(buildPracticeDeck([card(1), card(2)], index, NOW, 'backward')),
+			['1b', '2b'],
+		);
 	});
 });
 

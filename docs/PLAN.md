@@ -26,9 +26,9 @@
 13. **[U]** In a test, **Hard, Good, and Easy all count as a pass** (LEARNING/RELEARN → REVIEW). FSRS still gets the actual rating. Again → RELEARN, `due = now`, lapse++, `testable = false`.
 14. **[U]** Test eligibility = (LEARNING or RELEARN with `testable`) **or** (REVIEW with `due ≤ now`). Always excludes hidden cards and direction-gap blocked cards.
 15. **[D]** Practice reveal (back shown): a NEW card becomes LEARNING. Every reveal does `practiceExposures++` and sets `lastTouchedDay = today`. Queued clears on the first reveal. RELEARN stays RELEARN during practice. On the deck's **first wrap**, every card in the deck gets `testable = true`. REVIEW cards never enter practice decks.
-16. **[D]** A deck never contains both directions of the same card. Direction gap: a direction is blocked if the opposite direction's `lastTouchedDay === today` (local date). Backward NEW unlocks when forward state is REVIEW (`BACKWARD_UNLOCK_STATE` constant).
+16. **[U]** A practice deck is always a single direction (overrides §7 "may mix"). Direction gap: a direction is blocked if the opposite direction's `lastTouchedDay === today` (local date). Backward NEW unlocks when forward state is REVIEW (`BACKWARD_UNLOCK_STATE` constant).
 17. **[D]** Deck sizes: practice target 15 (`PRACTICE_SIZE`), NEW cap 10 (`NEW_CAP`). Test max 20. If fewer than 5 are eligible, run the test with what exists; if none, show a friendly message. Tests are ordered by retrievability ascending; unreviewed LEARNING cards count as R=0, ties broken by oldest `due`/`lastReview`. "Start another test deck" appears if more eligible cards remain.
-18. **[D]** "Test this deck" (after 3 cycles) tests the forward cards first, then offers the backward cards as a follow-up (or whichever direction exists).
+18. **[U]** "Test this deck" (after 3 cycles) tests that deck's cards in its own direction; there is no follow-up direction.
 19. **[U]** The practice deck is not persisted. Reload → rebuild. Per-card progress is already saved.
 
 **Interaction**

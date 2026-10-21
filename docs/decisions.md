@@ -46,9 +46,9 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - **Hard, Good and Easy all count as a pass** in a test (user): LEARNING/RELEARN → REVIEW. FSRS receives the actual rating. Again → RELEARN, `due = now`, lapses + 1, `testable = false`.
 - **Test eligibility** (user): LEARNING or RELEARN with `testable`, or REVIEW with `due <= now`. Hidden and direction-gap-blocked cards are excluded.
 - Practice reveal (back shown): NEW → LEARNING. Each reveal increments `practiceExposures` and sets `lastTouchedDay`. `queued` clears on the first reveal. RELEARN stays RELEARN during practice. On the deck's first wrap, every card in it becomes `testable`. REVIEW cards never enter practice decks.
-- A deck never holds both directions of one card. Direction gap: blocked if the opposite direction's `lastTouchedDay` is today (local). Backward NEW unlocks when forward is REVIEW (`BACKWARD_UNLOCK_STATE`).
+- **Practice decks are always one direction** (user; overrides §7 "may mix directions"). Home has separate forward and backward Practice buttons. Direction gap: blocked if the opposite direction's `lastTouchedDay` is today (local). Backward NEW unlocks when forward is REVIEW (`BACKWARD_UNLOCK_STATE`).
 - Practice deck target 15 (`PRACTICE_SIZE`), NEW cap 10 (`NEW_CAP`). Test max 20; fewer than 5 eligible still runs; none shows a message. Tests are ordered by retrievability ascending (never-tested = 0), then oldest `due`/`lastReview`.
-- "Test this deck" tests forward cards first, then offers backward as a follow-up.
+- "Test this deck" tests that deck's cards in its single direction, so there is no follow-up test in the other direction.
 - **Practice decks are not persisted** (user); reload rebuilds one. Per-card progress is saved as it happens.
 - Reset to NEW deletes both progress records and clears `queued`; `hidden` is unchanged.
 

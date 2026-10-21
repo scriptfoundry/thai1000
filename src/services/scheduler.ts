@@ -94,35 +94,23 @@ export const isGapBlocked = (
 const isBackwardUnlocked = (index: ProgressIndex, cardId: number): boolean =>
 	BACKWARD_UNLOCK_STATES.includes(stateOf(lookup(index, cardId, 'forward')));
 
-export interface DeckOptions {
-	/** Restrict to one direction; omit to mix directions. */
-	direction?: Direction;
-}
-
 const candidates = (
 	cards: Card[],
 	index: ProgressIndex,
 	now: number,
-	direction: Direction | undefined,
+	direction: Direction,
 ): DeckEntry[] => {
 	const today = localDay(now);
-	const directions = direction ? [direction] : DIRECTIONS;
-	const entries: DeckEntry[] = [];
-	for (const card of cards) {
-		if (card.hidden) {
-			continue;
-		}
-		for (const dir of directions) {
-			if (!isGapBlocked(index, card.id, dir, today)) {
-				entries.push({
-					card,
-					direction: dir,
-					progress: lookup(index, card.id, dir),
-				});
-			}
-		}
-	}
-	return entries;
+	return cards
+		.filter(
+			(card) =>
+				!card.hidden && !isGapBlocked(index, card.id, direction, today),
+		)
+		.map((card) => ({
+			card,
+			direction,
+			progress: lookup(index, card.id, direction),
+		}));
 };
 
 const byDue = (a: DeckEntry, b: DeckEntry): number =>
@@ -132,15 +120,15 @@ const byPriority = (a: DeckEntry, b: DeckEntry): number =>
 	b.card.id - a.card.id;
 
 /**
- * Practice deck (SPEC §7): RELEARN (oldest due) → LEARNING (oldest due) →
- * queued NEW → NEW (highest id), at most NEW_CAP new, never both directions
- * of one card, never REVIEW.
+ * Practice deck (SPEC §7), always one direction: RELEARN (oldest due) →
+ * LEARNING (oldest due) → queued NEW → NEW (highest id), at most NEW_CAP
+ * new, never REVIEW.
  */
 export const buildPracticeDeck = (
 	cards: Card[],
 	index: ProgressIndex,
 	now: number,
-	{ direction }: DeckOptions = {},
+	direction: Direction,
 ): DeckEntry[] => {
 	const pool = candidates(cards, index, now, direction);
 	const inState = (state: CardState): DeckEntry[] =>
@@ -148,8 +136,7 @@ export const buildPracticeDeck = (
 
 	const fresh = inState('New').filter(
 		(entry) =>
-			entry.direction === 'forward' ||
-			isBackwardUnlocked(index, entry.card.id),
+			direction === 'forward' || isBackwardUnlocked(index, entry.card.id),
 	);
 	const ordered = [
 		...inState('Relearning').sort(byDue),
@@ -159,14 +146,10 @@ export const buildPracticeDeck = (
 	];
 
 	const deck: DeckEntry[] = [];
-	const used = new Set<number>();
 	let newCount = 0;
 	for (const entry of ordered) {
 		if (deck.length >= PRACTICE_SIZE) {
 			break;
-		}
-		if (used.has(entry.card.id)) {
-			continue;
 		}
 		if (entry.progress === null) {
 			if (newCount >= NEW_CAP) {
@@ -174,7 +157,6 @@ export const buildPracticeDeck = (
 			}
 			newCount++;
 		}
-		used.add(entry.card.id);
 		deck.push(entry);
 	}
 	return deck;
