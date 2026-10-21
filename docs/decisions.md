@@ -52,6 +52,13 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - **Practice decks are not persisted** (user); reload rebuilds one. Per-card progress is saved as it happens.
 - Reset to NEW deletes both progress records and clears `queued`; `hidden` is unchanged.
 
+## Words screen
+
+- Words are listed **most frequent first** (highest id), matching practice priority. Rows render in batches of 100 as you scroll (IntersectionObserver), so 1000 rows never block the phone.
+- Filter chips show a count. A word matches if either direction has that status; HIDDEN overrides both directions, so a hidden word only appears under ALL and HIDDEN.
+- In the dialog, "Due" reads "Ready to test" / "Practise first" for LEARNING and RELEARN, since their `due` has no meaning before a test; REVIEW shows the date or "Due now".
+- "Queue for next practice" toggles, and only shows while some direction is still NEW and the word is not hidden. Reset asks for a second tap ("Tap again to reset") instead of a separate confirmation dialog. The dialog also has ▶ Thai / ▶ English buttons.
+
 ## Interaction
 
 - Practice: right on front flips; right on back advances (wraps, cycle + 1); left goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
