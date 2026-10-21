@@ -36,6 +36,13 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - The app's state machine (§6) owns `state`. FSRS only computes `stability`, `difficulty` and `due`.
 - FSRS-6 (21 weights) in long-term mode with no learning steps; practice replaces short-term steps. Same-day reviews use the FSRS-6 short-term stability formula (w17–w19). Retention 0.9, no fuzz, pass interval 1–36500 days. Weights are in the exported `FSRS_PARAMS`.
+- **FSRS verification:** formulas and default weights were checked against ts-fsrs 5.4.2 ("FSRS-6.0", from npm; GitHub was blocked). Over 24,000 random steps, stability matched within 3e-7 (relative; the reference rounds to 8 decimals) and every interval matched. `fsrs.test.ts` pins three reference sequences. ts-fsrs was only downloaded to a scratch folder and is not a dependency.
+- Elapsed time is whole **local** calendar days (ts-fsrs uses UTC days), matching `lastTouchedDay`.
+- A passed test is **due at local midnight** of the interval day, not the exact time of day, so a card due tomorrow is testable all of tomorrow.
+- The reference also pushes Hard < Good < Easy intervals apart when it computes all four at once; only the chosen rating is computed here, so that adjustment is skipped. The intervals already come out in that order for the default weights.
+- Backward NEW unlocks when forward is Review **or Relearning** ("at least REVIEW": a lapsed forward has been REVIEW before).
+- `NEW_CAP` counts queued NEW too: queued go first, then ordinary NEW up to 10 in total.
+- LEARNING directions are ordered by `due`, which is set when the card is first revealed in practice (oldest first).
 - **Hard, Good and Easy all count as a pass** in a test (user): LEARNING/RELEARN → REVIEW. FSRS receives the actual rating. Again → RELEARN, `due = now`, lapses + 1, `testable = false`.
 - **Test eligibility** (user): LEARNING or RELEARN with `testable`, or REVIEW with `due <= now`. Hidden and direction-gap-blocked cards are excluded.
 - Practice reveal (back shown): NEW → LEARNING. Each reveal increments `practiceExposures` and sets `lastTouchedDay`. `queued` clears on the first reveal. RELEARN stays RELEARN during practice. On the deck's first wrap, every card in it becomes `testable`. REVIEW cards never enter practice decks.
