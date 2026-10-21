@@ -7,7 +7,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - **ESLint removed** (user). The spec names Biome as the linter. Removed `eslint`, `@typescript-eslint/parser`, `globals` and `eslint.config.mjs`. `yarn lint` runs `biome check`.
 - **Biome ignores gitignored files** (`vcs.useIgnoreFile`), so `dist/` is not linted.
 - **`"strict": true`** added to `tsconfig.json`; the spec requires strict TS but it was not set.
-- **Tests use `node --test`** (user). Node 22 runs `.ts` files natively (type stripping), so no test framework is needed. `yarn test` runs `src/**/*.test.ts`. Tests are excluded from `tsc` because `@types/node` is not installed; Vite never bundles them since nothing imports them. Modules under test must stay free of DOM and Vite-only imports (`?raw`).
+- **Tests use `node --test`** (user), with no test framework. Ubuntu's Node build lacks native TypeScript support, so `extras/test-loader.mjs` registers small hooks that compile `.ts` with the installed `typescript` and resolve extensionless relative imports like Vite. `yarn test` runs `src/**/*.test.ts`. Tests are excluded from `tsc` because `@types/node` is not installed; Vite never bundles them since nothing imports them. Modules under test must stay free of DOM and Vite-only imports (`?raw`, `import.meta.env`), which is why seed parsing (`seed.ts`) is separate from fetching and writing (`seed-sync.ts`).
 - **`index.html`**: favicon link pointed at a missing `favicon.svg`; now `favicon.ico`. Added `theme-color` meta.
 - **`title.scss`**: removed an undefined `var(--red)`.
 - `vite-plugin-pwa` lists `workbox-build` and `workbox-window` as peer dependencies. Both are already present transitively, so nothing was added.
@@ -28,6 +28,8 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - `seed.tsv` is **not precached**. It uses a Workbox NetworkFirst runtime route (~3s timeout), so a new seed is picked up when online and the cached one is used offline. Precaching would serve a stale seed until the next app build.
 - Fetch fails and DB empty → fatal screen. Fetch fails and DB has cards → warning, continue. `navigator.onLine === false` at start → offline warning.
+- A seed row that fails validation but has a readable id does not delete the stored card, so a typo in the file cannot wipe progress. A seed with zero valid rows is treated as unavailable.
+- Updated cards keep `hidden`/`queued`; the new `seedVersion` is written in the same transaction as the diff, so it is stored only if the sync commits.
 - **Service worker uses `registerType: 'prompt'`** (user). It checks once at startup; if an update is waiting, a banner offers Reload. Nothing reloads automatically.
 
 ## Status model and FSRS
