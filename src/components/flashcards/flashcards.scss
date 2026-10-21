@@ -1,0 +1,41 @@
+.screen.flashcards-screen {
+	// The stage owns all touch input; nothing on this screen scrolls.
+	overflow: hidden;
+}
+
+main.flashcards {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space);
+	height: 100%;
+
+	.screen-nav {
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0;
+	}
+
+	.deck-status {
+		font-variant-numeric: tabular-nums;
+	}
+
+	.deck-title {
+		font-size: 1.25rem;
+	}
+
+	.card-stage {
+		position: relative;
+		flex: 1;
+		min-height: 16rem;
+		touch-action: none;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.deck-message {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space);
+		text-align: center;
+	}
+}

@@ -1,4 +1,5 @@
 import Banner, { type BannerOptions } from './components/banner/banner';
+import Flashcards from './components/flashcards/flashcards';
 import Home from './components/home/home';
 import SettingsScreen from './components/settings/settings';
 import Start from './components/start/start';
@@ -7,8 +8,11 @@ import { Router } from './services/router';
 import { SeedUnavailableError, syncSeed } from './services/seed-sync';
 import { loadSettings, ratesOf } from './services/settings';
 import { speech } from './services/speech';
-import type { AppContext } from './types';
+import type { AppContext, Direction } from './types';
 import './styles/main.scss';
+
+const parseDirection = (value: string | undefined): Direction | null =>
+	value === 'forward' || value === 'backward' ? value : null;
 
 const requireElement = (id: string): HTMLElement => {
 	const element = document.getElementById(id);
@@ -78,6 +82,18 @@ const main = (): void => {
 					},
 				}),
 			'/home': () => new Home(),
+			'/practice/:dir': ({ dir }) => {
+				const direction = parseDirection(dir);
+				return app && direction
+					? new Flashcards(app, {
+							direction,
+							onTestDeck: (cardIds) =>
+								router.navigate(
+									`/test/${direction}?cards=${cardIds.join(',')}`,
+								),
+						})
+					: null;
+			},
 			'/settings': () => (app ? new SettingsScreen(app) : null),
 		},
 		fallback: '/home',
