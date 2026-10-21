@@ -7,6 +7,14 @@ main.start {
 	min-height: 100%;
 	text-align: center;
 
+	.start-status:empty {
+		display: none;
+	}
+
+	.start-status.start-error {
+		font-weight: 600;
+	}
+
 	.start-button {
 		min-width: 12rem;
 		min-height: 64px;

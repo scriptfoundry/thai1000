@@ -7,6 +7,20 @@ export default defineConfig({
 		VitePWA({
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.ico'],
+			workbox: {
+				// The seed is fetched network-first rather than precached, so a new
+				// seed is picked up when online and the cached copy is used offline.
+				runtimeCaching: [
+					{
+						urlPattern: /\/data\/seed\.tsv$/,
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'seed',
+							networkTimeoutSeconds: 3,
+						},
+					},
+				],
+			},
 			manifest: {
 				name: 'Thai Flashcards',
 				short_name: 'Thai',
