@@ -105,7 +105,7 @@ const main = (): void => {
 						resumePath = null;
 					},
 				}),
-			'/home': () => new Home(),
+			'/home': () => (app ? new Home(app) : null),
 			'/practice/:dir': ({ dir }) => deckScreen('practice', dir),
 			'/test/:dir': ({ dir, cards }) =>
 				deckScreen('test', dir, parseCardIds(cards)),

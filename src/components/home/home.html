@@ -1,19 +1,34 @@
 <main class="home">
 	<h1>Thai Flashcards</h1>
-	<section class="home-section" aria-labelledby="home-practice">
-		<h2 id="home-practice">Practice</h2>
+
+	<section class="home-direction" data-direction="forward" aria-labelledby="home-forward">
+		<h2 id="home-forward">Thai → English</h2>
+		<dl class="home-counts">
+			<div><dt>New</dt><dd data-count="new">–</dd></div>
+			<div><dt>Learning</dt><dd data-count="learning">–</dd></div>
+			<div><dt>Relearn</dt><dd data-count="relearn">–</dd></div>
+			<div><dt>Due for test</dt><dd data-count="dueForTest">–</dd></div>
+		</dl>
 		<nav class="button-row">
-			<a class="button" href="#/practice/forward">Thai → English</a>
-			<a class="button" href="#/practice/backward">English → Thai</a>
+			<a class="button" href="#/practice/forward">Practice</a>
+			<a class="button home-test" href="#/test/forward">Test</a>
 		</nav>
 	</section>
-	<section class="home-section" aria-labelledby="home-test">
-		<h2 id="home-test">Test</h2>
+
+	<section class="home-direction" data-direction="backward" aria-labelledby="home-backward">
+		<h2 id="home-backward">English → Thai</h2>
+		<dl class="home-counts">
+			<div><dt>New</dt><dd data-count="new">–</dd></div>
+			<div><dt>Learning</dt><dd data-count="learning">–</dd></div>
+			<div><dt>Relearn</dt><dd data-count="relearn">–</dd></div>
+			<div><dt>Due for test</dt><dd data-count="dueForTest">–</dd></div>
+		</dl>
 		<nav class="button-row">
-			<a class="button" href="#/test/forward">Thai → English</a>
-			<a class="button" href="#/test/backward">English → Thai</a>
+			<a class="button" href="#/practice/backward">Practice</a>
+			<a class="button home-test" href="#/test/backward">Test</a>
 		</nav>
 	</section>
+
 	<nav class="home-links button-row">
 		<a class="button button-secondary" href="#/words">Words</a>
 		<a class="button button-secondary" href="#/settings">Settings</a>
