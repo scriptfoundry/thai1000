@@ -1,0 +1,23 @@
+dialog.confirm-dialog {
+	width: min(100% - 2 * var(--space), 28rem);
+	padding: 0;
+	border: 2px solid var(--border-color);
+	border-radius: calc(var(--radius) * 1.5);
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	&::backdrop {
+		background-color: rgb(28 79 130 / 35%);
+	}
+
+	.confirm {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space);
+		padding: var(--space);
+	}
+
+	.confirm-message {
+		white-space: pre-line;
+	}
+}
