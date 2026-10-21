@@ -1,10 +1,12 @@
 /** Loads and persists cards and per-direction progress. */
 import type { Card, Progress } from '../types';
 import { request, transact } from './db';
+import { nextState, type Rating } from './fsrs';
 import {
 	type DeckEntry,
 	indexProgress,
 	markTestable,
+	newProgress,
 	type ProgressIndex,
 	revealInPractice,
 } from './scheduler';
@@ -73,4 +75,21 @@ export const markDeckTestable = (
 				store.put(markTestable(current));
 			}
 		}
+	});
+
+/** Commit a test rating immediately (SPEC §8: closing mid-test loses nothing). */
+export const recordGrade = (
+	db: IDBDatabase,
+	entry: DeckEntry,
+	rating: Rating,
+	now: number,
+): Promise<Progress> =>
+	transact(db, ['progress'], async (tx) => {
+		const store = tx.objectStore('progress');
+		const current =
+			(await getProgress(store, entry)) ??
+			newProgress(entry.card.id, entry.direction, now);
+		const next = nextState(current, rating, now);
+		store.put(next);
+		return next;
 	});
