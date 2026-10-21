@@ -32,6 +32,22 @@ main.flashcards {
 		-webkit-user-select: none;
 	}
 
+	.deck-grades {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: calc(var(--space) * 0.5);
+
+		.button {
+			padding: 0 calc(var(--space) * 0.5);
+		}
+
+		.grade-again {
+			background-color: var(--background-color);
+			color: var(--text-color);
+		}
+	}
+
+
 	.deck-message {
 		display: flex;
 		flex-direction: column;

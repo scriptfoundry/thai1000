@@ -3,7 +3,7 @@
 		<a class="button button-secondary" href="#/home">← Home</a>
 		<p class="deck-status" aria-live="polite"></p>
 	</nav>
-	<h1 class="deck-title">Practice</h1>
+	<h1 class="deck-title">Flashcards</h1>
 
 	<div class="card-stage"></div>
 
@@ -13,11 +13,20 @@
 		</button>
 		<button type="button" class="button deck-next">Show answer</button>
 	</div>
+	<div class="deck-grades" hidden>
+		<button type="button" class="button grade grade-again" data-grade="grade-again">
+			Again
+		</button>
+		<button type="button" class="button grade" data-grade="grade-hard">Hard</button>
+		<button type="button" class="button grade" data-grade="grade-good">Good</button>
+		<button type="button" class="button grade" data-grade="grade-easy">Easy</button>
+	</div>
 	<div class="deck-offer button-row" hidden>
 		<button type="button" class="button deck-test">Test this deck</button>
 	</div>
 
 	<section class="deck-message" hidden>
+		<h2 class="deck-message-title">Done</h2>
 		<p class="deck-message-text"></p>
 		<nav class="button-row deck-message-actions"></nav>
 	</section>

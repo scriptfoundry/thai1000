@@ -1,5 +1,5 @@
 import Banner, { type BannerOptions } from './components/banner/banner';
-import Flashcards from './components/flashcards/flashcards';
+import Flashcards, { type DeckMode } from './components/flashcards/flashcards';
 import Home from './components/home/home';
 import SettingsScreen from './components/settings/settings';
 import Start from './components/start/start';
@@ -13,6 +13,13 @@ import './styles/main.scss';
 
 const parseDirection = (value: string | undefined): Direction | null =>
 	value === 'forward' || value === 'backward' ? value : null;
+
+/** `?cards=1,2,3` → [1, 2, 3]; anything malformed is dropped. */
+const parseCardIds = (value: string | undefined): number[] | undefined =>
+	value
+		?.split(',')
+		.map(Number)
+		.filter((id) => Number.isInteger(id) && id > 0);
 
 const requireElement = (id: string): HTMLElement => {
 	const element = document.getElementById(id);
@@ -65,6 +72,22 @@ const main = (): void => {
 	let started = false;
 	let resumePath: string | null = null;
 
+	const deckScreen = (
+		mode: DeckMode,
+		dir: string | undefined,
+		cardIds?: number[],
+	): Flashcards | null => {
+		const direction = parseDirection(dir);
+		return app && direction
+			? new Flashcards(app, {
+					mode,
+					direction,
+					cardIds,
+					navigate: (path) => router.navigate(path),
+				})
+			: null;
+	};
+
 	const router = new Router(container, {
 		routes: {
 			'/': () =>
@@ -82,18 +105,9 @@ const main = (): void => {
 					},
 				}),
 			'/home': () => new Home(),
-			'/practice/:dir': ({ dir }) => {
-				const direction = parseDirection(dir);
-				return app && direction
-					? new Flashcards(app, {
-							direction,
-							onTestDeck: (cardIds) =>
-								router.navigate(
-									`/test/${direction}?cards=${cardIds.join(',')}`,
-								),
-						})
-					: null;
-			},
+			'/practice/:dir': ({ dir }) => deckScreen('practice', dir),
+			'/test/:dir': ({ dir, cards }) =>
+				deckScreen('test', dir, parseCardIds(cards)),
 			'/settings': () => (app ? new SettingsScreen(app) : null),
 		},
 		fallback: '/home',
