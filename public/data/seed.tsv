@@ -1,4 +1,5 @@
-version: 1
+#seedVersion	1
+id	version	thai	english	thaiExample	englishExample	category
 1	1	หลอดไฟ	light bulb	ช่างไฟฟ้าปีนขึ้นไปเปลี่ยนหลอดไฟดวงใหม่ที่ระเบียง.	The electrician climbed up to replace a new light bulb on the balcony.	nouns
 2	1	พัดลม	electric fan	เปิดพัดลมส่ายเบาๆ เพื่อช่วยให้อากาศในห้องถ่ายเท.	Turn on the electric fan oscillating gently to help air circulate in the room.	nouns
 3	1	ผ้าห่ม	blanket	เด็กน้อยดึงผ้าห่มผืนหนาขึ้นมาคลุมตัวเพื่อคลายหนาว.	The child pulled up the thick blanket to cover up against the cold.	nouns
