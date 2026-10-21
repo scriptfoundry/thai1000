@@ -31,6 +31,8 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - A seed row that fails validation but has a readable id does not delete the stored card, so a typo in the file cannot wipe progress. A seed with zero valid rows is treated as unavailable.
 - Updated cards keep `hidden`/`queued`; the new `seedVersion` is written in the same transaction as the diff, so it is stored only if the sync commits.
 - **Service worker uses `registerType: 'prompt'`** (user). It checks once at startup; if an update is waiting, a banner offers Reload. Nothing reloads automatically.
+- The worker is registered by hand (`src/services/pwa.ts`, `injectRegister: false`) instead of through `virtual:pwa-register`. The helper would bundle `workbox-window`, which is only a transitive dependency, and the spec asks for no runtime dependencies. Reload posts `SKIP_WAITING` to the waiting worker and reloads on `controllerchange`. Registration only happens in production builds.
+- Precache: `index.html`, the JS/CSS bundle, `favicon.ico`, the manifest and its two icons (7 entries). The manifest adds `display: standalone`, `orientation: portrait`, `start_url`/`scope` `./`, a white `background_color` and the `#69b0f8` theme colour.
 
 ## Status model and FSRS
 
