@@ -3,6 +3,7 @@ import Flashcards, { type DeckMode } from './components/flashcards/flashcards';
 import Home from './components/home/home';
 import SettingsScreen from './components/settings/settings';
 import Start from './components/start/start';
+import Words from './components/words/words';
 import { openDb } from './services/db';
 import { Router } from './services/router';
 import { SeedUnavailableError, syncSeed } from './services/seed-sync';
@@ -109,6 +110,7 @@ const main = (): void => {
 			'/test/:dir': ({ dir, cards }) =>
 				deckScreen('test', dir, parseCardIds(cards)),
 			'/settings': () => (app ? new SettingsScreen(app) : null),
+			'/words': () => (app ? new Words(app) : null),
 		},
 		fallback: '/home',
 		guard: (path) => {

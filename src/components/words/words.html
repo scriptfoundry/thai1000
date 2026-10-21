@@ -1,0 +1,29 @@
+<main class="words">
+	<nav class="screen-nav">
+		<a class="button button-secondary" href="#/home">← Home</a>
+	</nav>
+	<h1>Words</h1>
+
+	<fieldset class="word-filters">
+		<legend class="visually-hidden">Filter by status</legend>
+		<div class="word-chips"></div>
+	</fieldset>
+	<p class="word-count" aria-live="polite"></p>
+
+	<div class="word-table-wrap">
+		<table class="word-table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Thai</th>
+					<th scope="col">English</th>
+					<th scope="col"><abbr title="Thai → English">Th→En</abbr></th>
+					<th scope="col"><abbr title="English → Thai">En→Th</abbr></th>
+					<th scope="col">Hidden</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<div class="word-sentinel" aria-hidden="true"></div>
+</main>

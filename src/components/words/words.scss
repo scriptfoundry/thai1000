@@ -1,0 +1,89 @@
+main.words {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space);
+
+	.word-filters {
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	.word-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: calc(var(--space) * 0.5);
+	}
+
+	.chip {
+		min-height: 36px;
+		padding: 0 calc(var(--space) * 0.75);
+		border: 2px solid var(--border-color);
+		border-radius: 999px;
+		background-color: var(--background-color);
+		font-size: 0.85rem;
+		font-weight: 600;
+		cursor: pointer;
+
+		&[aria-pressed='true'] {
+			background-color: var(--button-color);
+			color: var(--button-text-color);
+		}
+	}
+
+	.word-table-wrap {
+		overflow-x: auto;
+	}
+
+	.word-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.95rem;
+
+		th,
+		td {
+			padding: calc(var(--space) * 0.5);
+			border-bottom: 1px solid var(--border-color);
+			text-align: left;
+			vertical-align: top;
+		}
+
+		thead th {
+			white-space: nowrap;
+		}
+
+		abbr {
+			text-decoration: none;
+		}
+
+		tbody tr {
+			cursor: pointer;
+
+			&:hover,
+			&:focus-visible {
+				background-color: var(--surface-color);
+				outline: none;
+			}
+		}
+
+		.word-id {
+			font-variant-numeric: tabular-nums;
+		}
+
+		td[lang='th'] {
+			font-size: 1.1rem;
+		}
+	}
+
+	.status {
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		white-space: nowrap;
+	}
+
+	.word-sentinel {
+		height: 1px;
+	}
+}
