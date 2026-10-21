@@ -56,7 +56,12 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - Practice: right on front flips; right on back advances (wraps, cycle + 1); left goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
 - Test: right on front flips. Grades are accepted only on the back face, then auto-advance. Left and single-pointer right on the back do nothing.
-- Gestures: pointer count = max simultaneous pointers (3+ discarded). Swipe ≥ 50px with a dominant axis ≥ 1.5× the other; two-pointer swipes use the centroid. Tap < 10px and < 250ms; double tap = two taps within 300ms; triple tap discarded.
+- Gestures: pointer count = max simultaneous pointers (3+ discarded); a `pointercancel` discards the gesture. Swipe ≥ 50px of centroid travel with a dominant axis ≥ 1.5× the other. Tap: every pointer moves ≤ 10px and the gesture lasts ≤ 300ms (raised from 250ms so two-finger taps register). Taps within 300ms of each other form a multi-tap.
+- **Double taps act about 300ms after the second tap**, once no third tap has arrived; that delay is what lets triple taps be discarded. Single taps do nothing.
+- Presses that start on a button or link inside the card area are clicks, not gestures. Gesture keys call `preventDefault`, so Space never also activates a focused button.
+- Previous is disabled on the first card of a round, rather than wrapping backwards.
+- Card fronts show only "Listen · Thai" (or English) and a speaker icon, never the word. The main button reads "Show answer" on the front and "Next card" on the back.
+- "Test this deck" navigates to `#/test/<direction>?cards=<ids>`, so a reload keeps the test's card list. The router passes query values as route params.
 - **Separate speech rates** (user): Thai 0.7, English 1.0.
 - Voices match `voiceURI` or `name`, case-insensitive substring, because names like "Moira" and "Kanya" are not voiceURIs on every platform.
 - Voice warnings (fallback used, or no voice for a language) appear as banners at startup and on the Settings screen. Speech is unlocked by a silent utterance spoken inside the Start tap.
