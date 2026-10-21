@@ -1,0 +1,39 @@
+<main class="settings">
+	<nav class="screen-nav">
+		<a class="button button-secondary" href="#/home">← Home</a>
+	</nav>
+	<h1>Settings</h1>
+
+	<section class="settings-section" aria-labelledby="settings-speech">
+		<h2 id="settings-speech">Speech</h2>
+		<div class="voice" data-language="thai">
+			<h3>Thai</h3>
+			<p class="voice-name"></p>
+			<label class="voice-rate">
+				<span>Rate</span>
+				<input type="range" step="0.05" />
+				<output></output>
+			</label>
+			<button type="button" class="button button-secondary voice-sample">
+				Play sample
+			</button>
+		</div>
+		<div class="voice" data-language="english">
+			<h3>English</h3>
+			<p class="voice-name"></p>
+			<label class="voice-rate">
+				<span>Rate</span>
+				<input type="range" step="0.05" />
+				<output></output>
+			</label>
+			<button type="button" class="button button-secondary voice-sample">
+				Play sample
+			</button>
+		</div>
+	</section>
+
+	<section class="settings-section" aria-labelledby="settings-about">
+		<h2 id="settings-about">About</h2>
+		<p>Version <span class="app-version"></span></p>
+	</section>
+</main>

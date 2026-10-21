@@ -1,4 +1,4 @@
-import type { Settings } from '../types';
+import type { Language, Settings } from '../types';
 import { get, put } from './db';
 
 const KEY = 'app';
@@ -29,3 +29,8 @@ export const saveSettings = (
 	db: IDBDatabase,
 	settings: Settings,
 ): Promise<void> => put(db, 'settings', { ...settings }, KEY);
+
+export const ratesOf = (settings: Settings): Record<Language, number> => ({
+	thai: settings.thaiRate,
+	english: settings.englishRate,
+});

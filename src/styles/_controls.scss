@@ -38,3 +38,14 @@
 		flex: 1 1 10rem;
 	}
 }
+
+// Top-of-screen navigation (back to Home etc.).
+.screen-nav {
+	display: flex;
+	gap: calc(var(--space) * 0.5);
+	margin-bottom: var(--space);
+
+	.button {
+		min-height: 40px;
+	}
+}

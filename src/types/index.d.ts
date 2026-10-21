@@ -59,3 +59,8 @@ export interface AppContext {
 	db: IDBDatabase;
 	settings: Settings;
 }
+
+declare global {
+	/** `version` from package.json, injected by Vite. */
+	const __APP_VERSION__: string;
+}
