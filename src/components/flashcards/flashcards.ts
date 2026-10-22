@@ -63,6 +63,8 @@ export default class Flashcards extends BaseComponent {
 	private position = 0;
 	private face: Face = 'front';
 	private cycles = 0;
+	/** Test cards before this position are rated and can only be viewed. */
+	private graded = 0;
 	private passed = 0;
 	private failed = 0;
 	private card: CardView | null = null;
@@ -183,16 +185,27 @@ export default class Flashcards extends BaseComponent {
 			this.card?.replay();
 			return;
 		}
-		if (this.testing) {
+		if (action === 'prev') {
+			this.back();
+		} else if (this.testing) {
 			this.handleTest(action);
-			return;
-		}
-		if (action === 'next') {
+		} else if (action === 'next') {
 			this.nextPractice();
-		} else if (action === 'prev') {
-			this.prevPractice();
 		}
 		// Grades only apply in tests.
+	}
+
+	/** Back face → its front; front → the previous card's back. */
+	private back(): void {
+		if (this.face === 'back') {
+			this.face = 'front';
+		} else if (this.position > 0) {
+			this.position--;
+			this.face = 'back';
+		} else {
+			return;
+		}
+		this.show('left');
 	}
 
 	// --- Practice ---------------------------------------------------------
@@ -211,15 +224,6 @@ export default class Flashcards extends BaseComponent {
 			}
 		}
 		this.show('right');
-	}
-
-	private prevPractice(): void {
-		if (this.position === 0) {
-			return;
-		}
-		this.position--;
-		this.face = 'front';
-		this.show('left');
 	}
 
 	private reveal(): void {
@@ -256,11 +260,14 @@ export default class Flashcards extends BaseComponent {
 
 	// --- Test -------------------------------------------------------------
 
+	private get reviewing(): boolean {
+		return this.testing && this.position < this.graded;
+	}
+
 	private handleTest(action: CardAction): void {
-		if (this.face === 'front') {
+		if (this.face === 'front' || this.reviewing) {
 			if (action === 'next') {
-				this.face = 'back';
-				this.show('right');
+				this.next();
 			}
 			return;
 		}
@@ -282,6 +289,7 @@ export default class Flashcards extends BaseComponent {
 				console.error('Saving grade failed:', error),
 			);
 
+		this.graded++;
 		this.position++;
 		this.face = 'front';
 		if (this.position < this.deck.length) {
@@ -289,6 +297,17 @@ export default class Flashcards extends BaseComponent {
 		} else {
 			void this.finishTest();
 		}
+	}
+
+	/** Flip, or move on from a rated card's back (never past the first unrated card). */
+	private next(): void {
+		if (this.face === 'front') {
+			this.face = 'back';
+		} else {
+			this.position++;
+			this.face = 'front';
+		}
+		this.show('right');
 	}
 
 	private async finishTest(): Promise<void> {
@@ -386,11 +405,11 @@ export default class Flashcards extends BaseComponent {
 			? 'Next card'
 			: 'Show answer';
 		this.query<HTMLButtonElement>('.deck-prev').disabled =
-			this.position === 0;
-		// Tests rate the back face instead of moving on or back.
-		this.query('.deck-controls').hidden = this.testing && onBack;
-		this.query('.deck-prev').hidden = this.testing;
-		this.query('.deck-grades').hidden = !(this.testing && onBack);
+			this.position === 0 && !onBack;
+		// An unrated test back is rated instead of moved on from.
+		const grading = this.testing && onBack && !this.reviewing;
+		this.query('.deck-controls').hidden = grading;
+		this.query('.deck-grades').hidden = !grading;
 	}
 
 	private showMessage(

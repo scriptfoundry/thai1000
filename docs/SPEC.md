@@ -121,7 +121,7 @@ In addition to using visible on-screen buttons, an experienced user should be ab
 | Pointer type | Pointer gesture | Keyboard | Action |
 |---|---|
 | Single | Swipe left | Right arrow | flip to back of current card / advance to front of next card |
-| Single | Swipe right | Left arrow | return to front of previous card |
+| Single | Swipe right | Left arrow | on a back face, return to its front; on a front face, return to the back of the previous card |
 | Single | Double tap | Space bar | play audio again |
 | Double | Swipe up | Shift + Up arrow | grade Easy |
 | Double | Swipe down | Shift + Down arrow | grade Hard |
@@ -129,6 +129,7 @@ In addition to using visible on-screen buttons, an experienced user should be ab
 | Double | Double tap | Shift + Space bar | grade Again |
 
 - After grading, advance to the next card.
+- Going back never re-grades: in a test, an earlier card can be viewed again but its grade cannot be changed.
 - When selecting what kind of deck to load, there should be separate navigation buttons for "forward" and "backward" decks.
 - Grades commit to IndexedDB immediately (so closing the app mid-test loses nothing).
 - Swipe detection: pointer events, minimum distance about 50px, dominant axis wins; ignore vertical scrolling conflicts via `touch-action: none` on the card. Discard ambiguous gestures (including triple pointers and triple taps.)

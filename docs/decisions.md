@@ -78,16 +78,17 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 ## Interaction
 
 - **Single-pointer swipes** (user): swipe left = next (→ key), swipe right = previous (← key). The §8 table originally had the swipes the other way round. The keys are unchanged.
-- Practice: next on front flips; next on back advances (wraps, cycle + 1); previous goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
-- Test: next on front flips. Grades are accepted only on the back face, then auto-advance. Previous, and next on the back, do nothing.
-- On a test card back, the Previous/Next buttons are replaced by Again / Hard / Good / Easy. Previous is not offered in tests, because a rated card cannot be re-rated.
+- **Previous steps back one face** (user): on a back it shows that card's front; on a front it shows the previous card's back (no-op on the first card's front). Same in practice and tests.
+- Practice: next on front flips; next on back advances (wraps, cycle + 1). Grade gestures are ignored. Going back after a wrap stops at the first card of the new round, which is reshuffled.
+- Test: next on front flips. Grades are accepted only on the back of the first unrated card, then auto-advance. Earlier (rated) cards can be revisited with Previous but are view-only: their back shows Previous / Next card instead of the grade buttons, and grades are ignored there, so a rating cannot be changed.
+- On an unrated test card back, the Previous/Next buttons are replaced by Again / Hard / Good / Easy; swipe right / ← still goes back to the front.
 - **Grade button colours and hints** (user): Again light grey, Hard dark red, Good the normal button blue, Easy light blue (`--grade-*` variables). These are the only text not in `#1c4f82` or white. Each button shows its two-finger gesture under the label: ⌾⌾ double tap, ⇊ down, ⇉ right, ⇈ up.
 - The test summary reads "Memorized X of N · Failed Y" and offers **Another test deck** only while more cards in that direction are test-eligible, plus Practice and Home. "Another test deck" is a full test of that direction, even when the finished test came from a practice deck.
 - Ratings are saved in their own transaction as each card is rated. The summary counts the remaining cards after those writes, since IndexedDB runs a later read after earlier writes to the same store.
 - Gestures: pointer count = max simultaneous pointers (3+ discarded); a `pointercancel` discards the gesture. Swipe ≥ 50px of centroid travel with a dominant axis ≥ 1.5× the other. Tap: every pointer moves ≤ 10px and the gesture lasts ≤ 300ms (raised from 250ms so two-finger taps register). Taps within 300ms of each other form a multi-tap.
 - **Double taps act about 300ms after the second tap**, once no third tap has arrived; that delay is what lets triple taps be discarded. Single taps do nothing.
 - Presses that start on a button or link inside the card area are clicks, not gestures. Gesture keys call `preventDefault`, so Space never also activates a focused button.
-- Previous is disabled on the first card of a round, rather than wrapping backwards.
+- Previous is disabled on the front of the first card of a round, rather than wrapping backwards.
 - **Card info button** (user): a round "i" in the card's top-right corner, on both faces, opens the same word dialog as the Words screen. On a Thai → English front it does reveal the answer; that is the point of it. Card gestures and keys are ignored while the dialog is open. A change made in the dialog (hide, reset) updates the deck entry, so a later grade starts from the reset progress, but the card stays in the current deck.
 - **Replay on the back** (user): Play again / double tap / Space on a back face says the back word, then the front word (e.g. English, then Thai on a Thai → English card). The back still speaks only its own word when it first appears. `speech.speakAll()` stops the sequence if anything else speaks or cancels in between, so moving on mid-replay never plays the second word over the next card.
 - Card fronts show only "Listen · Thai" (or English) and a speaker icon, never the word. The main button reads "Show answer" on the front and "Next card" on the back.
