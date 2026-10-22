@@ -12,16 +12,40 @@ dialog.word-dialog {
 	}
 
 	.word-detail {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		gap: var(--space);
 		padding: var(--space);
 	}
 
+	// Above the header text, which leaves room for it so they never overlap.
+	.word-close {
+		position: absolute;
+		top: calc(var(--space) * 0.5);
+		right: calc(var(--space) * 0.5);
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		border: 2px solid var(--border-color);
+		border-radius: 50%;
+		background-color: var(--background-color);
+		color: var(--text-color);
+		font-size: 1.5rem;
+		line-height: 1;
+		cursor: pointer;
+
+		&:focus-visible {
+			outline: 3px solid var(--text-color);
+			outline-offset: 2px;
+		}
+	}
+
 	.word-header {
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--space) * 0.25);
+		padding-right: 48px;
 	}
 
 	.word-id,
