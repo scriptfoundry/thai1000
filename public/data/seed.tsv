@@ -1,4 +1,4 @@
-#seedVersion	1
+#seedVersion	2
 id	version	thai	english	thaiExample	englishExample	category
 1	1	หลอดไฟ	light bulb	ช่างไฟฟ้าปีนขึ้นไปเปลี่ยนหลอดไฟดวงใหม่ที่ระเบียง.	The electrician climbed up to replace a new light bulb on the balcony.	nouns
 2	1	พัดลม	electric fan	เปิดพัดลมส่ายเบาๆ เพื่อช่วยให้อากาศในห้องถ่ายเท.	Turn on the electric fan oscillating gently to help air circulate in the room.	nouns
@@ -971,7 +971,7 @@ id	version	thai	english	thaiExample	englishExample	category
 969	1	เขา	he	เขาทำงานเป็นวิศวกรประจำบริษัทข้ามชาติแห่งนี้.	He works as an engineer at this multinational company.	pronouns
 970	1	สาย	late	วันนี้นักเรียนตื่นสายจึงต้องรีบวิ่งไปขึ้นรถโรงเรียนให้ทัน.	The pupil woke up late today and had to sprint to catch the bus.	adverbs
 971	1	เล็ก	small	นกกระจอกตัวเล็กกระโดดหาเศษอาหารอยู่บนพื้นสนามหญ้า.	The small sparrow hops scouring food scraps on the grass lawn.	adjectives
-972	1	ครั้ง	time	นี่เป็นครั้งแรกที่ฉันได้ลองชิมอาหารพื้นเมืองจานนี้.	This is the first time I have tasted this regional dish.	nouns
+972	2	ครั้ง	occassion	นี่เป็นครั้งแรกที่ฉันได้ลองชิมอาหารพื้นเมืองจานนี้.	This is the first time I have tasted this regional dish.	nouns
 973	1	ดึงดูด	to attract	ดอกไม้ส่งกลิ่นดึงดูดผึ้งเข้ามา.	The flower gives off a scent to attract bees.	verbs
 974	1	สวัสดีตอนบ่าย	good afternoon	สวัสดีตอนบ่าย ขอเชิญทุกท่านนั่งพักดื่มน้ำเย็นก่อนเริ่มสัมมนา.	Good afternoon; please sit down and drink cold water before the seminar.	others
 975	1	แต่	but	เขาอยากไปวิ่งออกกำลังกายแต่ฝนเริ่มตกลงมาพอดี.	He wanted to go for a run, but it started raining.	conjunctions
