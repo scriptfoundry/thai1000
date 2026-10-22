@@ -1,6 +1,7 @@
 import { BaseComponent, SCREEN_TRANSITION_MS } from '../../services/component';
 import { type Library, loadLibrary } from '../../services/progress';
 import { progressKey, type Status, statusOf } from '../../services/scheduler';
+import { textMatcher } from '../../services/search';
 import type { AppContext, Card, Direction } from '../../types';
 import WordDialog from '../word-dialog/word-dialog';
 import WORDS_CONTENTS from './words.html?raw';
@@ -35,11 +36,12 @@ const chipLabel = (filter: Filter): string =>
 /** Rows added per batch as the user scrolls. */
 const BATCH = 100;
 
-/** All words, most frequent (highest id) first, with status filters. */
+/** All words, most frequent (highest id) first, with search and status filters. */
 export default class Words extends BaseComponent {
 	private readonly app: AppContext;
 	private library: Library | null = null;
 	private filter: Filter = 'ALL';
+	private search = '';
 	private matches: Card[] = [];
 	private rendered = 0;
 	private observer: IntersectionObserver | null = null;
@@ -82,6 +84,13 @@ export default class Words extends BaseComponent {
 				return group;
 			}),
 		);
+
+		const search = this.query<HTMLInputElement>('.word-search-input');
+		search.addEventListener('input', () => {
+			this.search = search.value;
+			this.applyFilter();
+			this.element.scrollTo({ top: 0 });
+		});
 
 		const body = this.query('tbody');
 		body.addEventListener('click', (event) => this.openFromEvent(event));
@@ -158,7 +167,11 @@ export default class Words extends BaseComponent {
 	}
 
 	private applyFilter(): void {
-		const cards = this.library?.cards ?? [];
+		// The search narrows every chip as well as the table.
+		const matcher = textMatcher(this.search);
+		const cards = (this.library?.cards ?? []).filter((c) =>
+			matcher(c.english),
+		);
 		for (const chip of this.element.querySelectorAll<HTMLButtonElement>(
 			'.chip',
 		)) {

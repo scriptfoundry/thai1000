@@ -8,6 +8,6 @@ Below are bugfixes and general changes as of Oct 22 at 19:48
 
 [x] Show the "Test this deck" button after only one complete cycle of the deck cards.
 
-[ ] Add text filter input for the words-list view. Display all words matching the requested text anywhere in the `englishWord` field. Do not trim search text (for example, a search for ` to ` should not be shortened to `to`) For now, do not filter by Thai. When blank, show all cards.
+[x] Add text filter input for the words-list view. Display all words matching the requested text anywhere in the `englishWord` field. Do not trim search text (for example, a search for ` to ` should not be shortened to `to`) For now, do not filter by Thai. When blank, show all cards.
 
 [ ] Make "Th->En" and "En->Th" into button group headers so that the buttons are more likely to fit into a single line on Android.

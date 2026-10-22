@@ -3,6 +3,21 @@ main.words {
 	flex-direction: column;
 	gap: var(--space);
 
+	.word-search {
+		display: block;
+	}
+
+	.word-search-input {
+		width: 100%;
+		min-height: 44px;
+		padding: 0 calc(var(--space) * 0.75);
+		border: 2px solid var(--border-color);
+		border-radius: var(--radius);
+		background-color: var(--background-color);
+		color: var(--text-color);
+		font: inherit;
+	}
+
 	.word-filters {
 		min-width: 0;
 		margin: 0;
