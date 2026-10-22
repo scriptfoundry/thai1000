@@ -98,8 +98,9 @@ export default class WordDialog extends BaseComponent {
 		this.query('.speak-thai').addEventListener('click', () => {
 			if (this.word) void speech.speak(this.word.card.thai, 'thai');
 		});
-		this.query('.speak-english').addEventListener('click', () => {
-			if (this.word) void speech.speak(this.word.card.english, 'english');
+		this.query('.word-examples').addEventListener('click', () => {
+			if (this.word)
+				void speech.speak(this.word.card.thaiExample, 'thai');
 		});
 		this.query('.word-hide').addEventListener('click', () =>
 			this.run((word) =>
@@ -180,6 +181,8 @@ export default class WordDialog extends BaseComponent {
 		this.query('.word-category').textContent = card.category;
 		this.query('.word-example-thai').textContent = card.thaiExample;
 		this.query('.word-example-english').textContent = card.englishExample;
+		this.query<HTMLButtonElement>('.word-examples').disabled =
+			card.thaiExample === '';
 
 		this.query('tbody').replaceChildren(
 			...ROWS.map(([label, value]) => {

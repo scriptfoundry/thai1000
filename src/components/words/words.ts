@@ -193,19 +193,26 @@ export default class Words extends BaseComponent {
 		row.tabIndex = 0;
 		row.dataset.id = String(card.id);
 
-		const cells: [string, string?][] = [
+		// [text, className, colSpan]; a hidden word shows one HIDDEN across
+		// both direction columns.
+		const cells: [string, string?, number?][] = [
 			[String(card.id), 'word-id'],
 			[card.thai],
 			[card.english],
-			[forward, 'status'],
-			[backward, 'status'],
-			[card.hidden ? 'Yes' : ''],
 		];
-		for (const [text, className] of cells) {
+		if (card.hidden) {
+			cells.push(['HIDDEN', 'status', 2]);
+		} else {
+			cells.push([forward, 'status'], [backward, 'status']);
+		}
+		for (const [text, className, colSpan] of cells) {
 			const td = document.createElement('td');
 			td.textContent = text;
 			if (className) {
 				td.className = className;
+			}
+			if (colSpan) {
+				td.colSpan = colSpan;
 			}
 			row.append(td);
 		}

@@ -42,7 +42,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 
 [x] In the table view, break down the filters by direction. `ALL` and `HIDDEN` can remain as is but below that show `TH->EN`: `NEW` `LEARNING` `REVIEW` `RELEARN` and then `EN->TH`: `NEW` `LEARNING` `REVIEW` `RELEARN`.
 
-[ ] When viewing the word details:
+[x] When viewing the word details:
      1. make the example region clickable and play the Thai example when clicked; and
 	 2. remove the English play button.
 	 3. remove dedicated column for hidden cards. Instead, put `HIDDEN` in place of the `Th→En` `En→Th` information (i.e. `colspan="2"`)

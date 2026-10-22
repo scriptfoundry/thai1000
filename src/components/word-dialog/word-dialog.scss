@@ -51,10 +51,26 @@ dialog.word-dialog {
 		flex-direction: column;
 		gap: calc(var(--space) * 0.25);
 		padding: calc(var(--space) * 0.75);
+		border: 2px solid transparent;
 		border-radius: var(--radius);
 		background-color: var(--surface-color);
+		text-align: left;
+		cursor: pointer;
 
-		&:has(p:empty:first-child + p:empty) {
+		&:hover:not(:disabled) {
+			border-color: var(--border-color);
+		}
+
+		&:focus-visible {
+			outline: 3px solid var(--text-color);
+			outline-offset: 2px;
+		}
+
+		&:disabled {
+			cursor: default;
+		}
+
+		&:has(span:empty:first-child + span:empty) {
 			display: none;
 		}
 	}
