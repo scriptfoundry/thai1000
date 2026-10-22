@@ -1,6 +1,6 @@
 Below are bugfixes and general changes for app version 0.0.0.
 
-[ ] Ensure that deck cards always shuffled whether for `Practice` or `Test` before showing them to the user:
+[x] Ensure that deck cards always shuffled whether for `Practice` or `Test` before showing them to the user:
      1. when first starting a practice/test deck; or
 	 2. before starting a second pass of a practice deck (i.e. after completing a pass of all cards in the practice deck and starting another pass).
 

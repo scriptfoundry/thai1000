@@ -15,6 +15,7 @@ import {
 	testCandidates,
 } from '../../services/scheduler';
 import { speech } from '../../services/speech';
+import { shuffle } from '../../services/utils';
 import type { AppContext, Direction } from '../../types';
 import CardView, { type Face, type Side } from '../card/card';
 import FLASHCARDS_CONTENTS from './flashcards.html?raw';
@@ -120,12 +121,15 @@ export default class Flashcards extends BaseComponent {
 		}
 		const now = Date.now();
 		const { direction, cardIds } = this.options;
-		this.deck = this.testing
-			? buildTestDeck(cards, index, now, {
-					direction,
-					cardIds: cardIds ? new Set(cardIds) : undefined,
-				})
-			: buildPracticeDeck(cards, index, now, direction);
+		// The scheduler picks which cards; the order they are shown in is random.
+		this.deck = shuffle(
+			this.testing
+				? buildTestDeck(cards, index, now, {
+						direction,
+						cardIds: cardIds ? new Set(cardIds) : undefined,
+					})
+				: buildPracticeDeck(cards, index, now, direction),
+		);
 
 		if (this.deck.length === 0) {
 			this.showEmpty();
@@ -194,6 +198,7 @@ export default class Flashcards extends BaseComponent {
 			this.position++;
 			if (this.position >= this.deck.length) {
 				this.position = 0;
+				this.reshuffle();
 				this.completeCycle();
 			}
 		}
@@ -218,6 +223,15 @@ export default class Flashcards extends BaseComponent {
 			.catch((error: unknown) =>
 				console.error('Saving reveal failed:', error),
 			);
+	}
+
+	/** A new round: reshuffle, without repeating the card just shown. */
+	private reshuffle(): void {
+		const last = this.deck[this.deck.length - 1];
+		this.deck = shuffle(this.deck);
+		if (this.deck.length > 1 && this.deck[0] === last) {
+			this.deck.push(...this.deck.splice(0, 1));
+		}
 	}
 
 	private completeCycle(): void {
