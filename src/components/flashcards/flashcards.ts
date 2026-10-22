@@ -180,7 +180,7 @@ export default class Flashcards extends BaseComponent {
 			return;
 		}
 		if (action === 'replay') {
-			this.card?.speak();
+			this.card?.replay();
 			return;
 		}
 		if (this.testing) {

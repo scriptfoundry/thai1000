@@ -2,7 +2,7 @@ Below are bugfixes and general changes as of Oct 22 at 19:48
 
 [x] In any card view add a small info icon that, if pressed, will display the detail view for that word. The purpose is to provide context for the Thai word and disambiguate it from other possible meanings.
 
-[ ] On the back face of any card (any direction) change the "say again" behaviour: now say the back-side word and then the front-dive word. Front face behaviour does not change.
+[x] On the back face of any card (any direction) change the "say again" behaviour: now say the back-side word and then the front-dive word. Front face behaviour does not change.
 
 [ ] Change the swipe back behaviour: now, of on the front face, go back to the back face of the previous card, and when on the back face go back to the front face of the same card. Do not permit changes to grading of earlier cards.
 

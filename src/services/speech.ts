@@ -152,6 +152,17 @@ export class Speech {
 		this.wakeEnabled = enabled;
 	}
 
+	/** Speak each part in turn; stops if one is cut short. */
+	public async speakAll(
+		parts: readonly (readonly [text: string, language: Language])[],
+	): Promise<void> {
+		for (const [text, language] of parts) {
+			if (!(await this.speak(text, language))) {
+				return;
+			}
+		}
+	}
+
 	/**
 	 * Call from a user gesture (the Start tap): Chrome on Android blocks
 	 * speech until one has happened.
@@ -199,18 +210,21 @@ export class Speech {
 		});
 	}
 
-	/** Speak after cancelling anything in progress; resolves when done or interrupted. */
-	public async speak(text: string, language: Language): Promise<void> {
+	/**
+	 * Speak after cancelling anything in progress. Resolves when done or
+	 * interrupted: true unless another speak() or cancel() cut it short.
+	 */
+	public async speak(text: string, language: Language): Promise<boolean> {
 		const { voice } = this.choices[language];
 		if (!this.supported || !voice || text.trim() === '') {
 			this.cancel();
-			return;
+			return true;
 		}
 		const generation = ++this.generation;
 		await this.wake(voice);
 		if (generation !== this.generation) {
 			// Another speak() or cancel() happened while waking.
-			return;
+			return false;
 		}
 		this.cancel();
 		return new Promise((resolve) => {
@@ -219,11 +233,13 @@ export class Speech {
 			utterance.lang = voice.lang;
 			utterance.rate = this.rates[language];
 			const finish = (): void => {
-				if (this.current === utterance) {
+				// cancel() clears `current` before the interrupted utterance ends.
+				const completed = this.current === utterance;
+				if (completed) {
 					this.current = null;
 				}
 				this.lastEndedAt = Date.now();
-				resolve();
+				resolve(completed);
 			};
 			utterance.onend = finish;
 			utterance.onerror = finish;

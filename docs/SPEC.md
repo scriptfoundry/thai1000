@@ -138,7 +138,7 @@ In addition to using visible on-screen buttons, an experienced user should be ab
 ### Audio and card faces
 - Forward card (Thai→English): **front** speaks the Thai word automatically, no text shown; **back** shows Thai and English text, and speaks the English.
 - Backward card (English→Thai): **front** speaks the English word, no text shown; **back** shows English and Thai text, and speaks the Thai.
-- Every face has a **replay** button (in addition to gesture and keyboard shortcuts).
+- Every face has a **replay** button (in addition to gesture and keyboard shortcuts). Replay on a front repeats the front word; replay on a back says the back word, then the front word.
 - Every face has a small **info** button that opens the word's detail dialog (§11), to give the word context and tell it apart from other meanings.
 - Chrome on Android requires a user gesture before speech: the first screen of a session must have a "Start" button.
 

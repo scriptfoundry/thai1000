@@ -71,17 +71,24 @@ export default class CardView extends BaseComponent {
 		secondaryText.lang = LANG_ATTR[secondary];
 
 		this.query('.card-replay').addEventListener('click', () =>
-			this.speak(),
+			this.replay(),
 		);
 		this.query('.card-info').addEventListener('click', () =>
 			this.options.onInfo(),
 		);
-		this.speak();
+		void speech.speak(textOf(entry, spoken), spoken);
 	}
 
-	public speak(): void {
-		const { spoken } = layout(this.options.entry, this.options.face);
-		void speech.speak(textOf(this.options.entry, spoken), spoken);
+	/** Play again: the front repeats its word; the back says its word, then the front's. */
+	public replay(): void {
+		const { entry, face } = this.options;
+		const { spoken, primary, secondary } = layout(entry, face);
+		const order = face === 'front' ? [spoken] : [secondary, primary];
+		void speech.speakAll(
+			order.map(
+				(language) => [textOf(entry, language), language] as const,
+			),
+		);
 	}
 
 	/** Slide out towards `side` and remove. */
