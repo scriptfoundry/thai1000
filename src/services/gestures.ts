@@ -2,8 +2,8 @@
  * Pointer and keyboard input → semantic card actions (SPEC §8).
  *
  * | pointers | gesture     | keyboard      | action      |
- * | 1        | swipe right | →             | next        |
- * | 1        | swipe left  | ←             | prev        |
+ * | 1        | swipe left  | →             | next        |
+ * | 1        | swipe right | ←             | prev        |
  * | 1        | double tap  | Space         | replay      |
  * | 2        | swipe up    | Shift + ↑     | grade-easy  |
  * | 2        | swipe down  | Shift + ↓     | grade-hard  |
@@ -56,7 +56,7 @@ export interface Scheduler {
 }
 
 const SWIPES: Record<1 | 2, Partial<Record<Direction, CardAction>>> = {
-	1: { right: 'next', left: 'prev' },
+	1: { left: 'next', right: 'prev' },
 	2: { up: 'grade-easy', down: 'grade-hard', right: 'grade-good' },
 };
 const DOUBLE_TAPS: Record<1 | 2, CardAction> = {

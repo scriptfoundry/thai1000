@@ -74,9 +74,9 @@ const taps = (pointers: number, count: number): void => {
 };
 
 describe('swipes', () => {
-	test('one pointer: right = next, left = prev, vertical ignored', () => {
-		gesture(1, 120, 10);
-		gesture(1, -120, 0);
+	test('one pointer: left = next, right = prev, vertical ignored', () => {
+		gesture(1, -120, 10);
+		gesture(1, 120, 0);
 		gesture(1, 0, -150);
 		assert.deepEqual(actions, ['next', 'prev']);
 	});

@@ -25,8 +25,8 @@ Automated checks: `yarn lint`, `yarn tsc --noEmit`, `yarn test` and `yarn build`
 ## Practice (§7, §8)
 
 - [ ] Practice → Thai → English: up to 15 cards, at most 10 new, and the front shows no text but speaks Thai.
-- [ ] → / swipe right: back shows Thai and English and speaks English; again moves to the next card.
-- [ ] ← / swipe left: front of the previous card. Space / double tap: replay.
+- [ ] → / swipe left: back shows Thai and English and speaks English; again moves to the next card.
+- [ ] ← / swipe right: front of the previous card. Space / double tap: replay.
 - [ ] Two-finger gestures and triple taps do nothing in practice.
 - [ ] After 3 rounds, "Test this deck" appears.
 - [ ] English → Thai practice on a fresh install shows the "appear once a word passes" message.

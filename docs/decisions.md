@@ -76,8 +76,9 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 ## Interaction
 
-- Practice: right on front flips; right on back advances (wraps, cycle + 1); left goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
-- Test: right on front flips. Grades are accepted only on the back face, then auto-advance. Left and single-pointer right on the back do nothing.
+- **Single-pointer swipes** (user): swipe left = next (→ key), swipe right = previous (← key). The §8 table originally had the swipes the other way round. The keys are unchanged.
+- Practice: next on front flips; next on back advances (wraps, cycle + 1); previous goes to the previous card's front (no-op at the first card). Grade gestures are ignored.
+- Test: next on front flips. Grades are accepted only on the back face, then auto-advance. Previous, and next on the back, do nothing.
 - On a test card back, the Previous/Next buttons are replaced by Again / Hard / Good / Easy. Previous is not offered in tests, because a rated card cannot be re-rated.
 - The test summary reads "Memorized X of N · Failed Y" and offers **Another test deck** only while more cards in that direction are test-eligible, plus Practice and Home. "Another test deck" is a full test of that direction, even when the finished test came from a practice deck.
 - Ratings are saved in their own transaction as each card is rated. The summary counts the remaining cards after those writes, since IndexedDB runs a later read after earlier writes to the same store.

@@ -120,8 +120,8 @@ In addition to using visible on-screen buttons, an experienced user should be ab
 
 | Pointer type | Pointer gesture | Keyboard | Action |
 |---|---|
-| Single | Swipe right | Right arrow | flip to back of current card / advance to front of next card |
-| Single | Swipe left | Left arrow | return to front of previous card |
+| Single | Swipe left | Right arrow | flip to back of current card / advance to front of next card |
+| Single | Swipe right | Left arrow | return to front of previous card |
 | Single | Double tap | Space bar | play audio again |
 | Double | Swipe up | Shift + Up arrow | grade Easy |
 | Double | Swipe down | Shift + Down arrow | grade Hard |
