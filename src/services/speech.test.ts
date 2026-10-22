@@ -26,6 +26,17 @@ describe('pickVoice', () => {
 		});
 	});
 
+	test('Android: matches the Thai Thailand voice', () => {
+		const voices = [
+			voice('English United States', 'en-US'),
+			voice('Thai Thailand', 'th-TH'),
+		];
+		assert.deepEqual(pickVoice(voices, 'thai'), {
+			voice: voices[1],
+			preferred: true,
+		});
+	});
+
 	test('first preferred entry wins over later ones', () => {
 		const voices = [
 			voice('Moira', 'en-IE'),

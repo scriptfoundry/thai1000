@@ -24,7 +24,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 			hint: ⇈ (U+21C8 UPWARD PAIRED ARROWS)
 
 
-[ ] Add the "Prefered voice" for Thai (necessary for Android). Should be `['Kanya', 'Thai Thailand']`.
+[x] Add the "Prefered voice" for Thai (necessary for Android). Should be `['Kanya', 'Thai Thailand']`.
 
 [ ] Have all warning messages (e.g. Prefered voice not found) self-dismiss after 10 seconds if not dismissed by user.
 

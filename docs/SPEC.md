@@ -146,7 +146,7 @@ In addition to using visible on-screen buttons, an experienced user should be ab
 - Use only the **SpeechSynthesis API** with locally available voices.
 - Run `speechSynthesis.getVoices()` asynchronously during app initialization and wait for `voiceschanged` and handle both cases.
 - Preferred voices are configured in arrays near the top of the module, first match wins. These values are:
-  `ENGLISH_VOICES = ['English Australia', 'Moira']` and `THAI_VOICES = ['Kanya']` (match by `voiceURI`. If no matching voice is found, fall back to the first voice whose `lang` starts with `en` and `th` and display a user warning. At least one Thai voice is guaranteed to exist.
+  `ENGLISH_VOICES = ['English Australia', 'Moira']` and `THAI_VOICES = ['Kanya', 'Thai Thailand']` (match by `voiceURI`. If no matching voice is found, fall back to the first voice whose `lang` starts with `en` and `th` and display a user warning. At least one Thai voice is guaranteed to exist.
 - Settings screen exposes speech rate (default 0.7 for Thai), shows which voice was selected for each language and has a button to play a sample in that voice at that rate.
 - Always cancel any in-progress speech before navigating or starting new speech.
 

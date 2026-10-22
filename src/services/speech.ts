@@ -6,7 +6,8 @@ import type { Language } from '../types';
 
 /** Preferred voices, first match wins (matched against voiceURI or name). */
 export const ENGLISH_VOICES = ['English Australia', 'Moira'];
-export const THAI_VOICES = ['Kanya'];
+// 'Thai Thailand' is the Android name.
+export const THAI_VOICES = ['Kanya', 'Thai Thailand'];
 
 const PREFERRED: Record<Language, readonly string[]> = {
 	english: ENGLISH_VOICES,
