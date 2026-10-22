@@ -88,6 +88,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - **Double taps act about 300ms after the second tap**, once no third tap has arrived; that delay is what lets triple taps be discarded. Single taps do nothing.
 - Presses that start on a button or link inside the card area are clicks, not gestures. Gesture keys call `preventDefault`, so Space never also activates a focused button.
 - Previous is disabled on the first card of a round, rather than wrapping backwards.
+- **Card info button** (user): a round "i" in the card's top-right corner, on both faces, opens the same word dialog as the Words screen. On a Thai → English front it does reveal the answer; that is the point of it. Card gestures and keys are ignored while the dialog is open. A change made in the dialog (hide, reset) updates the deck entry, so a later grade starts from the reset progress, but the card stays in the current deck.
 - Card fronts show only "Listen · Thai" (or English) and a speaker icon, never the word. The main button reads "Show answer" on the front and "Next card" on the back.
 - "Test this deck" navigates to `#/test/<direction>?cards=<ids>`, so a reload keeps the test's card list. The router passes query values as route params.
 - **Separate speech rates** (user): Thai 0.7, English 1.0.

@@ -77,6 +77,10 @@ export default class WordDialog extends BaseComponent {
 		}
 	}
 
+	public get open(): boolean {
+		return this.dialog.open;
+	}
+
 	private get dialog(): HTMLDialogElement {
 		return this.element as HTMLDialogElement;
 	}

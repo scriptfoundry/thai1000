@@ -38,6 +38,8 @@ export interface CardOptions {
 	face: Face;
 	/** Side the card slides in from. */
 	from: Side;
+	/** The info button: show the word's detail. */
+	onInfo: () => void;
 }
 
 export default class CardView extends BaseComponent {
@@ -70,6 +72,9 @@ export default class CardView extends BaseComponent {
 
 		this.query('.card-replay').addEventListener('click', () =>
 			this.speak(),
+		);
+		this.query('.card-info').addEventListener('click', () =>
+			this.options.onInfo(),
 		);
 		this.speak();
 	}

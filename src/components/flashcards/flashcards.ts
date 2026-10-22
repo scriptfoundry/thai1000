@@ -3,6 +3,7 @@ import { Rating } from '../../services/fsrs';
 import { attachCardInput, type CardAction } from '../../services/gestures';
 import {
 	loadLibrary,
+	loadWord,
 	markDeckTestable,
 	recordGrade,
 	recordReveal,
@@ -18,6 +19,7 @@ import { speech } from '../../services/speech';
 import { shuffle } from '../../services/utils';
 import type { AppContext, Direction } from '../../types';
 import CardView, { type Face, type Side } from '../card/card';
+import WordDialog from '../word-dialog/word-dialog';
 import FLASHCARDS_CONTENTS from './flashcards.html?raw';
 import './flashcards.scss';
 
@@ -65,6 +67,7 @@ export default class Flashcards extends BaseComponent {
 	private failed = 0;
 	private card: CardView | null = null;
 	private detachInput: (() => void) | null = null;
+	private dialog: WordDialog | null = null;
 	private unmounted = false;
 
 	constructor(app: AppContext, options: FlashcardsOptions) {
@@ -111,6 +114,7 @@ export default class Flashcards extends BaseComponent {
 		this.unmounted = true;
 		this.detachInput?.();
 		this.detachInput = null;
+		this.dialog?.close();
 		speech.cancel();
 	}
 
@@ -168,6 +172,10 @@ export default class Flashcards extends BaseComponent {
 	}
 
 	private handle(action: CardAction): void {
+		// Keys still reach the window while the word dialog is open.
+		if (this.dialog?.open) {
+			return;
+		}
 		if (this.deck.length === 0 || this.position >= this.deck.length) {
 			return;
 		}
@@ -334,13 +342,33 @@ export default class Flashcards extends BaseComponent {
 		return entry;
 	}
 
+	/** The word dialog for `entry`, which picks up any change made there. */
+	private showInfo(entry: DeckEntry): void {
+		this.dialog?.close();
+		this.dialog = new WordDialog({
+			db: this.app.db,
+			cardId: entry.card.id,
+			onChange: () => {
+				void loadWord(this.app.db, entry.card.id).then((word) => {
+					if (word) {
+						entry.card = word.card;
+						entry.progress = word[entry.direction];
+					}
+				});
+			},
+		});
+		void this.dialog.mount(document.body);
+	}
+
 	/** Swap in the current face; the new card slides in from `from`. */
 	private show(from: Side): void {
 		const previous = this.card;
+		const entry = this.current();
 		this.card = new CardView({
-			entry: this.current(),
+			entry,
 			face: this.face,
 			from,
+			onInfo: () => this.showInfo(entry),
 		});
 		void previous?.leave(from === 'right' ? 'left' : 'right');
 		void this.card.mount(this.query('.card-stage'));
