@@ -26,7 +26,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 
 [x] Add the "Prefered voice" for Thai (necessary for Android). Should be `['Kanya', 'Thai Thailand']`.
 
-[ ] Have all warning messages (e.g. Prefered voice not found) self-dismiss after 10 seconds if not dismissed by user.
+[x] Have all warning messages (e.g. Prefered voice not found) self-dismiss after 10 seconds if not dismissed by user.
 
 [ ] When listening using TWS Bluetooth audio, the earphones can go to sleep after a period of inactivity. I propose adding a new setting to the settings page:
 

@@ -91,7 +91,8 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - "Test this deck" navigates to `#/test/<direction>?cards=<ids>`, so a reload keeps the test's card list. The router passes query values as route params.
 - **Separate speech rates** (user): Thai 0.7, English 1.0.
 - Voices match `voiceURI` or `name`, case-insensitive substring, because names like "Moira" and "Kanya" are not voiceURIs on every platform.
-- Voice warnings (fallback used, or no voice for a language) appear as banners at startup and on the Settings screen. Speech is unlocked by a silent utterance spoken inside the Start tap.
+- Voice warnings (fallback used, or no voice for a language) appear as banners at startup and on the Settings screen.
+- **Warning banners close themselves after 10 seconds** (user; `WARNING_DISMISS_MS`) unless dismissed first. Info banners such as "A new version is available" and error banners stay until dismissed. Speech is unlocked by a silent utterance spoken inside the Start tap.
 - Rates are adjustable from 0.5 to 1.5 and saved when the slider is released. There is no manual voice override yet: the spec only asks to show the chosen voice, and a picker can be added to the `settings` store later.
 - The app version comes from `package.json` via a Vite `define` (`__APP_VERSION__`).
 - Component convention: `constructor(deps)`, `async mount(parent)`, `async unmount()`. Shared plumbing (template, fade/slide, `query`) lives in `BaseComponent` (`services/component.ts`); screens add the `screen` class for the 300ms transition.
