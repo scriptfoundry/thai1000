@@ -113,6 +113,21 @@ main.words {
 		white-space: nowrap;
 	}
 
+	.status-review {
+		font-variant-numeric: tabular-nums;
+	}
+
+	.difficulty {
+		font-size: 1rem;
+		line-height: 1;
+
+		@for $band from 1 through 5 {
+			&.difficulty-#{$band} {
+				color: var(--difficulty-#{$band}-color);
+			}
+		}
+	}
+
 	.word-sentinel {
 		height: 1px;
 	}

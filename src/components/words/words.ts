@@ -1,8 +1,9 @@
 import { BaseComponent, SCREEN_TRANSITION_MS } from '../../services/component';
 import { type Library, loadLibrary } from '../../services/progress';
+import { reviewSummary } from '../../services/review';
 import { progressKey, type Status, statusOf } from '../../services/scheduler';
 import { textMatcher } from '../../services/search';
-import type { AppContext, Card, Direction } from '../../types';
+import type { AppContext, Card, Direction, Progress } from '../../types';
 import WordDialog from '../word-dialog/word-dialog';
 import WORDS_CONTENTS from './words.html?raw';
 import './words.scss';
@@ -138,17 +139,6 @@ export default class Words extends BaseComponent {
 		this.element.scrollTo({ top: 0 });
 	}
 
-	private statuses(card: Card): [Status, Status] {
-		const index = this.library?.index;
-		return [
-			statusOf(card, index?.get(progressKey(card.id, 'forward')) ?? null),
-			statusOf(
-				card,
-				index?.get(progressKey(card.id, 'backward')) ?? null,
-			),
-		];
-	}
-
 	/** Direction filters never match hidden words (HIDDEN overrides both). */
 	private matchesFilter(card: Card, filter: Filter): boolean {
 		if (filter === 'ALL') {
@@ -201,35 +191,30 @@ export default class Words extends BaseComponent {
 	}
 
 	private row(card: Card): HTMLTableRowElement {
-		const [forward, backward] = this.statuses(card);
 		const row = document.createElement('tr');
 		row.tabIndex = 0;
 		row.dataset.id = String(card.id);
-
-		// [text, className, colSpan]; a hidden word shows one HIDDEN across
-		// both direction columns.
-		const cells: [string, string?, number?][] = [
-			[String(card.id), 'word-id'],
-			[card.thai],
-			[card.english],
-		];
-		if (card.hidden) {
-			cells.push(['HIDDEN', 'status', 2]);
-		} else {
-			cells.push([forward, 'status'], [backward, 'status']);
-		}
-		for (const [text, className, colSpan] of cells) {
-			const td = document.createElement('td');
-			td.textContent = text;
-			if (className) {
-				td.className = className;
-			}
-			if (colSpan) {
-				td.colSpan = colSpan;
-			}
-			row.append(td);
-		}
+		row.append(
+			cell(String(card.id), 'word-id'),
+			cell(card.thai),
+			cell(card.english),
+		);
 		row.cells[1]?.setAttribute('lang', 'th');
+
+		// A hidden word shows one HIDDEN across both direction columns.
+		if (card.hidden) {
+			const hidden = cell('HIDDEN', 'status');
+			hidden.colSpan = 2;
+			row.append(hidden);
+			return row;
+		}
+		const now = Date.now();
+		for (const direction of ['forward', 'backward'] as const) {
+			const progress =
+				this.library?.index.get(progressKey(card.id, direction)) ??
+				null;
+			row.append(statusCell(statusOf(card, progress), progress, now));
+		}
 		return row;
 	}
 
@@ -263,3 +248,35 @@ export default class Words extends BaseComponent {
 		this.element.scrollTop = top;
 	}
 }
+
+const cell = (text: string, className?: string): HTMLTableCellElement => {
+	const td = document.createElement('td');
+	td.textContent = text;
+	if (className) {
+		td.className = className;
+	}
+	return td;
+};
+
+/** REVIEW shows days until due and a difficulty bar instead of its name. */
+const statusCell = (
+	status: Status,
+	progress: Progress | null,
+	now: number,
+): HTMLTableCellElement => {
+	if (status !== 'REVIEW' || !progress) {
+		return cell(status, 'status');
+	}
+	const { due, block, band } = reviewSummary(progress, now);
+	const td = cell(`${due} `, 'status status-review');
+	td.title = `REVIEW · ${due === 'od' ? 'overdue' : `due in ${due}`} · difficulty ${progress.difficulty.toFixed(1)}`;
+	const bar = document.createElement('span');
+	bar.className = `difficulty difficulty-${band}`;
+	bar.textContent = block;
+	bar.setAttribute('aria-hidden', 'true');
+	const label = document.createElement('span');
+	label.className = 'visually-hidden';
+	label.textContent = `REVIEW, difficulty ${Math.round(progress.difficulty)}`;
+	td.append(bar, label);
+	return td;
+};

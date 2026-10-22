@@ -10,7 +10,7 @@ Below are bugfixes and general changes as of Oct 23
 		2. `Hide` (no change)
 		3. `Reset to NEW` becomes `Reset`
 
-[ ] In the words list view, instead of `REVIEW` show a two-part value:
+[x] In the words list view, instead of `REVIEW` show a two-part value:
 	1. First put a number that shows how many days until it is due for testing again (e.g. `12d`). For overdue cards put `od` (lower case).
 	2. Then put an icon representing difficutly in increments of 1-to-8. Use the `Lower-nth-Eighth block` Unicode series (U+2581 - U+2588), where `Lower one eighth block` means the lowest difficulty and `Full block` shows the highest difficulty. The icons should also be coloured according to the closest integer difficulty of that word-direction:
 		rgb(96, 165, 250) for difficulties 1 or 2

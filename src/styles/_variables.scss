@@ -17,6 +17,13 @@ $breakpoint-wide: 1024px;
 	--grade-easy-color: #cfe6fd;
 	--grade-easy-text-color: #000;
 
+	// Words list difficulty bars, by rounded difficulty 1–2 … 9–10.
+	--difficulty-1-color: rgb(96 165 250);
+	--difficulty-2-color: rgb(52 211 153);
+	--difficulty-3-color: rgb(251 191 36);
+	--difficulty-4-color: rgb(251 146 60);
+	--difficulty-5-color: rgb(220 38 38);
+
 	--font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Thai', sans-serif;
 	--radius: 12px;
 	--space: 16px;
