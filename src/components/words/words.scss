@@ -12,8 +12,22 @@ main.words {
 
 	.word-chips {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		gap: calc(var(--space) * 0.5);
+	}
+
+	.word-chip-group {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: calc(var(--space) * 0.5);
+	}
+
+	.word-chip-label {
+		min-width: 4.5em;
+		font-size: 0.85rem;
+		font-weight: 700;
+		white-space: nowrap;
 	}
 
 	.chip {

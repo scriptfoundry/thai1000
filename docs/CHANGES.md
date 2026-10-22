@@ -40,7 +40,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 
 [x] Make all LEARNING cards testable from the main menu screen, even if they have been seen fewer than three times. However, don't show the test button until the cards in the deck have all been seen at least three times.
 
-[ ] In the table view, break down the filters by direction. `ALL` and `HIDDEN` can remain as is but below that show `TH->EN`: `NEW` `LEARNING` `REVIEW` `RELEARN` and then `EN->TH`: `NEW` `LEARNING` `REVIEW` `RELEARN`.
+[x] In the table view, break down the filters by direction. `ALL` and `HIDDEN` can remain as is but below that show `TH->EN`: `NEW` `LEARNING` `REVIEW` `RELEARN` and then `EN->TH`: `NEW` `LEARNING` `REVIEW` `RELEARN`.
 
 [ ] When viewing the word details:
      1. make the example region clickable and play the Thai example when clicked; and

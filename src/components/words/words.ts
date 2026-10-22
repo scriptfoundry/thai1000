@@ -1,21 +1,36 @@
 import { BaseComponent, SCREEN_TRANSITION_MS } from '../../services/component';
 import { type Library, loadLibrary } from '../../services/progress';
 import { progressKey, type Status, statusOf } from '../../services/scheduler';
-import type { AppContext, Card } from '../../types';
+import type { AppContext, Card, Direction } from '../../types';
 import WordDialog from '../word-dialog/word-dialog';
 import WORDS_CONTENTS from './words.html?raw';
 import './words.scss';
 
-type Filter = 'ALL' | Status;
+type DirectionStatus = Exclude<Status, 'HIDDEN'>;
 
-const FILTERS: readonly Filter[] = [
-	'ALL',
+/** ALL, HIDDEN, or one status in one direction, e.g. `forward:NEW`. */
+type Filter = 'ALL' | 'HIDDEN' | `${Direction}:${DirectionStatus}`;
+
+const DIRECTION_STATUSES: readonly DirectionStatus[] = [
 	'NEW',
 	'LEARNING',
 	'REVIEW',
 	'RELEARN',
-	'HIDDEN',
 ];
+
+const byDirection = (direction: Direction): Filter[] =>
+	DIRECTION_STATUSES.map((status): Filter => `${direction}:${status}`);
+
+/** Chip rows: ALL and HIDDEN, then each status per direction. */
+const FILTER_GROUPS: readonly { label: string | null; filters: Filter[] }[] = [
+	{ label: null, filters: ['ALL', 'HIDDEN'] },
+	{ label: 'TH→EN', filters: byDirection('forward') },
+	{ label: 'EN→TH', filters: byDirection('backward') },
+];
+
+/** Chip text without the direction, which the row label already shows. */
+const chipLabel = (filter: Filter): string =>
+	filter.split(':').at(-1) ?? filter;
 
 /** Rows added per batch as the user scrolls. */
 const BATCH = 100;
@@ -41,13 +56,30 @@ export default class Words extends BaseComponent {
 
 	protected override onMount(): void {
 		this.query('.word-chips').replaceChildren(
-			...FILTERS.map((filter) => {
-				const chip = document.createElement('button');
-				chip.type = 'button';
-				chip.className = 'chip';
-				chip.dataset.filter = filter;
-				chip.addEventListener('click', () => this.setFilter(filter));
-				return chip;
+			...FILTER_GROUPS.map(({ label, filters }) => {
+				const group = document.createElement('div');
+				group.className = 'word-chip-group';
+				if (label) {
+					group.setAttribute('role', 'group');
+					group.setAttribute('aria-label', label);
+					const heading = document.createElement('span');
+					heading.className = 'word-chip-label';
+					heading.textContent = label;
+					group.append(heading);
+				}
+				group.append(
+					...filters.map((filter) => {
+						const chip = document.createElement('button');
+						chip.type = 'button';
+						chip.className = 'chip';
+						chip.dataset.filter = filter;
+						chip.addEventListener('click', () =>
+							this.setFilter(filter),
+						);
+						return chip;
+					}),
+				);
+				return group;
 			}),
 		);
 
@@ -108,9 +140,21 @@ export default class Words extends BaseComponent {
 		];
 	}
 
-	/** A word matches if either direction does (HIDDEN overrides both). */
+	/** Direction filters never match hidden words (HIDDEN overrides both). */
 	private matchesFilter(card: Card, filter: Filter): boolean {
-		return filter === 'ALL' || this.statuses(card).includes(filter);
+		if (filter === 'ALL') {
+			return true;
+		}
+		if (filter === 'HIDDEN') {
+			return card.hidden;
+		}
+		const [direction, status] = filter.split(':') as [
+			Direction,
+			DirectionStatus,
+		];
+		const progress =
+			this.library?.index.get(progressKey(card.id, direction)) ?? null;
+		return statusOf(card, progress) === status;
 	}
 
 	private applyFilter(): void {
@@ -122,7 +166,7 @@ export default class Words extends BaseComponent {
 			const count = cards.filter((c) =>
 				this.matchesFilter(c, filter),
 			).length;
-			chip.textContent = `${filter} ${count}`;
+			chip.textContent = `${chipLabel(filter)} ${count}`;
 			chip.setAttribute('aria-pressed', String(filter === this.filter));
 		}
 

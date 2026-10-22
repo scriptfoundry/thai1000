@@ -59,7 +59,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 ## Words screen
 
 - Words are listed **most frequent first** (highest id), matching practice priority. Rows render in batches of 100 as you scroll (IntersectionObserver), so 1000 rows never block the phone.
-- Filter chips show a count. A word matches if either direction has that status; HIDDEN overrides both directions, so a hidden word only appears under ALL and HIDDEN.
+- **Filters are per direction** (user). Chips show a count. The first row has ALL and HIDDEN; below it, TH→EN and EN→TH each have NEW, LEARNING, REVIEW and RELEARN, which match on that direction's status only. HIDDEN overrides both directions, so a hidden word only appears under ALL and HIDDEN.
 - In the dialog, "Due" reads "Ready to test" for LEARNING and "Ready to test" / "Practise first" for RELEARN, since their `due` has no meaning before a test; REVIEW shows the date or "Due now".
 - "Queue for next practice" toggles, and only shows while some direction is still NEW and the word is not hidden. Reset asks for a second tap ("Tap again to reset") instead of a separate confirmation dialog. The dialog also has ▶ Thai / ▶ English buttons.
 
