@@ -28,6 +28,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - `seed.tsv` is **not precached**. It uses a Workbox NetworkFirst runtime route (~3s timeout), so a new seed is picked up when online and the cached one is used offline. Precaching would serve a stale seed until the next app build.
 - Fetch fails and DB empty → fatal screen. Fetch fails and DB has cards → warning, continue. `navigator.onLine === false` at start → offline warning.
+- **Offline starts still read the cached seed** (considered, not changed). Offline, the NetworkFirst route fails at once and returns the cached file. Its `#seedVersion` matches `meta`, so the diff and the write are already skipped. Skipping the read as well would only save parsing about 1000 lines (a few milliseconds), and `navigator.onLine` is not reliable enough to justify a second code path.
 - A seed row that fails validation but has a readable id does not delete the stored card, so a typo in the file cannot wipe progress. A seed with zero valid rows is treated as unavailable.
 - Updated cards keep `hidden`/`queued`; the new `seedVersion` is written in the same transaction as the diff, so it is stored only if the sync commits.
 - **Service worker uses `registerType: 'prompt'`** (user). It checks once at startup; if an update is waiting, a banner offers Reload. Nothing reloads automatically.

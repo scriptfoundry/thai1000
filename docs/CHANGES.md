@@ -4,7 +4,8 @@ Below are bugfixes and general changes for app version 0.0.0.
      1. when first starting a practice/test deck; or
 	 2. before starting a second pass of a practice deck (i.e. after completing a pass of all cards in the practice deck and starting another pass).
 
-[ ] Only if possible and only if you think it will make any difference, completely skip processing the seed file if offline. If it's being loaded from a local cache, we should expect it to match the data in IndexedDB.
+[x] Only if possible and only if you think it will make any difference, completely skip processing the seed file if offline. If it's being loaded from a local cache, we should expect it to match the data in IndexedDB.
+     → Not changed: offline, the diff and write are already skipped; only a few ms of parsing remain. See `decisions.md`.
 
 [ ] Swap the "Single: Swipe left" and "Single: Swipe right" actions. I got these reversed in the SPEC document.
 
