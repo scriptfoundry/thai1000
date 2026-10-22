@@ -106,7 +106,7 @@ Filled by priority until reaching 15 or running out of eligible cards:
 
 A practice deck may mix directions; each card keeps its own direction. If fewer than 15 eligible cards exist, still build the deck from whatever is available (and show a friendly message if none).
 
-Practice cycling: advancing past the last card wraps to the first card, and the deck's **cycle counter** increments each wrap. After **three full cycles**, show a button **"Test this deck"** that starts a test on that deck's cards (split by direction, see "Test deck" below). The user may ignore it and keep practicing indefinitely. A card is flagged `testable` once its deck has been cycled once. Practice never calls FSRS ratings.
+Practice cycling: advancing past the last card wraps to the first card, and the deck's **cycle counter** increments each wrap. After **one full cycle**, show a button **"Test this deck"** that starts a test on that deck's cards (split by direction, see "Test deck" below). The user may ignore it and keep practicing indefinitely. A card is flagged `testable` once its deck has been cycled once. Practice never calls FSRS ratings.
 
 ### Test deck (5–20 cards, single direction)
 - Contains cards whose direction is `testable` and (for REVIEW cards) `due <= now`, in one direction only. Order by lowest retrievability / oldest due first.

@@ -28,7 +28,7 @@ Automated checks: `yarn lint`, `yarn tsc --noEmit`, `yarn test` and `yarn build`
 - [ ] → / swipe left: back shows Thai and English and speaks English; again moves to the next card.
 - [ ] ← / swipe right: front of the previous card. Space / double tap: replay.
 - [ ] Two-finger gestures and triple taps do nothing in practice.
-- [ ] After 3 rounds, "Test this deck" appears.
+- [ ] After 1 round, "Test this deck" appears.
 - [ ] English → Thai practice on a fresh install shows the "appear once a word passes" message.
 
 ## Test (§7, §8, §14)

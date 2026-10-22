@@ -6,7 +6,7 @@ Below are bugfixes and general changes as of Oct 22 at 19:48
 
 [x] Change the swipe back behaviour: now, of on the front face, go back to the back face of the previous card, and when on the back face go back to the front face of the same card. Do not permit changes to grading of earlier cards.
 
-[ ] Show the "Test this deck" button after only one complete cycle of the deck cards.
+[x] Show the "Test this deck" button after only one complete cycle of the deck cards.
 
 [ ] Add text filter input for the words-list view. Display all words matching the requested text anywhere in the `englishWord` field. Do not trim search text (for example, a search for ` to ` should not be shortened to `to`) For now, do not filter by Thai. When blank, show all cards.
 

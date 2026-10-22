@@ -13,7 +13,7 @@ export const NEW_CAP = 10;
 /** Largest test deck. */
 export const TEST_MAX = 20;
 /** Wraps of a practice deck before "Test this deck" is offered. */
-export const CYCLES_BEFORE_TEST = 3;
+export const CYCLES_BEFORE_TEST = 1;
 /** Forward states that unlock the backward direction of a NEW word. */
 export const BACKWARD_UNLOCK_STATES: readonly CardState[] = [
 	'Review',
