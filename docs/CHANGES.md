@@ -2,7 +2,7 @@ Below are bugfixes and general changes as of Oct 23
 
 [x] In the word dialog view, turn the `Close` text button into a close icon at the top-righthand corner of the dialog box. Give the icon a higher `z-index` stacking order than either `p.word-id` and `h2.word-thai` (though they should never overlap).
 
-[ ] Also in the word dialog view:
+[x] Also in the word dialog view:
 	1. Move the remaining buttons to above the word-status table.
 	2. Make them fit on one line.
 	3. Change button text:

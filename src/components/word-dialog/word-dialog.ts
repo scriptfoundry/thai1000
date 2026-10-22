@@ -214,15 +214,11 @@ export default class WordDialog extends BaseComponent {
 		const queue = this.query('.word-queue');
 		const hasNew = forward === null || backward === null;
 		queue.hidden = card.hidden || !hasNew;
-		queue.textContent = card.queued
-			? 'Remove from queue'
-			: 'Queue for next practice';
+		queue.textContent = card.queued ? 'Unqueue' : 'Practice / now';
 
 		const reset = this.query<HTMLButtonElement>('.word-reset');
 		reset.hidden = forward === null && backward === null;
-		reset.textContent = this.confirmingReset
-			? 'Tap again to reset'
-			: 'Reset to NEW';
+		reset.textContent = this.confirmingReset ? 'Tap again' : 'Reset';
 		reset.classList.toggle('button-secondary', !this.confirmingReset);
 	}
 }
