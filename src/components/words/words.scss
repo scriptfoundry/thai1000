@@ -38,8 +38,9 @@ main.words {
 		gap: calc(var(--space) * 0.5);
 	}
 
+	// A header line above its chips, so the four chips get the full width.
 	.word-chip-label {
-		min-width: 4.5em;
+		flex-basis: 100%;
 		font-size: 0.85rem;
 		font-weight: 700;
 		white-space: nowrap;
@@ -47,7 +48,7 @@ main.words {
 
 	.chip {
 		min-height: 36px;
-		padding: 0 calc(var(--space) * 0.75);
+		padding: 0 calc(var(--space) * 0.5);
 		border: 2px solid var(--border-color);
 		border-radius: 999px;
 		background-color: var(--background-color);
