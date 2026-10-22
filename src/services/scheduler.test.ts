@@ -157,7 +157,7 @@ describe('buildPracticeDeck', () => {
 });
 
 describe('buildTestDeck', () => {
-	test('includes testable LEARNING/RELEARN and due REVIEW only', () => {
+	test('includes LEARNING, testable RELEARN and due REVIEW only', () => {
 		const all = cards(6);
 		const index = indexProgress([
 			progress(1, 'forward', 'Learning', { testable: true }),
@@ -173,9 +173,10 @@ describe('buildTestDeck', () => {
 				due: NOW + DAY_MS,
 				stability: 5,
 			}),
+			progress(6, 'forward', 'Relearning', { testable: false }),
 		]);
 		const deck = buildTestDeck(all, index, NOW, { direction: 'forward' });
-		assert.deepEqual(ids(deck).sort(), ['1f', '3f', '4f']);
+		assert.deepEqual(ids(deck).sort(), ['1f', '2f', '3f', '4f']);
 		// Untested (R = 0) before the reviewed card with R > 0.
 		assert.equal(ids(deck).at(-1), '4f');
 	});

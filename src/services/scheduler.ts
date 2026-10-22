@@ -162,10 +162,14 @@ export const buildPracticeDeck = (
 	return deck;
 };
 
-/** SPEC §7 test eligibility (hidden and gap-blocked are filtered earlier). */
+/**
+ * Test eligibility (hidden and gap-blocked are filtered earlier): LEARNING
+ * always, RELEARN once practiced again, REVIEW when due.
+ */
 const isTestable = (progress: Progress | null, now: number): boolean => {
 	switch (stateOf(progress)) {
 		case 'Learning':
+			return true;
 		case 'Relearning':
 			return progress?.testable === true;
 		case 'Review':

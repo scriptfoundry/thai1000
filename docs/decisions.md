@@ -47,7 +47,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - `NEW_CAP` counts queued NEW too: queued go first, then ordinary NEW up to 10 in total.
 - LEARNING directions are ordered by `due`, which is set when the card is first revealed in practice (oldest first).
 - **Hard, Good and Easy all count as a pass** in a test (user): LEARNING/RELEARN → REVIEW. FSRS receives the actual rating. Again → RELEARN, `due = now`, lapses + 1, `testable = false`.
-- **Test eligibility** (user): LEARNING or RELEARN with `testable`, or REVIEW with `due <= now`. Hidden and direction-gap-blocked cards are excluded.
+- **Test eligibility** (user): every LEARNING card (however few times it has been practised), RELEARN with `testable`, or REVIEW with `due <= now`. Hidden and direction-gap-blocked cards are excluded. A RELEARN card still has to go through a practice round before it is retested (§6). "Test this deck" still appears only after three full rounds of the practice deck, i.e. once every card in it has been seen three times.
 - Practice reveal (back shown): NEW → LEARNING. Each reveal increments `practiceExposures` and sets `lastTouchedDay`. `queued` clears on the first reveal. RELEARN stays RELEARN during practice. On the deck's first wrap, every card in it becomes `testable`. REVIEW cards never enter practice decks.
 - **Practice decks are always one direction** (user; overrides §7 "may mix directions"). Home has separate forward and backward Practice buttons. Direction gap: blocked if the opposite direction's `lastTouchedDay` is today (local). Backward NEW unlocks when forward is REVIEW (`BACKWARD_UNLOCK_STATE`).
 - Practice deck target 15 (`PRACTICE_SIZE`), NEW cap 10 (`NEW_CAP`). Test max 20; fewer than 5 eligible still runs; none shows a message. Tests are ordered by retrievability ascending (never-tested = 0), then oldest `due`/`lastReview`.
@@ -60,7 +60,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 
 - Words are listed **most frequent first** (highest id), matching practice priority. Rows render in batches of 100 as you scroll (IntersectionObserver), so 1000 rows never block the phone.
 - Filter chips show a count. A word matches if either direction has that status; HIDDEN overrides both directions, so a hidden word only appears under ALL and HIDDEN.
-- In the dialog, "Due" reads "Ready to test" / "Practise first" for LEARNING and RELEARN, since their `due` has no meaning before a test; REVIEW shows the date or "Due now".
+- In the dialog, "Due" reads "Ready to test" for LEARNING and "Ready to test" / "Practise first" for RELEARN, since their `due` has no meaning before a test; REVIEW shows the date or "Due now".
 - "Queue for next practice" toggles, and only shows while some direction is still NEW and the word is not hidden. Reset asks for a second tap ("Tap again to reset") instead of a separate confirmation dialog. The dialog also has ▶ Thai / ▶ English buttons.
 
 ## Export / import

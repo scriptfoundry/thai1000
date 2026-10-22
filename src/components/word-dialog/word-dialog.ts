@@ -30,6 +30,7 @@ const formatDue = (progress: Progress | null, now: number): string => {
 		case 'New':
 			return '—';
 		case 'Learning':
+			return 'Ready to test';
 		case 'Relearning':
 			return progress?.testable ? 'Ready to test' : 'Practise first';
 		default:

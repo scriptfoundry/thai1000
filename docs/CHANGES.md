@@ -38,7 +38,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 	 3. if less than `2000` milliseconds have elapsed since the end of the last SpeechSynthesisUtterance, resolve immediately and return;
 	 4. call `setTimeout(resolve, 300)` while also immediately playing an empty `SpeechSynthesisUtterance`  (i.e. force SpeechSynthesis to send silent utterance data to the audio output and allow 300ms to elapse before playing any audible speech utterances)
 
-[ ] Make all LEARNING cards testable from the main menu screen, even if they have been seen fewer than three times. However, don't show the test button until the cards in the deck have all been seen at least three times.
+[x] Make all LEARNING cards testable from the main menu screen, even if they have been seen fewer than three times. However, don't show the test button until the cards in the deck have all been seen at least three times.
 
 [ ] In the table view, break down the filters by direction. `ALL` and `HIDDEN` can remain as is but below that show `TH->EN`: `NEW` `LEARNING` `REVIEW` `RELEARN` and then `EN->TH`: `NEW` `LEARNING` `REVIEW` `RELEARN`.
 

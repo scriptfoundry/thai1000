@@ -147,7 +147,7 @@ export default class Flashcards extends BaseComponent {
 		if (this.testing) {
 			this.showMessage(
 				'Nothing to test',
-				'No cards in this direction are ready. Practise a deck through at least once, or come back when reviews are due.',
+				'No cards in this direction are ready. Practise some cards first, or come back when reviews are due.',
 				[
 					{ label: 'Practice', path: `/practice/${direction}` },
 					{ label: 'Home', path: '/home', secondary: true },
