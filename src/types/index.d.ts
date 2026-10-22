@@ -52,6 +52,8 @@ export interface Settings {
 	/** SpeechSynthesis rate, 0.5–1.5. */
 	thaiRate: number;
 	englishRate: number;
+	/** Poke Bluetooth audio awake before speaking. */
+	enableWake: boolean;
 }
 
 /** Shared by screens once the app has booted. */

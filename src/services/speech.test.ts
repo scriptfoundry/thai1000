@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
-import { pickVoice, type VoiceLike } from './speech';
+import { needsWake, pickVoice, type VoiceLike, WAKE_IDLE_MS } from './speech';
 
 const voice = (name: string, lang: string, voiceURI = name): VoiceLike => ({
 	name,
@@ -66,5 +66,32 @@ describe('pickVoice', () => {
 			voice: null,
 			preferred: false,
 		});
+	});
+});
+
+describe('needsWake', () => {
+	const idle = { speaking: false, enabled: true, now: 10_000 };
+
+	test('wakes when enabled and idle long enough or never spoken', () => {
+		assert.equal(needsWake({ ...idle, lastEndedAt: null }), true);
+		assert.equal(
+			needsWake({ ...idle, lastEndedAt: idle.now - WAKE_IDLE_MS }),
+			true,
+		);
+	});
+
+	test('skips while speaking, when disabled, or soon after speech', () => {
+		assert.equal(
+			needsWake({ ...idle, speaking: true, lastEndedAt: null }),
+			false,
+		);
+		assert.equal(
+			needsWake({ ...idle, enabled: false, lastEndedAt: null }),
+			false,
+		);
+		assert.equal(
+			needsWake({ ...idle, lastEndedAt: idle.now - WAKE_IDLE_MS + 1 }),
+			false,
+		);
 	});
 });

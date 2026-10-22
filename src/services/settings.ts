@@ -9,6 +9,7 @@ export const RATE_MAX = 1.5;
 export const DEFAULT_SETTINGS: Readonly<Settings> = Object.freeze({
 	thaiRate: 0.7,
 	englishRate: 1,
+	enableWake: false,
 });
 
 const rate = (value: unknown, fallback: number): number =>
@@ -22,6 +23,10 @@ export const loadSettings = async (db: IDBDatabase): Promise<Settings> => {
 	return {
 		thaiRate: rate(stored?.thaiRate, DEFAULT_SETTINGS.thaiRate),
 		englishRate: rate(stored?.englishRate, DEFAULT_SETTINGS.englishRate),
+		enableWake:
+			typeof stored?.enableWake === 'boolean'
+				? stored.enableWake
+				: DEFAULT_SETTINGS.enableWake,
 	};
 };
 

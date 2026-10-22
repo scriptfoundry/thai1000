@@ -22,6 +22,32 @@ const LANGUAGE_NAME: Record<Language, string> = {
 /** Chrome may never fire `voiceschanged` when voices are already loaded. */
 const VOICES_TIMEOUT_MS = 2000;
 
+/** Silence after which Bluetooth earphones may have gone to sleep. */
+export const WAKE_IDLE_MS = 2000;
+/** Time a poked device gets before audible speech starts. */
+export const WAKE_DELAY_MS = 300;
+
+export interface WakeCheck {
+	/** An utterance is in progress, so the device is already awake. */
+	speaking: boolean;
+	/** The `enableWake` setting. */
+	enabled: boolean;
+	now: number;
+	/** When the last utterance ended, or null if none has. */
+	lastEndedAt: number | null;
+}
+
+/** Whether to poke the audio device before speaking. */
+export const needsWake = ({
+	speaking,
+	enabled,
+	now,
+	lastEndedAt,
+}: WakeCheck): boolean =>
+	!speaking &&
+	enabled &&
+	(lastEndedAt === null || now - lastEndedAt >= WAKE_IDLE_MS);
+
 /** The subset of SpeechSynthesisVoice used here, so tests can fake it. */
 export interface VoiceLike {
 	name: string;
@@ -83,6 +109,10 @@ export class Speech {
 	private rates: Record<Language, number> = { english: 1, thai: 1 };
 	/** Held so Chrome doesn't garbage-collect it before `end` fires. */
 	private current: SpeechSynthesisUtterance | null = null;
+	private wakeEnabled = false;
+	private lastEndedAt: number | null = null;
+	/** Bumped by speak() and cancel(), so a speak waiting on wake() knows it was superseded. */
+	private generation = 0;
 
 	public get supported(): boolean {
 		return typeof window !== 'undefined' && 'speechSynthesis' in window;
@@ -118,6 +148,10 @@ export class Speech {
 		this.rates = { ...rates };
 	}
 
+	public setWake(enabled: boolean): void {
+		this.wakeEnabled = enabled;
+	}
+
 	/**
 	 * Call from a user gesture (the Start tap): Chrome on Android blocks
 	 * speech until one has happened.
@@ -133,18 +167,52 @@ export class Speech {
 
 	public cancel(): void {
 		if (this.supported) {
+			this.generation++;
 			this.current = null;
 			window.speechSynthesis.cancel();
 		}
 	}
 
-	/** Speak after cancelling anything in progress; resolves when done or interrupted. */
-	public speak(text: string, language: Language): Promise<void> {
-		this.cancel();
-		const { voice } = this.choices[language];
-		if (!this.supported || !voice || text.trim() === '') {
+	/**
+	 * With `enableWake`, play an empty utterance and wait WAKE_DELAY_MS so
+	 * Bluetooth earphones that went to sleep are awake for the real speech.
+	 * Resolves at once if speech is in progress, waking is off, or the last
+	 * utterance ended less than WAKE_IDLE_MS ago.
+	 */
+	private wake(voice: SpeechSynthesisVoice): Promise<void> {
+		const synth = window.speechSynthesis;
+		const check: WakeCheck = {
+			speaking: this.current !== null || synth.speaking,
+			enabled: this.wakeEnabled,
+			now: Date.now(),
+			lastEndedAt: this.lastEndedAt,
+		};
+		if (!needsWake(check)) {
 			return Promise.resolve();
 		}
+		return new Promise((resolve) => {
+			window.setTimeout(resolve, WAKE_DELAY_MS);
+			const silent = new SpeechSynthesisUtterance('');
+			silent.voice = voice;
+			silent.lang = voice.lang;
+			synth.speak(silent);
+		});
+	}
+
+	/** Speak after cancelling anything in progress; resolves when done or interrupted. */
+	public async speak(text: string, language: Language): Promise<void> {
+		const { voice } = this.choices[language];
+		if (!this.supported || !voice || text.trim() === '') {
+			this.cancel();
+			return;
+		}
+		const generation = ++this.generation;
+		await this.wake(voice);
+		if (generation !== this.generation) {
+			// Another speak() or cancel() happened while waking.
+			return;
+		}
+		this.cancel();
 		return new Promise((resolve) => {
 			const utterance = new SpeechSynthesisUtterance(text);
 			utterance.voice = voice;
@@ -154,6 +222,7 @@ export class Speech {
 				if (this.current === utterance) {
 					this.current = null;
 				}
+				this.lastEndedAt = Date.now();
 				resolve();
 			};
 			utterance.onend = finish;

@@ -12,7 +12,7 @@ import {
 	saveSettings,
 } from '../../services/settings';
 import { speech } from '../../services/speech';
-import type { AppContext, Language, Settings } from '../../types';
+import type { AppContext, Language } from '../../types';
 import { confirmDialog } from '../confirm-dialog/confirm-dialog';
 import SETTINGS_CONTENTS from './settings.html?raw';
 import './settings.scss';
@@ -22,7 +22,7 @@ const SAMPLES: Record<Language, string> = {
 	english: 'Hello, nice to meet you.',
 };
 
-const RATE_KEY: Record<Language, keyof Settings> = {
+const RATE_KEY: Record<Language, 'thaiRate' | 'englishRate'> = {
 	thai: 'thaiRate',
 	english: 'englishRate',
 };
@@ -44,12 +44,29 @@ export default class SettingsScreen extends BaseComponent {
 		for (const language of LANGUAGES) {
 			this.bindVoice(language);
 		}
+		this.bindWake();
 		this.query('.app-version').textContent = __APP_VERSION__;
 		this.bindData();
 	}
 
 	protected override onUnmount(): void {
 		speech.cancel();
+	}
+
+	private save(): void {
+		saveSettings(this.app.db, this.app.settings).catch((error: unknown) =>
+			console.error('Saving settings failed:', error),
+		);
+	}
+
+	private bindWake(): void {
+		const toggle = this.query<HTMLInputElement>('.wake-toggle');
+		toggle.checked = this.app.settings.enableWake;
+		toggle.addEventListener('change', () => {
+			this.app.settings.enableWake = toggle.checked;
+			speech.setWake(toggle.checked);
+			this.save();
+		});
 	}
 
 	private bindData(): void {
@@ -164,12 +181,7 @@ export default class SettingsScreen extends BaseComponent {
 			output.value = this.app.settings[key].toFixed(2);
 			speech.setRates(ratesOf(this.app.settings));
 		});
-		input.addEventListener('change', () => {
-			saveSettings(this.app.db, this.app.settings).catch(
-				(error: unknown) =>
-					console.error('Saving settings failed:', error),
-			);
-		});
+		input.addEventListener('change', () => this.save());
 
 		const sample = find<HTMLButtonElement>('.voice-sample');
 		sample.disabled = !voice;

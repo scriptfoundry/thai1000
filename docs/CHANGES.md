@@ -28,7 +28,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 
 [x] Have all warning messages (e.g. Prefered voice not found) self-dismiss after 10 seconds if not dismissed by user.
 
-[ ] When listening using TWS Bluetooth audio, the earphones can go to sleep after a period of inactivity. I propose adding a new setting to the settings page:
+[x] When listening using TWS Bluetooth audio, the earphones can go to sleep after a period of inactivity. I propose adding a new setting to the settings page:
 
     "Poke Bluetooth device before playing audio" (`enableWake` -- default `false`)
 

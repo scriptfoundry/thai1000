@@ -90,6 +90,7 @@ Decisions made where `SPEC.md` is silent, ambiguous, or contradicts the repo. `(
 - Card fronts show only "Listen · Thai" (or English) and a speaker icon, never the word. The main button reads "Show answer" on the front and "Next card" on the back.
 - "Test this deck" navigates to `#/test/<direction>?cards=<ids>`, so a reload keeps the test's card list. The router passes query values as route params.
 - **Separate speech rates** (user): Thai 0.7, English 1.0.
+- **Bluetooth wake** (user): the Settings toggle "Poke Bluetooth device before playing audio" (`enableWake`, default off) makes every `speech.speak()` first play an empty utterance and wait 300ms (`WAKE_DELAY_MS`). It is skipped while speech is in progress, or when the last utterance ended less than 2000ms ago (`WAKE_IDLE_MS`). A speak that is superseded by another speak or a cancel during the wait is dropped, so quick card changes never overlap. The empty utterance uses the target voice, so the same engine opens the audio stream. The Start unlock utterance is not affected.
 - Voices match `voiceURI` or `name`, case-insensitive substring, because names like "Moira" and "Kanya" are not voiceURIs on every platform.
 - Voice warnings (fallback used, or no voice for a language) appear as banners at startup and on the Settings screen.
 - **Warning banners close themselves after 10 seconds** (user; `WARNING_DISMISS_MS`) unless dismissed first. Info banners such as "A new version is available" and error banners stay until dismissed. Speech is unlocked by a silent utterance spoken inside the Start tap.

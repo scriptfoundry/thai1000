@@ -32,6 +32,31 @@ main.settings {
 		}
 	}
 
+	.setting-toggle {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--space) * 0.25);
+
+		label {
+			display: flex;
+			align-items: center;
+			gap: calc(var(--space) * 0.75);
+			min-height: 48px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+
+		input {
+			width: 1.5rem;
+			height: 1.5rem;
+			accent-color: var(--primary-color);
+		}
+
+		.setting-hint {
+			font-size: 0.9rem;
+		}
+	}
+
 	.voice-rate {
 		display: flex;
 		align-items: center;

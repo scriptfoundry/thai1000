@@ -47,6 +47,7 @@ const main = (): void => {
 			speech.init(),
 		]);
 		speech.setRates(ratesOf(settings));
+		speech.setWake(settings.enableWake);
 		for (const warning of voiceWarnings) {
 			showNotice(warning, { kind: 'warning' });
 		}
