@@ -9,6 +9,14 @@ $breakpoint-wide: 1024px;
 	--background-color: #fff;
 	--surface-color: #f2f8fe;
 
+	// Test grade buttons; Good uses the normal button colours.
+	--grade-again-color: #e2e2e2;
+	--grade-again-text-color: #000;
+	--grade-hard-color: #9b1c1c;
+	--grade-hard-text-color: #fff;
+	--grade-easy-color: #cfe6fd;
+	--grade-easy-text-color: #000;
+
 	--font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Thai', sans-serif;
 	--radius: 12px;
 	--space: 16px;

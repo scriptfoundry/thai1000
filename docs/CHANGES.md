@@ -9,7 +9,7 @@ Below are bugfixes and general changes for app version 0.0.0.
 
 [x] Swap the "Single: Swipe left" and "Single: Swipe right" actions. I got these reversed in the SPEC document.
 
-[ ] Modify on-screen test buttons: put them in the order below (left-to-right); add colors; add gesture hints:
+[x] Modify on-screen test buttons: put them in the order below (left-to-right); add colors; add gesture hints:
      1. Again:
 			color: light grey, black text;
 			hint: ⌾⌾ (U+233E APL FUNCTIONAL SYMBOL CIRCLE JOT)

@@ -14,12 +14,19 @@
 		<button type="button" class="button deck-next">Show answer</button>
 	</div>
 	<div class="deck-grades" hidden>
+		<!-- Hints show the two-finger gesture for each grade. -->
 		<button type="button" class="button grade grade-again" data-grade="grade-again">
-			Again
+			Again<span class="grade-hint" aria-hidden="true">⌾⌾</span>
 		</button>
-		<button type="button" class="button grade" data-grade="grade-hard">Hard</button>
-		<button type="button" class="button grade" data-grade="grade-good">Good</button>
-		<button type="button" class="button grade" data-grade="grade-easy">Easy</button>
+		<button type="button" class="button grade grade-hard" data-grade="grade-hard">
+			Hard<span class="grade-hint" aria-hidden="true">⇊</span>
+		</button>
+		<button type="button" class="button grade grade-good" data-grade="grade-good">
+			Good<span class="grade-hint" aria-hidden="true">⇉</span>
+		</button>
+		<button type="button" class="button grade grade-easy" data-grade="grade-easy">
+			Easy<span class="grade-hint" aria-hidden="true">⇈</span>
+		</button>
 	</div>
 	<div class="deck-offer button-row" hidden>
 		<button type="button" class="button deck-test">Test this deck</button>

@@ -38,12 +38,23 @@ main.flashcards {
 		gap: calc(var(--space) * 0.5);
 
 		.button {
-			padding: 0 calc(var(--space) * 0.5);
+			flex-direction: column;
+			gap: 2px;
+			padding: calc(var(--space) * 0.25) calc(var(--space) * 0.5);
 		}
 
-		.grade-again {
-			background-color: var(--background-color);
-			color: var(--text-color);
+		.grade-hint {
+			font-size: 1.1rem;
+			font-weight: 400;
+			line-height: 1;
+		}
+
+		@each $grade in again, hard, easy {
+			.grade-#{$grade} {
+				border-color: var(--grade-#{$grade}-color);
+				background-color: var(--grade-#{$grade}-color);
+				color: var(--grade-#{$grade}-text-color);
+			}
 		}
 	}
 
