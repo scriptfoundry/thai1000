@@ -10,7 +10,7 @@ const THEME_COLOR = '#69b0f8';
 const BACKGROUND_COLOR = '#ffffff';
 
 export default defineConfig({
-	base: './',
+	base: '/thai1000/',
 	define: {
 		__APP_VERSION__: JSON.stringify(version),
 	},
