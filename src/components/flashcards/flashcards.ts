@@ -367,6 +367,7 @@ export default class Flashcards extends BaseComponent {
 		this.dialog = new WordDialog({
 			db: this.app.db,
 			cardId: entry.card.id,
+			hideEnglish: true,
 			onChange: () => {
 				void loadWord(this.app.db, entry.card.id).then((word) => {
 					if (word) {

@@ -15,6 +15,8 @@ import './word-dialog.scss';
 export interface WordDialogOptions {
 	db: IDBDatabase;
 	cardId: number;
+	/** Hide the English behind a spoiler until tapped (opened from a card). */
+	hideEnglish?: boolean;
 	/** Called after any change so the caller can refresh. */
 	onChange: () => void;
 }
@@ -99,6 +101,9 @@ export default class WordDialog extends BaseComponent {
 		this.query('.word-close').addEventListener('click', () =>
 			this.dialog.close(),
 		);
+		if (this.options.hideEnglish) {
+			this.addSpoiler();
+		}
 		this.query('.speak-thai').addEventListener('click', () => {
 			if (this.word) void speech.speak(this.word.card.thai, 'thai');
 		});
@@ -128,6 +133,31 @@ export default class WordDialog extends BaseComponent {
 
 		this.dialog.showModal();
 		void this.reload();
+	}
+
+	/** Black out the English; a tap, Enter or Space reveals it for good. */
+	private addSpoiler(): void {
+		const english = this.query('.word-english');
+		english.classList.add('spoiler');
+		english.tabIndex = 0;
+		english.role = 'button';
+		english.ariaLabel = 'Reveal English';
+		const reveal = () => {
+			english.classList.remove('spoiler');
+			english.removeAttribute('tabindex');
+			english.removeAttribute('role');
+			english.removeAttribute('aria-label');
+			english.removeEventListener('click', reveal);
+			english.removeEventListener('keydown', onKey);
+		};
+		const onKey = (event: KeyboardEvent) => {
+			if (event.key === 'Enter' || event.key === ' ') {
+				event.preventDefault();
+				reveal();
+			}
+		};
+		english.addEventListener('click', reveal);
+		english.addEventListener('keydown', onKey);
 	}
 
 	protected override onUnmount(): void {

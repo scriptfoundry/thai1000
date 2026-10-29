@@ -83,13 +83,8 @@
 		overflow-wrap: anywhere;
 	}
 
-	.card-listen {
-		font-size: 4rem;
-		line-height: 1;
-	}
-
-	&.card-front .card-text,
-	&.card-back .card-listen {
+	// The front shows only the question word; its answer waits for the back.
+	&.card-front .card-secondary {
 		display: none;
 	}
 }
