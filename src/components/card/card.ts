@@ -15,7 +15,7 @@ const LANGUAGE_LABEL: Record<Language, string> = {
 };
 
 /**
- * Forward (Thai→English): front speaks Thai with no text; back shows Thai and
+ * Forward (Thai→English): front shows and speaks Thai; back shows Thai and
  * English and speaks English. Backward is the mirror image.
  */
 const layout = (entry: DeckEntry, face: Face) => {

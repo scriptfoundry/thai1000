@@ -59,6 +59,21 @@ dialog.word-dialog {
 
 	.word-english {
 		font-size: 1.25rem;
+
+		&.spoiler {
+			align-self: flex-start;
+			min-width: 6em;
+			border-radius: calc(var(--radius) * 0.5);
+			background-color: black;
+			color: black;
+			cursor: pointer;
+			user-select: none;
+
+			&:focus-visible {
+				outline: 3px solid var(--text-color);
+				outline-offset: 2px;
+			}
+		}
 	}
 
 	.word-speak {

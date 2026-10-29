@@ -24,7 +24,7 @@ Automated checks: `yarn lint`, `yarn tsc --noEmit`, `yarn test` and `yarn build`
 
 ## Practice (§7, §8)
 
-- [x] Practice → Thai → English: up to 15 cards, at most 10 new, and the front shows no text but speaks Thai.
+- [x] Practice → Thai → English: up to 15 cards, at most 10 new, and the front shows the Thai word (no English) and speaks it.
 - [x] → / swipe right: back shows Thai and English and speaks English; again moves to the next card.
 - [x] ← / swipe left: front of the previous card. Space / double tap: replay.
 - [x] Two-finger gestures and triple taps do nothing in practice.
@@ -46,6 +46,7 @@ Automated checks: `yarn lint`, `yarn tsc --noEmit`, `yarn test` and `yarn build`
 - [x] Dialog: Hide moves the word to HIDDEN and out of decks. Unhide restores it.
 - [x] Queue on a NEW word: it appears first among the new cards of the next practice deck, and the queued flag clears once its back is shown.
 - [x] Reset to NEW needs two taps, then both directions are NEW.
+- [x] The card "i" button opens the dialog with the English blacked out; tapping it reveals the English. From Words the English shows normally.
 
 ## Export / import (§12, §14)
 
